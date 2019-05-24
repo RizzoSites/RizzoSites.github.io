@@ -1,0 +1,238 @@
+
+
+@media (min-width: 1200px) and (max-width: 1450px)
+	.journal-order__container
+		max-width: 1100px
+	.footer-container
+		max-width: 1000px
+
+@media (max-width: 1200px)
+	.header
+		&-nav
+			display: none
+			margin-left: 0
+			&-open
+				display: block
+		&-main
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-top: 145px
+			max-height: 320px
+			height: 100%
+			max-width: 320px
+			text-align: center
+			&__title
+				font-size: 30px
+				max-width: 270px
+			&__subtitle
+				font-size: 55px
+		&-head
+			height: 100px
+			padding-top: 0
+			a.button
+				display: none
+			&__container
+				width: 100%
+				justify-content: flex-start
+			&__logo
+				margin-top: 37px
+				margin-left: 40px
+		&-navbtn
+			display: flex
+			justify-content: flex-end
+	.main-container
+		display: flex
+		justify-content: center
+	.about
+		padding-top: 90px
+		background-image: none
+		text-align: center
+		&-container
+			padding-left: 20px
+			padding-right: 20px
+		&-blocks
+			flex-direction: column
+		&-block
+			margin-bottom: 50px
+		&-images
+			height: 350px
+			.about-img__1
+				display: none
+			.about-img__2
+				width: 100%
+				transform: none
+		.section-title
+			&::before
+				left: 50%
+				transform: translateX(-50%)
+	.journal
+		&-blocks
+			flex-direction: column
+			align-items: center
+			box-shadow: none
+		&-block
+			position: relative
+			width: 100%
+			max-width: 420px
+			padding-left: 10px
+			padding-right: 10px
+		&-order
+			text-align: center
+			form
+				background-color: transparent
+			&__container
+				height: 80%
+				align-items: center
+		&-form
+			display: flex
+			flex-direction: column
+			align-items: center
+			&::after
+				content: none
+			&__input
+				margin-bottom: 10px
+				border: 1px solid #ccc
+			.button
+				margin-top: 20px
+			.section-text
+				width: 320px
+			.section-title
+				max-width: 250px
+				&::before
+					left: 50%
+					transform: translateX(-50%)
+		&-warning
+			display: none
+	.work
+		&-blocks
+			flex-direction: column
+			align-items: center
+		&-block
+			margin-right: 0
+			margin-bottom: 50px
+			&__number
+				&::after
+					content: none
+		.section-title
+			margin-bottom: 65px
+	.travel
+		&-blocks
+			flex-direction: column
+		&-block
+			margin-right: 0
+			margin-bottom: 10px
+		.section-title
+			margin-bottom: 65px
+	.gallery
+		display: none
+	.clients
+		&-blocks
+			flex-direction: column
+			align-items: center
+		&-block
+			margin-right: 0
+			margin-bottom: 30px
+			align-items: center
+			text-align: center
+			&:nth-child(1)
+				margin-right: 0
+	.contacts
+		&-container
+			padding-left: 20px
+			padding-right: 20px
+		&-form
+			height: 410px
+			width: 350px
+			&__input
+				max-width: 310px
+				padding: 18px
+			&__text
+				max-width: 170px
+				color: #504242
+				text-align: center
+				line-height: 20px
+			.section-title
+		.section-title
+			margin-bottom: 40px
+			color: #3fa9d3 e
+			&::before
+				content: none
+	.footer
+		padding-bottom: 30px
+		&-container
+			flex-direction: column
+			align-items: center
+		&-span
+			margin-bottom: 20px
+		&-icons
+			margin: 0
+		&-number
+			display: none
+		.footer-img__last
+			margin-right: 0
+@media (max-width: 700px)
+	.journal-form__input
+		margin-right: 0
+
+@media (min-width: 331px) and (max-width: 360px)
+	.header-main
+		max-width: 300px
+	.journal
+		&-block
+			height: 360px
+			&:nth-child(1)
+				&::after
+					top: 140px
+					left: 143px
+			&:nth-child(3)
+				&::after
+					top: 135px
+					left: 155px
+			&:nth-child(5)
+				&::after
+					top: 150px
+					left: 150px
+			&__title
+				padding-top: 40px
+	.contacts
+		&-container
+			padding-left: 15px
+			padding-right: 15px
+		&-form
+			width: 330px
+			&__input
+				max-width: 300px
+
+@media (max-width: 330px)
+	.header
+		&-main
+			max-width: 300px
+	.journal
+		&-block
+			&:nth-child(1)
+				&::after
+					top: 120px
+					left: 120px
+			&:nth-child(3)
+				&::after
+					top: 120px
+					left: 135px
+			&:nth-child(5)
+				&::after
+					top: 130px
+					left: 130px
+		&-form
+			.section-text
+				max-width: 300px
+	.travel
+		&-block
+			height: 370px
+	.contacts
+		&-container
+			padding-left: 10px
+			padding-right: 10px
+		&-form
+			width: 300px
+			&__input
+				width: 280px

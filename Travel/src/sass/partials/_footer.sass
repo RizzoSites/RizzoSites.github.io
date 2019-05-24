@@ -1,0 +1,40 @@
+.footer
+	padding-top: 20px
+	padding-bottom: 20px
+	background: url(../img/footer.png) no-repeat
+	background-size: cover
+	&-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 100%
+	&-span
+		@include OSregular
+		color: #7ab0c0
+		font-size: 18px
+	&-icons
+		display: flex
+		align-items: center
+	&-icon
+		position: relative
+		&:hover::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			height: 93%
+			width: 90%
+			background: #000
+			opacity: 0.4
+		&:nth-child(3)
+			&:hover::before
+				width: 44%
+		img
+			margin-right: 5px
+		.footer-img__last
+			margin-right: 50px
+	&-number
+		color: #7ec6d6
+		font-family: 'Roboto'
+		font-weight: 700
+		font-size: 25px

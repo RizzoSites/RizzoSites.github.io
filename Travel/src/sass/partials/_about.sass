@@ -1,0 +1,48 @@
+.about
+    padding-bottom: 45px
+    background-image: url(../img/about/map.png)
+    background-size: 60%
+    background-repeat: no-repeat
+    background-position: center top 40px
+    background-color: #f6f4f4
+    &-container
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &-blocks
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &-block
+        position: relative
+        max-width: 650px
+            
+    &-title
+        margin-bottom: 25px
+        font-size: 20px
+    &-text
+        margin-bottom: 25px
+        max-width: 380px
+        font-size: 15px
+    &-button
+        padding: 15px 35px
+    &-images 
+        max-width: 700px
+        height: 700px
+    &-img
+        &__1
+            transform: translateY(-30px)
+        &__2
+            transform: translate(-70px, -220px)
+            float: left
+    .section-title
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background: url(../img/wave.png) no-repeat
+            top: -45px
+            left: 0
+            height: 10px
+            width: 82px

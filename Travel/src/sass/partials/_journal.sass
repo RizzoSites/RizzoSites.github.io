@@ -1,0 +1,135 @@
+.journal
+    padding-top: 90px
+    padding-bottom: 70px
+    &-container
+        padding-bottom: 90px
+        display: flex
+        flex-direction: column
+        align-items: center
+    .section-title
+        position: relative
+        margin-bottom: 80px
+        &::before
+            content: ''
+            position: absolute
+            background: url(../img/wave.png) no-repeat
+            top: -35px
+            left: 50%
+            transform: translateX(-50%)
+            height: 10px
+            width: 82px
+    &-blocks
+        max-width: 1140px
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        box-shadow: 0px 0px 21px 0px rgba(6, 6, 6, 0.13)
+    &-block
+        height: 380px
+        max-width: 380px
+        width: 100%
+        position: relative
+        padding-bottom: 25px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        &:nth-child(1)
+            background: url(../img/journal/img-1.png) no-repeat
+            background-size: cover
+        &:nth-child(3)
+            background: url(../img/journal/img-2.png) no-repeat
+            background-size: cover
+        &:nth-child(4)
+            .journal-block__subtitle
+                max-width: 270px
+        &:nth-child(5)
+            background: url(../img/journal/img-3.png) no-repeat
+            background-size: cover
+        &:nth-child(6)
+            .journal-block__subtitle
+                max-width: 210px
+        &__title
+            padding-top: 45px
+            margin-bottom: 45px
+            color: #16b5ef
+            text-transform: uppercase
+            @include OSbold
+        &__subtitle
+            margin-bottom: 20px
+            max-width: 310px
+            letter-spacing: 2px
+            line-height: 20px
+            text-transform: uppercase
+            color: #000
+            @include OSbold
+        &__descr
+            margin-bottom: 40px
+            max-width: 310px
+            color: $grey
+            line-height: 25px
+            @include OSregular
+        &__number
+            font-family: "Times New Roman", Times, serif
+            font-style: italic
+        &__span
+            text-decoration: line-through
+    &-order
+        background: url(../img/journal/journal-bg.png) no-repeat
+        background-size: cover
+        height: 650px
+        &__container
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .section-title 
+                margin-bottom: 20px
+                &::before
+                    left: 43px
+            .section-text
+                margin-bottom: 25px
+                max-width: 620px
+                font-size: 16px
+    &-warning
+        position: relative
+        margin-left: 25px
+        @include OSbold
+        color: $blue
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -25px
+            height: 20px
+            width: 20px
+            background: url(../img/lock.png) no-repeat
+    &-form
+        max-width: 835px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            background: url(../img/divider.png) no-repeat
+            top: 140px
+            left: 300px
+            height: 50px
+            width: 20px
+        .button
+            padding: 22px 70px
+        &__form
+            height: 66px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 30px
+        &__input
+            max-width: 300px
+            width: 100%
+            padding: 20px 25px
+            border: none
+            border-radius: 3px
+            background-color: #fff
+            color: #848484
+            @include OSregular
+            font-size: 16px

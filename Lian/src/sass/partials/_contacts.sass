@@ -1,0 +1,141 @@
+.contacts
+	background: #fafafa
+	border-bottom: 3px solid #f2f2f2
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+	&-bg
+		background: #9a9ea5 url(../img/contacts/contacts-bg.png) no-repeat 
+		background-size: cover
+		height: 350px
+		&__container
+			display: flex
+			flex-direction: column
+			justify-content: center
+			height: 100%
+		&__title
+			max-width: 420px
+	&-info
+		padding-top: 70px
+		padding-bottom: 70px
+		&__blocks
+			display: flex
+			max-width: 1128px
+			margin: 0 auto
+		&__title
+			font-family: 'Roboto'
+			font-weight: 300
+			font-size: 30px
+			text-transform: uppercase
+			letter-spacing: 10px
+			margin-bottom: 10px
+		&__subtitle
+			position: relative
+			font-size: 16px
+			margin-bottom: 60px
+			&::after
+				content: ''
+				position: absolute
+				top: 40px
+				left: 0
+				height: 1px
+				width: 60px
+				background-color: #000
+		&__text
+			font-family: 'Roboto'
+			font-size: 15px
+			font-weight: 700
+			margin-bottom: 30px
+			&__o
+				margin-bottom: 15px
+			span
+				margin-left: 5px
+				color: #777
+				font-weight: 500
+		&__form
+			padding-top: 70px
+			padding-bottom: 70px
+			max-width: 750px
+			width: 100%
+			transform: translateX(80px)
+			.contacts-form
+				display: flex
+				flex-wrap: wrap
+				max-width: 100%
+				margin-bottom: 30px
+	&-map
+		background: url(../img/contacts/map.png) no-repeat 
+		background-size: cover
+		height: 360px
+		display: flex
+		align-items: center
+		margin-bottom: 70px
+		&__span
+			font-family: 'Roboto'
+			font-weight: 300
+			color: 777777
+			&__o
+				transform: translateY(-13px)
+		&__block
+			position: relative
+			margin-top: -10px
+			margin-right: -120px
+			padding-top: 25px
+			padding-bottom: 25px
+			display: flex
+			flex-direction: column
+			align-items: center
+			height: 120px
+			width: 320px
+			background-color: #fff
+			&::after
+				content: ''
+				position: absolute
+				bottom: -70px
+				border: 25px solid transparent
+				border-top: 50px solid #fff
+	&-title
+		font-size: 30px
+		font-weight: 300
+		margin-bottom: 30px
+	&-text
+		max-width: 600px
+		margin-bottom: 50px
+	&-blocks
+		display: flex
+		justify-content: space-between
+		max-width: 1120px
+		width: 100%
+	&-block
+		text-align: left
+		h2
+			margin-bottom: 30px
+		p
+			max-width: 350px
+		
+		img
+			width: 350px
+			margin-bottom: 20px
+
+
+
+.form-text__contacts
+	max-width: 328px
+	width: 100%
+.form-textarea__contacts
+	height: 150px
+
+.contacts-button
+	text-transform: uppercase
+	padding: 10px 50px
+	border: none
+	color: #fff
+	background-color: #000
+	font-family: 'Roboto'
+	font-weight: 700
+	font-size: 15px
+	cursor: pointer
+	&:hover
+		background-color: #1d41b9

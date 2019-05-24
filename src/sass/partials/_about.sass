@@ -1,0 +1,30 @@
+.about
+	padding-top: 90px
+	padding-bottom: 110px
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+	&-images
+		min-width: 810px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-arrow
+		margin-top: -65px
+	.section-title
+		position: relative
+		margin-bottom: 70px
+		&::after
+			content: ''
+			position: absolute
+			top: 80px
+			left: 50%
+			transform: translateX(-50%)
+			height: 1px
+			width: 100px
+			background-color: #f2d699
+	.section-text
+		margin-bottom: 45px
+		max-width: 900px

@@ -1,0 +1,189 @@
+.header
+    position: relative
+    background: url(../img/header/header-bg.png) no-repeat
+    background-size: cover
+    height: 700px
+    &-head
+        padding-top: 25px
+        background: rgba(255,255, 255, 0.4)
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2)
+        height: 100px
+        &__container
+            display: flex
+            justify-content: space-around
+            align-items: center
+        &__logo
+            margin-top: -3px
+            color: $blue
+            font-size: 29px
+            @include Bringin
+            span
+                color: #95a5ad
+    &-navbtn
+        display: none
+        height: 140px
+        width: 165px
+        background: #afeeee
+        border-radius: 50%
+        box-shadow: 0 0 100vw #afeeee 
+        position: fixed
+        top: -60px
+        right: -90px
+        z-index: 1000
+        cursor: pointer
+        transition: .4s ease-in-out 
+        z-index: 1000
+        &__inner
+            position: relative
+            width: 100%
+            height: 100%
+            z-index: 1000
+            span
+                position: absolute
+                width: 30px
+                height: 2px
+                background-color: #000
+                display: block
+                transition: .5s ease-in-out
+                top: 66%
+                left: 19%
+                &::before, &::after
+                    position: absolute
+                    width: 30px
+                    height: 2px
+                    background-color: #000
+                    display: block
+                    transition: .5s ease-in-out
+                &::before
+                    content: ''
+                    top: -10px
+                &::after
+                    content: ''
+                    bottom: -10px
+        &__active
+            span
+                transform: rotate(45deg)
+                &::after
+                    bottom: 0
+                    transform: rotate(90deg)
+                &::before
+                    top: 0
+                    transform: rotate(90deg)                  
+    &-main
+        flex: 1
+        margin-top: 180px
+        padding: 30px 35px
+        height: 320px
+        width: 460px
+        background: transparent
+        border: 2px solid #fff    
+        &__title
+            letter-spacing: 1px
+            text-transform: uppercase
+            color: #fff
+            font-size: 40px
+            @include OSbold
+        &__subtitle
+            margin-top: -15px
+            margin-bottom: 10px
+            letter-spacing: 10px
+            font-size: 60px
+            color: $blue
+            font-family: 'Lemon'
+            font-weight: 400
+        &__text
+            margin-bottom: 20px
+            max-width: 340px
+            line-height: 25px
+            color: #d5dbde
+            font-size: 14px
+            @include OSregular
+.main-container
+    max-width: 1000px
+
+.header-navMenu
+  ul 
+    list-style: none
+    display: flex
+    margin-left: -270px
+    li
+      a
+        margin-right: 25px
+        text-decoration: none
+        text-transform: uppercase
+        color: #9daeb6
+        font-size: 12px
+        @include OSbold
+        &:hover
+            color: $blue
+                                
+@keyframes fadeInRight 
+  0% 
+    opacity: 0
+    left: 50px
+  100%
+    opacity: 1
+    left: 0
+    transform: rotate(0deg)
+
+@media (max-width: 1200px)
+    .header-nav
+        position: fixed
+        background: #2a3140
+        top: 0
+        right: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        transform-origin: right top
+        transform: scale(0)
+        visibility: hidden
+        transition: all 0.4s ease-in-out
+        overflow: hidden
+        z-index: 999   
+        &-open 
+            opacity: 0.99
+            visibility: visible
+            transform: scale(1)
+            li 
+                display: block
+                animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
+                animation-delay: 0.4s
+                transform: rotate(-7deg)
+                transform-origin: right bottom
+                &:nth-of-type(2) 
+                    animation-delay: 0.5s
+                &:nth-of-type(3) 
+                    animation-delay: 0.6s
+                &:nth-of-type(4) 
+                    animation-delay: 0.7s
+                &:nth-of-type(5) 
+                    animation-delay: 0.8s
+    .header-navMenu
+        position: absolute
+        display: flex!important
+        flex-direction: column
+        align-items: center 
+        justify-content: center
+        height: 100%
+        width: 54%
+        top: 0%
+        left: 50%
+        transform: translate(-43%)
+        text-align: center
+        ul 
+            display: flex
+            flex-direction: column
+            margin: 0
+            li
+                padding: 5px
+                display: block
+                position: relative
+                opacity: 0
+                width: 100%
+                a
+                    color: #fff
+                    text-decoration: none
+                    font-size: 50px
+                    margin: 5px 0
+                    transition: 0.2s        
