@@ -12,17 +12,21 @@
 		<div class="container header-container">
 			<div class="header-head">
 				<img src="img/header/header-logo.png" alt="Logo" class="header-logo">
-				<div class="header-navbtn" onclick="lockScroll()">
-					<span></span>
+				<div class="header-navbtn" role="navigation" id="header-navbtn">
+					<div class="header-navbtn__inner">
+						<span></span>
+					</div>
 				</div>
 				<!-- /.header-navbtn -->
-				<nav class="header-nav">
-					<a href="#food" class="header-nav__item">Our Food</a>
-					<a href="#restaurant" class="header-nav__item">Our Restaurant</a>
-					<a href="#values" class="header-nav__item">Our Values</a>
-					<a href="#reservation" class="header-nav__item">Reservations</a>
-					<a href="#footer" class="header-nav__item">Contact</a>
-				</nav>
+				<div class="header-nav">
+					<nav class="header-navMenu">
+						<a href="#food" class="header-nav__item" role="menuItem">Our Food</a>
+						<a href="#restaurant" class="header-nav__item" role="menuItem">Our Restaurant</a>
+						<a href="#values" class="header-nav__item" role="menuItem">Our Values</a>
+						<a href="#reservation" class="header-nav__item" role="menuItem">Reservations</a>
+						<a href="#footer" class="header-nav__item" role="menuItem">Contact</a>
+					</nav>
+				</div>
 			</div>
 			<!-- /.header-head -->
 			<div class="header-main">

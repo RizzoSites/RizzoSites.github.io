@@ -1,6 +1,6 @@
 .header
 	position: relative
-	background: url(../img/header/header-bg.png) no-repeat center 50%
+	background: url(../img/header/header-bg.jpg) no-repeat center 50%
 	background-size: cover 
 	height: 100vh
 	padding-top: 45px
@@ -28,46 +28,53 @@
 	&-logo
 	&-navbtn
 		display: none
-		position: absolute
-		top: 39.5px
-		right: 17px
-		width: 40px
-		height: 30px
-		span
+		height: 130px
+		width: 160px
+		background: #d6ae7c
+		border-radius: 50%
+		position: fixed
+		top: -60px
+		right: -90px
+		z-index: 1000
+		cursor: pointer
+		transition: .4s ease-in-out 
+		z-index: 1000
+		&__inner
 			position: relative
-			width: 30px
-			height: 2px
-			display: block
-			transition: .5s ease-in-out
-			background-color: #fff
-			&::before
-				content: ''
+			width: 100%
+			height: 100%
+			z-index: 1000
+			span
 				position: absolute
-				top: -8px
 				width: 30px
 				height: 2px
+				background-color: #000
 				display: block
 				transition: .5s ease-in-out
-				background-color: #fff
-			&::after
-				content: ''
-				position: absolute
-				bottom: -8px
-				width: 30px
-				height: 2px
-				display: block
-				transition: .5s ease-in-out
-				background-color: #fff
+				top: 63%
+				left: 14%
+				&::before, &::after
+					position: absolute
+					width: 30px
+					height: 2px
+					background-color: #000
+					display: block
+					transition: .5s ease-in-out
+				&::before
+					content: ''
+					top: -10px
+				&::after
+					content: ''
+					bottom: -10px
 		&__active
 			span
-				height: 0
-				background-color: transparent
+				transform: rotate(45deg)
+				&::after
+					bottom: 0
+					transform: rotate(90deg)
 				&::before
 					top: 0
-					transform: rotate(-45deg)
-				&::after
-					top: 0
-					transform: rotate(45deg)
+					transform: rotate(90deg)
 	&-nav
 		&__item
 			color: #fff
@@ -106,5 +113,58 @@
 				height: 3px
 				background: #fff
 
-.lock-scroll
-	overflow: hidden
+@media (max-width: 1200px)
+	.header-nav 
+		position: fixed
+		background: #2a3140
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		opacity: 0
+		transform-origin: right top
+		transform: scale(0)
+		visibility: hidden
+		transition: all 0.4s ease-in-out
+		overflow: hidden
+		z-index: 999   
+		&-open 
+			display: block!important
+			opacity: 0.99
+			visibility: visible
+			transform: scale(1)
+			li 
+				display: block
+				animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
+				animation-delay: 0.3s
+				transform: rotate(-7deg)
+				transform-origin: right bottom
+	.header-navMenu
+		position: absolute
+		display: flex!important
+		flex-direction: column
+		align-items: center 
+		justify-content: center
+		height: 100%
+		width: 54%
+		top: 0%
+		left: 47%
+		transform: translate(-43%)
+		text-align: center
+		ul 
+			display: flex
+			flex-direction: column
+			margin: 0
+			li
+				padding: 5px
+				display: block
+				position: relative
+				opacity: 0
+				width: 100%
+				a
+					color: #fff
+					text-decoration: none
+					font-size: 50px
+					margin: 5px 0
+					transition: 0.2s
+
