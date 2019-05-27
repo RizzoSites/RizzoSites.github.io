@@ -148,6 +148,11 @@
 			&__subtitle
 				&::after
 					display: none
+			&__1
+				padding-left: 40px
+			&__2
+				&__inside
+					padding-left: 40px
 			&__3
 				background-color: #fff
 				padding-top: 20px
@@ -330,6 +335,11 @@
 	.blog
 		&-bg
 			height: 624px
+		&-block
+			&__8
+				margin-bottom: 30px
+	.single-post
+		transform: translateY(2487px)
 	.contacts
 		&-bg
 			height: 624px
@@ -428,6 +438,8 @@
 			&__6
 				height: 225px
 				padding-top: 0
+			&__7
+				height: 380px
 			&__9
 				&__inside
 					padding-left: 56px
@@ -438,8 +450,21 @@
 							display: none
 						&:nth-child(9)
 							display: none
+		.section-text__blog
+			position: relative
+			transform: translateX(20px)
+			line-height: 15px
+			margin-bottom: 0
+			&::before
+				content: ''
+				position: absolute
+				background: url(../img/blog/icon-calendar.png) no-repeat
+				height: 20px
+				width: 20px
+				top: 0px
+				left: -20px
 	.single-post
-		transform: translateY(2487px)
+		transform: translateY(2527px)
 		&__block
 			&__quote
 				padding: 10px 10px
