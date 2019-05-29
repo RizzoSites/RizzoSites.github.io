@@ -1,0 +1,1 @@
+$(window).on("mousemove",function(a){var n=$(window).width(),o=$(window).height(),e=.5-a.pageX/n,r=.5-a.pageY/o;$(".parallax").each(function(a,n){var o=parseInt($(n).data("offset")),t="translate3d("+Math.round(e*o)+"px,"+Math.round(r*o)+"px, 0px";$(n).css({transform:t})})});
