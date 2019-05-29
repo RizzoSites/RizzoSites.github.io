@@ -2,41 +2,31 @@ html
 	box-sizing: border-box
 *, *:before, *:after  
 	box-sizing: inherit 
+body
+	font-family: Calibri, Arial, Helvetica, sans-serif
+	font-size: 14px
 
+html, body
+	max-width: 100%
+	overflow-x: hidden
 .container
-	max-width: 1050px
+	max-width: 1350px
 	margin: 0 auto
-
-.body
-	font-family: Arial, Helvetica, sans-serif
-
-.button
-	padding: 10px 55px
-	border: none
-	cursor: pointer
-	background-color: #dddddd
-	font-size: 22px
-	font-family: 'PT Serif'
-	font-weight: 40px
-	&:hover
-		background-color: #585a5f
-		color: #fff
-		transition: all ease .3s
-
-.section-title
-	font-family: 'PT Serif'
-	font-weight: 700
-	font-size: 36px
-	text-align: center
-	margin-bottom: 70px
-
-#scrollBtn
-	display: block
+.lock-scroll
 	position: fixed
-	bottom: 20px
-	right: 30px
-	background: url(../img/arrow.png) no-repeat center
-	background-size: 100% 100%
-	height: 55px
-	width: 55px
-	opacity: 0.8
+	height: 100%
+	overflow: hidden
+	width: 100%
+.section-title
+	font-family: 'Akrobat'
+	font-size: 48px
+	font-weight: 300
+.section-subtitle
+	margin-bottom: 60px
+	font-family: 'Calibri'
+	font-size: 22px
+	font-weight: 300
+.section-text
+	font-family: 'Roboto'
+	font-size: 20px
+	font-weight: 300

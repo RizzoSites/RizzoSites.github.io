@@ -1,27 +1,29 @@
 .advantages
-	padding-top: 120px
-	padding-bottom: 120px
+	padding-top: 100px
+	padding-bottom: 100px
+	background-color: #f9f9f9
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
 	&-blocks
 		display: flex
-		justify-content: space-around
+		justify-content: center
+		align-items: center
+	&-block
+		margin-right: 70px
+		display: flex
+		flex-direction: column
 		align-items: center
 		text-align: center
-	&-block
-		max-width: 170px
-		position: relative
-
-		&__1
-			max-width: 135px
-		&__title
-			font-family: "PT Serif"
-			font-weight: 400
+		&:last-child
+			margin-right: 0
+		img
+			margin-bottom: 45px
+		&__text
+			max-width: 270px
+			font-family: 'Calibri'
 			font-size: 20px
-
-	&-img
-		min-height: 90px
-		margin-bottom: 20px
-		&__1
-			display: flex
-			align-items: center
-			justify-content: center
-			
+			font-weight: 400
+	.section-title
+		margin-bottom: 35px
