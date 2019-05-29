@@ -1,0 +1,59 @@
+body
+	font-family: Arial, sans-serif
+
+.img-1, .img-2, .img-3
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	background-attachment: fixed
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+.img-1
+	height: 100vh
+	background-image: url(https://img1.akspic.ru/image/92011-sobor-otpusk-srednevekovaya_arhitektura-otel-nebo-1920x1080.jpg?attachment=1)
+
+.img-2
+	background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293_960_720.jpg)
+	min-height: 500px
+
+.img-3
+	background-image: url(https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200)
+	min-height: 500px
+
+.section
+	padding: 50px 80px
+	text-align: center
+	&-light
+		background-color: #f4f4f4
+		color: #666
+	&-dark
+		background-color: rgb(36,43,48)
+		color: #ddd
+
+.text
+	font-size: 50px	
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 8px
+	text-align: center
+	font-weight: bold
+	&-o
+		border: 2px solid #fff
+		padding: 30px 30px
+
+
+@media (max-width: 800px)
+	.text
+		padding 20px
+		max-width: 400px
+		font-size: 30px
+	.img-2
+		height: 700px
+	.img-3
+		height: 700px
+
+h2
+	margin-bottom: 10px
