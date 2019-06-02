@@ -1,0 +1,79 @@
+.course
+	&-bg
+		min-height: 560px
+		padding-top: 50px
+		padding-bottom: 100px
+		margin-bottom: 30px
+		background: transparent
+		background-size: cover
+	&-container
+		max-width: 1010px
+	&-title
+		color: $white
+		font-size: 36px
+	&-blocks
+		max-width: 1060px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		padding-top: 60px
+		text-align: center
+	&-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		min-width: 260px
+		min-height: 110px
+		img
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				top: 50px
+				right: 0
+				height: 2px
+				width: 345px
+				background-color: $purple
+		&:last-child
+			margin-top: 100px
+			margin-right: 0
+			span
+				max-width: 200px
+				color: $purple
+			.course-block__img
+				&::after
+					content: none
+		&:nth-child(3)
+			margin-right: 0
+			.course-block__img
+				&::after
+					content: none
+		&:nth-child(4)
+			margin-top: 100px
+			margin-right: 0
+		&:nth-child(5)
+			margin-top: 100px
+			margin-right: 0
+			span
+				max-width: 250px
+		span
+			max-width: 220px
+			margin-top: 10px
+			line-height: 25px	
+			font-family: 'Lato'
+			font-weight: 400
+		&__img
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				right: -345px
+				height: 2px
+				width: 345px
+				transform: translateY(-50%)
+				background-color: $purple
+.button-container
+	display: flex
+	justify-content: center

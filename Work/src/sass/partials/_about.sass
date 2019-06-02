@@ -1,0 +1,62 @@
+.about
+	padding-top: 50px
+	padding-bottom: 40px
+	background: transparent
+	min-height: 560px
+	transform: translate3d(0,0,0)
+	&-block
+		display: flex
+		flex-direction: column
+		max-width: 500px
+		&__title
+			margin-bottom: 5px
+			letter-spacing: 1px
+			color: $white
+			font-size: 36px
+		&__subtitle
+			font-family: 'CodePro'
+			font-weight: 400
+			max-width: 350px
+			margin-bottom: 15px
+			line-height: 28px
+			text-transform: uppercase
+		&__text
+			max-width: 427px
+			margin-bottom: 20px
+			font-family: 'Lato'
+			font-weight: 400
+			line-height: 28px
+		&__quote
+			&__text
+				max-width: 440px
+				font-family: 'Lato'
+				font-style: italic
+				font-weight: 400
+				color: $purple
+			.dots
+				display: flex
+				margin-bottom: 15px
+			.dot
+				height: 12px
+				width: 12px
+				margin-right: 10px
+				background-color: $purple
+
+	&-separator
+		display: flex
+		flex-direction: column
+		margin-bottom: 35px
+		span
+			margin-right: 5px
+			color: $purple
+			font-family: 'CodePro'
+			font-weight: 400
+		p
+			font-family: 'Lato'
+			font-weight: 400
+			margin-bottom: 10px
+			&:nth-child(2)
+				margin-bottom: 0
+		div
+			display: flex
+			

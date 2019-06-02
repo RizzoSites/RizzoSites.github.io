@@ -1,0 +1,131 @@
+.header
+	position: relative
+	min-height: 100vh
+	background: url('../img/header/header-bg.jpg') no-repeat center
+	background-size: cover
+	&-container
+		max-width: 1147px
+	&-main
+		display: flex
+		flex-direction: column
+		padding-top: 220px
+	&-title
+		margin-bottom: 12px
+		font-family: 'CodePro'
+		font-weight: 700
+		font-size: 60px
+		text-transform: uppercase
+		line-height: 65px
+		z-index: 10
+	&-subtitle
+		max-width: 450px
+		margin-bottom: 70px
+		font-family: 'CodePro'
+		font-weight: 400
+		text-transform: uppercase
+		line-height: 28px
+		z-index: 10
+	&-separator
+		display: flex
+		align-items: center
+		max-width: 300px
+		z-index: 10
+		cursor: pointer
+		span
+			margin-left: 30px
+			font-family: 'CodePro'
+			font-weight: 400
+			font-size: 24px
+			text-transform: uppercase
+	&-application
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: 250px
+		right: -100px
+		transform: rotate(-90deg)
+		z-index: 200
+	&-btn
+		padding: 22px 30px
+		border-radius: 8px
+		background-color: #fff
+		color: $purple
+		font-family: 'CodePro'
+		font-weight: 400
+		text-decoration: none		
+.modalDialog
+	z-index: 100
+	position: fixed
+	top: 0
+	right: -540px
+	height: 100%
+	width: 530px
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 145px 100px 90px 100px
+	text-align: center
+	background-color: #fff
+	color: $dark
+	opacity 400ms ease-in
+	&-title
+		margin-bottom: 30px
+		font-family: 'CodePro'
+		font-size: 36px
+		font-weight: 400
+	&-subtitle
+		margin-bottom: 30px
+		font-family: 'Lato'
+		font-size: 24px
+		font-weight: 400
+		color: $purple
+	&-icons
+		a
+			text-decoration: none
+			margin-right: 40px
+			user-select: none
+		img
+			opacity: 0.5
+			transition: ease all .5s
+			&:last-child
+				margin-right: 0
+			&:hover
+				height: 50px
+				opacity: 1
+				transition: ease all .5s
+				
+	&-form
+		margin-top: 40px
+		margin-bottom: 120px
+		width: 300px
+		.form-input
+			padding-top: 5px
+			padding-bottom: 5px
+			margin-bottom: 50px
+			width: 100%
+			border: none
+			border-bottom: 1px solid $dark
+			&:last-child
+				margin-bottom: 0
+		.form-text
+			font-family: 'Lato'
+			font-weight: 400
+			font-size: 18px
+			opacity: 0.5
+			&:focus
+				opacity: 1
+			&:hover
+				opacity: 1
+	.closeModal
+		position: absolute
+		top: 80px
+		right: 110px
+		cursor: pointer
+.mouse-pointer
+	position: absolute
+	bottom: -50px
+	left: 50%
+	transform: translateX(-50%)
+.modal-open
+	right: 0
