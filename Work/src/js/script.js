@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $('.feedback-slider').slick({
   });
-  modalOpen()
+  modalOpen();
 });
 
 /* Открытие модального окна */
@@ -14,6 +14,8 @@ var modalOpen = function() { // главная функция
 
     $(menuOpen).click(function() { /* выбираем класс icon-menu и
                добавляем метод click с функцией, вызываемой при клике */
+        $('.header-btn').removeClass('header-btn__active');
+        $('.header-btn').toggleClass('header-btn__active');
 
         $('.modalDialog ').animate({ //выбираем класс menu и метод animate
 
@@ -30,14 +32,17 @@ var modalOpen = function() { // главная функция
         }, 700); //скорость движения меню в мс
     });
 
+    // 
+
+    $('#open-modal').click(function() {
+    $('#open-modal').toggleClass('header-btn__active');
+  });
 
 /* Закрытие меню */
 
-	$('.header-btn').click(function() {
-		$('.header-btn').toggleClass('header-btn__active')
-	});
-
     $('.closeModal').click(function() { //выбираем класс icon-close и метод click
+
+        $('.header-btn').removeClass('header-btn__active');
 
         $('.modalDialog').animate({ //выбираем класс menu и метод animate
 

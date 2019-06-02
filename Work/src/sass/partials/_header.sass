@@ -54,8 +54,11 @@
 		font-family: 'CodePro'
 		font-weight: 400
 		text-decoration: none
-		&:hover
-			cursor: text
+		transition: ease all .3s
+		&__active
+			transform: translateY(200px)
+			transition: ease all .3s
+
 .modalDialog
 	z-index: 100
 	position: fixed
