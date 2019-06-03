@@ -1,18 +1,28 @@
 			
-@media (min-height: 740px) and (max-height: 840px)
+@media only screen and (min-height: 740px) and (max-height: 840px)
 	.header
 		&-container
 			max-width: 1000px
 		&-main
 			padding-top: 160px
-@media (min-height: 600px) and (max-height: 740px)
+@media only screen and (min-height: 740px) and (max-height: 815px)
+	.modalDialog
+		padding: 105px 100px 50px 100px
+	.closeModal
+		top: 40px!important
+@media only screen and (min-height: 600px) and (max-height: 740px)
 	.header
 		&-container
 			max-width: 920px
 		&-main
 			padding-top: 130px
+		.modalDialog
+			padding: 75px 100px 50px 100px
+		.closeModal
+			top: 25px
+			right: 60px
 
-@media (min-height: 600px) and (max-height: 680px)
+@media only screen and (min-height: 600px) and (max-height: 680px)
 	.header
 		&-container
 			max-width: 800px
@@ -23,7 +33,7 @@
 		&-subtitle
 			margin-bottom: 40px
 
-@media (min-height: 450px) and (max-height: 680px)
+@media only screen and (min-height: 450px) and (max-height: 600px)
 	.header
 		&-container
 			max-width: 780px
@@ -36,3 +46,8 @@
 		&-separator
 			img
 				height: 100px
+
+@media only screen and (max-width: 1050px)
+	.header
+		&-container
+			max-width: 850px
