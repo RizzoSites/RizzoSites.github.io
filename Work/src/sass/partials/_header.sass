@@ -5,6 +5,7 @@
 	background-size: cover
 	&-container
 		max-width: 1147px
+		
 	&-main
 		display: flex
 		flex-direction: column
@@ -55,6 +56,8 @@
 		font-weight: 400
 		text-decoration: none
 		transition: ease all .3s
+		&:hover
+			box-shadow: 0 10px 20px rgba(39, 39, 39, 0.15)
 		&__active
 			transform: translateY(200px)
 			transition: ease all .3s
@@ -79,7 +82,7 @@
 		font-size: 36px
 		font-weight: 400
 	&-subtitle
-		margin-bottom: 30px
+		margin-bottom: 20px
 		font-family: 'Lato'
 		font-size: 24px
 		font-weight: 400
@@ -88,17 +91,29 @@
 		a
 			text-decoration: none
 			margin-right: 40px
-			user-select: none
-		img
-			opacity: 0.5
-			transition: ease all .5s
 			&:last-child
 				margin-right: 0
-			&:hover
-				height: 50px
-				opacity: 1
-				transition: ease all .5s
-				
+			.fa-icon__1
+				padding: 8px
+				border-radius: 50%
+			.fa-icon__2
+				padding-left: 15px
+				padding-right: 15px
+			.fa-icon__3
+				padding-left: 11px
+				padding-right: 11px
+			i
+				padding: 8px
+				background-color: #000
+				color: #fff
+				font-size: 27px
+				border-radius: 50%
+				opacity: 0.5
+				transition: all 1s ease-out
+				overflow: hidden
+				&:hover
+					opacity: 1
+					transform: scale(1.1)
 	&-form
 		margin-top: 40px
 		margin-bottom: 120px
