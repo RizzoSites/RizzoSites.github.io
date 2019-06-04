@@ -2,11 +2,55 @@
 $(document).ready(function(){
   $('.feedback-slider').slick({
   });
+
+  // открытие модального окна
   modalOpen();
+  
+  width = $(window).width();
+    if (width <= 991) {
+        // смена блоков в секции features
+        swap();
+        setInterval(swap, 3000);
+        // лок экрана на смартфонах при нажатии на кнопку хедера
+        $(".header-btn").click(function() {
+          lockScroll();
+        });
+      }
 });
 
-/* Открытие модального окна */
 
+/* Функция для смены блоков в секции features */
+
+var newsIndex = 1;
+function swap() {
+  $(".features-block__block").hide();
+  $(".features-block__block" + newsIndex).show();
+  
+  var newsCount = 2;
+  newsIndex++;
+  if(newsIndex > newsCount) {
+    newsIndex = 1;
+  }
+}
+
+
+// Функция для смены блоков, показывает блоки по очереди, начальный блок задаётся выше
+
+function blockAnimate() {
+    var length = $('.features-block .features-block__block').length - 1;
+    $('.features-block .features-block__block').each(function(index) {
+        if($(this).hasClass('active') && index != length) {
+            $(this).removeClass('active').fadeOut(1000).next('.features-block__block').addClass('active').fadeIn(1000);
+            return false;
+        } else if (index == length) {
+            $(this).removeClass('active').fadeOut(1000);
+            $('.features-block .features-block__block').eq(0).addClass('active').fadeIn(1000);
+            return false;
+        }
+    });
+};
+
+/* Открытие модального окна */
 
 var modalOpen = function() { // главная функция
 
@@ -59,3 +103,11 @@ var modalOpen = function() { // главная функция
     });
 };
 
+function lockScroll() {
+            if ($('body').hasClass('lock-scroll')) {
+                $('body').removeClass('lock-scroll');
+            }
+            else {
+                $('body').addClass('lock-scroll');
+            }
+      }
