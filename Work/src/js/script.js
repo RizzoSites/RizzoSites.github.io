@@ -15,6 +15,9 @@ $(document).ready(function(){
         $(".header-btn").click(function() {
           lockScroll();
         });
+        $('.closeModal').click(function() {
+        $('body').removeClass('header-btn__active');
+  });
       }
 });
 
@@ -70,7 +73,7 @@ var modalOpen = function() { // главная функция
         
         $('body').animate({ //выбираем тег body и метод animate
 
-            right: '530px' /* чтобы всё содержимое также сдвигалось вправо
+            right: '-1024px' /* чтобы всё содержимое также сдвигалось вправо
                при открытии меню, установим ему положение 285px */
 
         }, 700); //скорость движения меню в мс
@@ -90,7 +93,7 @@ var modalOpen = function() { // главная функция
 
         $('.modalDialog').animate({ //выбираем класс menu и метод animate
 
-            right: '-530px' /* при клике на крестик меню вернется назад в свое
+            right: '-1024px' /* при клике на крестик меню вернется назад в свое
                положение и скроется */
 
         }, 200); //скорость движения меню в мс
