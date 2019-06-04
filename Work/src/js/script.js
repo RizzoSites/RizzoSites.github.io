@@ -5,6 +5,9 @@ $(document).ready(function(){
 
   // открытие модального окна
   modalOpen();
+  $('.closeModal').click(function() {
+        $('body').removeClass('lock-scroll');   
+  });
   
   width = $(window).width();
     if (width <= 991) {
@@ -15,9 +18,6 @@ $(document).ready(function(){
         $(".header-btn").click(function() {
           lockScroll();
         });
-        $('.closeModal').click(function() {
-        $('body').removeClass('header-btn__active');
-  });
       }
 });
 
