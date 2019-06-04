@@ -18,8 +18,24 @@ $(document).ready(function(){
         $(".header-btn").click(function() {
           lockScroll();
         });
+      } else if (width >991) {
+        $(".features-block").removeClass("wow fadeIn");
+        $(".features-block").removeClass("wow fadeIn");
       }
+  
 });
+
+// лок на экран во время модалки
+
+function lockScroll() {
+            if ($('body').hasClass('lock-scroll')) {
+                $('body').removeClass('lock-scroll');
+            }
+            else {
+                $('body').addClass('lock-scroll');
+            }
+      }
+
 
 
 /* Функция для смены блоков в секции features */
@@ -36,28 +52,9 @@ function swap() {
   }
 }
 
-
-// Функция для смены блоков, показывает блоки по очереди, начальный блок задаётся выше
-
-function blockAnimate() {
-    var length = $('.features-block .features-block__block').length - 1;
-    $('.features-block .features-block__block').each(function(index) {
-        if($(this).hasClass('active') && index != length) {
-            $(this).removeClass('active').fadeOut(1000).next('.features-block__block').addClass('active').fadeIn(1000);
-            return false;
-        } else if (index == length) {
-            $(this).removeClass('active').fadeOut(1000);
-            $('.features-block .features-block__block').eq(0).addClass('active').fadeIn(1000);
-            return false;
-        }
-    });
-};
-
-/* Открытие модального окна */
-
 var modalOpen = function() { // главная функция
 
-	var menuOpen = document.querySelectorAll('.header-btn, .open-btn');
+  var menuOpen = document.querySelectorAll('.header-btn, .open-btn');
 
     $(menuOpen).click(function() { /* выбираем класс icon-menu и
                добавляем метод click с функцией, вызываемой при клике */
@@ -73,13 +70,15 @@ var modalOpen = function() { // главная функция
         
         $('body').animate({ //выбираем тег body и метод animate
 
-            right: '-1024px' /* чтобы всё содержимое также сдвигалось вправо
+            right: '-500px' /* чтобы всё содержимое также сдвигалось вправо
                при открытии меню, установим ему положение 285px */
 
         }, 700); //скорость движения меню в мс
     });
 
     // 
+
+    // увести кнопку на хедере за пределы окна при вызове модалки
 
     $('#open-modal').click(function() {
     $('#open-modal').toggleClass('header-btn__active');
@@ -93,7 +92,7 @@ var modalOpen = function() { // главная функция
 
         $('.modalDialog').animate({ //выбираем класс menu и метод animate
 
-            right: '-1024px' /* при клике на крестик меню вернется назад в свое
+            right: '-500px' /* при клике на крестик меню вернется назад в свое
                положение и скроется */
 
         }, 200); //скорость движения меню в мс
@@ -106,11 +105,3 @@ var modalOpen = function() { // главная функция
     });
 };
 
-function lockScroll() {
-            if ($('body').hasClass('lock-scroll')) {
-                $('body').removeClass('lock-scroll');
-            }
-            else {
-                $('body').addClass('lock-scroll');
-            }
-      }
