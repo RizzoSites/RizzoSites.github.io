@@ -63,17 +63,30 @@
 		&__active
 			transform: translateY(200px)
 			transition: ease all .3s
-
+.wrapper
+	position: relative
+	overflow-x: hidden
+.modal-content
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	text-align: center
+	color: $dark
+.modal-active
+	transform: translateX(0%)!important
 .modalDialog
 	z-index: 100
 	position: fixed
 	top: 0
-	right: -1024px
-	height: 100%
+	right: 0
+	height: 100vh
 	width: 530px
 	padding: 145px 100px 90px 100px
 	background-color: #fff
-	overflow: hidden
+	transition: 0.5s
+	transform: translateX(100%)
 	&-title
 		margin-bottom: 30px
 		font-family: 'CodePro'
@@ -115,14 +128,6 @@
 					opacity: 1
 					transform: scale(1.1)
 		width: 300px
-	.modal-content
-		height: 100%
-		width: 100%
-		display: flex
-		flex-direction: column
-		align-items: center
-		text-align: center
-		color: $dark
 	.form
 		margin-top: 40px
 		margin-bottom: 30px
