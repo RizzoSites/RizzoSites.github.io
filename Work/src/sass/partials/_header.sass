@@ -178,7 +178,7 @@
 		&-main
 			padding-top: 0
 		&-title
-			font-size: 38px
+			font-size: 36px
 			line-height: 40px
 		&-separator
 			display: none
@@ -191,15 +191,44 @@
 		.mouse-pointer
 			display: none
 	.modalDialog
-		padding: 65px 100px 90px 100px
 		z-index: 1000
-		max-width: 100%
-		&
-		.closeModal
-			top: 10px
-			right: 20px
+		padding: 50px 40px 5px 40px
+		width: 0%
+		left: 0
+		transform: translateX(-1300px)
+		&-title
+			margin-bottom: 20px
+			font-size: 22px
+			max-width: 300px 
+		&-subtitle
+			max-width: 150px
+			font-size: 20px
+		&-form
+			margin-top: 0
+			margin-bottom: 0
+		.form
+			margin-top: 0
+		&-icons
+			margin-bottom: 30px
+			a
+				i
+					font-size: 24px
+		.form-input
+			width: 80%
+			margin-bottom: 40px!important
+			&:last-child
+				margin-bottom: 25px!important
+		.form-text
+			font-size: 16px!important
+	.closeModal
+		top: 22px!important
+		right: 20px!important
+	.modal-active
+		width: 100%!important
 	.header-btn__active
 		transform: translateX(500px)
+	.button-o
+		padding: 14px 55px
 
 @media (min-width: 530px) and (max-width: 1024px)
 	.header
@@ -213,43 +242,17 @@
 	.header
 		&-title
 			font-size: 32px
+
+@media (min-height: 600px) and (max-width: 1024px) and (orientation: portrait)
 	.modalDialog
-		padding: 50px 40px 5px 40px
-		width: 0%
-		left: 0
-		transform: translateX(-1300px)
-		&-title
-			margin-bottom: 20px
-			font-size: 22px
-			max-width: 300px 
-		&-subtitle
-				max-width: 150px
-				font-size: 20px
-		&-form
-			margin-bottom: 0
-		&-icons
-			margin-bottom: 30px
-			a
-				i
-					font-size: 24px
-		.form
-			margin-top: 0
-			margin-bottom: 0
-		.form-input
-			width: 80%
-			margin-bottom: 40px!important
-			&:last-child
-				margin-bottom: 25px!important
-		.form-text
-			font-size: 16px!important
-		.button-o
-			padding: 14px 55px
-		.closeModal
-			top: 22px
-			right: 20px
-	.modal-active
-		width: 250%!important
-@media (min-height: 740px) and (orientation: portrait)
+		padding: 105px 40px 100px 40px
+	.closeModal
+		top: 40px
+		right: 50px
+	.header-application
+		top: 85%
+		
+@media (min-height: 720px) and (max-width: 1024px) and (orientation: portrait)
 	.modalDialog
 		padding: 155px 40px 100px 40px
 	.closeModal
