@@ -2,31 +2,33 @@
 $(document).ready(function(){
   $('.feedback-slider').slick({
   });
+  // вызов модального окна по нажатию на кнопку "Отправить заявку"
   $('.header-btn').click(function() {
+    $(this).toggleClass('header-btn__active')
     $('.modalDialog').toggleClass('modal-active');
   });
+  // закрытие модального окна по нажатию на стрелочку в модалке и снятие лок-скролла
   $('.closeModal').click(function() {
-      $('body').removeClass('lock-scroll');   
-      $('.modalDialog').removeClass('modal-active');
+    $('body').removeClass('lock-scroll');   
+    $('.modalDialog').removeClass('modal-active');
+    $('.header-btn').removeClass('header-btn__active')
   });
+  // вызов модального окна по нажатию на кнопку "Записаться", кнопка "Отправить заявку" уезжает за границы
     $('.open-btn').click(function() {
     $('.modalDialog').toggleClass('modal-active');
+    $('.header-btn').toggleClass('header-btn__active')
   });
-  // открытие модального окна
-  
+
+  // Удаление анимации и локскрина на десктопе   
   width = $(window).width();
-    if (width <= 1024) {
-        // смена блоков в секции features
-    } else if (width > 1024) {
+    if (width > 1024) {
         $(".features-block").removeClass("wow fadeIn");
         $(".features-block").removeClass("wow fadeIn");
-    } else if (width < 767) {
-      // лок экрана на смартфонах при нажатии на кнопку хедера
+    } else if (width < 1024) {
         $(".header-btn").click(function() {
           lockScroll();
         });
-    } 
-  
+    }
 });
 
 // лок на экран во время модалки
@@ -40,19 +42,4 @@ function lockScroll() {
             }
       }
 
-
-
-/* Функция для смены блоков в секции features */
-
-var newsIndex = 1;
-function swap() {
-  $(".features-block__block").hide();
-  $(".features-block__block" + newsIndex).show();
-  
-  var newsCount = 2;
-  newsIndex++;
-  if(newsIndex > newsCount) {
-    newsIndex = 1;
-  }
-}
 

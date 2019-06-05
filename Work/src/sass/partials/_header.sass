@@ -61,10 +61,7 @@
 		&__active
 			transform: translateY(200px)
 			transition: ease all .3s
-.wrapper
-	position: relative
-	transition: 1s
-	overflow-x: hidden
+// стили для модального окна
 .modal-content
 	display: flex
 	flex-direction: column
@@ -72,6 +69,7 @@
 	justify-content: center
 	text-align: center
 	color: $dark
+	// выезжающая модалка
 .modal-active
 	transform: translateX(0%)!important
 .modalDialog
@@ -84,7 +82,7 @@
 	padding: 145px 100px 90px 100px
 	background-color: #fff
 	transition: 0.5s
-	transform: translateX(1300px)
+	transform: translateX(100%)
 	&-title
 		margin-bottom: 30px
 		font-family: 'CodePro'
@@ -125,11 +123,10 @@
 				&:hover
 					opacity: 1
 					transform: scale(1.1)
-		width: 300px
 	.form
 		margin-top: 40px
 		margin-bottom: 30px
-		.form-input
+		&-input
 			padding-top: 5px
 			padding-bottom: 5px
 			margin-bottom: 50px
@@ -138,7 +135,7 @@
 			border-bottom: 1px solid $dark
 			&:last-child
 				margin-bottom: 0
-		.form-text
+		&-text
 			font-family: 'Lato'
 			font-weight: 400
 			font-size: 18px
@@ -147,6 +144,7 @@
 				opacity: 1
 			&:hover
 				opacity: 1
+	// стрелка, по которой закрывается модалка
 	.closeModal
 		position: absolute
 		top: 80px
@@ -157,8 +155,6 @@
 	bottom: -50px
 	left: 50%
 	transform: translateX(-50%)
-.modal-open
-	right: 0
 
 @media (min-width: 1050px) and (max-width: 1250px)
 	.header
@@ -169,10 +165,10 @@
 	.header
 		background-position: 65%
 		&-container
+			height: 100vh	
 			display: flex
 			flex-direction: column
 			justify-content: center
-			height: 100vh	
 			padding-left: 20px
 			padding-right: 20px
 		&-main
@@ -190,6 +186,7 @@
 			height: 80px
 		.mouse-pointer
 			display: none
+	// адаптивное модальное окно
 	.modalDialog
 		z-index: 1000
 		padding: 50px 40px 5px 40px
@@ -229,7 +226,6 @@
 		transform: translateX(500px)
 	.button-o
 		padding: 14px 55px
-
 @media (max-width: 767px)
 	.modalDialog
 		left: 0!important
