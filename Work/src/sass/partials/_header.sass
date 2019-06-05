@@ -75,6 +75,7 @@
 	color: $dark
 .modal-active
 	transform: translateX(0%)!important
+	width: 100%!important
 .modalDialog
 	z-index: 100
 	position: fixed
@@ -194,7 +195,7 @@
 	.modalDialog
 		padding: 65px 100px 90px 100px
 		z-index: 1000
-		width: 100%
+		max-width: 100%
 		&
 		.closeModal
 			top: 10px
@@ -216,6 +217,7 @@
 			font-size: 32px
 	.modalDialog
 		padding: 45px 40px 30px 40px
+		width: 0%
 		&-title
 			font-size: 26px
 			max-width: 300px 
