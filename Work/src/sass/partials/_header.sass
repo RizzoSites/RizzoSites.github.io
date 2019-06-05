@@ -194,8 +194,7 @@
 		z-index: 1000
 		padding: 50px 40px 5px 40px
 		width: 0%
-		left: 0
-		transform: translateX(-1300px)
+		transform: translateX(530px)
 		&-title
 			margin-bottom: 20px
 			font-size: 22px
@@ -214,7 +213,8 @@
 				i
 					font-size: 24px
 		.form-input
-			width: 80%
+			width: 100%
+			max-width: 300px
 			margin-bottom: 40px!important
 			&:last-child
 				margin-bottom: 15px!important
@@ -230,6 +230,10 @@
 	.button-o
 		padding: 14px 55px
 
+@media (max-width: 767px)
+	.modalDialog
+		left: 0!important
+		transform: translateX(-1024px)
 @media (min-width: 530px) and (max-width: 1024px)
 	.header
 		&-title
@@ -243,17 +247,31 @@
 		&-title
 			font-size: 32px
 
+@media (min-width: 768px) and (max-width: 1024px)
+	.modalDialog
+		padding: 155px 40px 100px 40px!important
+		right: 0!important
+		width: 400px!important
+		&-title
+			font-size: 32px
+		&-subtitle
+			max-width: 170px
+			font-size: 24px
+		.form-input
+			max-width: 350px
 
-@media (min-height: 600px) and (max-width: 1024px) and (orientation: portrait)
+@media (min-height: 600px) and (max-width: 767px) and (orientation: portrait)
 	.modalDialog
 		padding: 105px 40px 100px 40px
+	.modal-content
+		height: 80%
 	.closeModal
 		top: 40px
 		right: 50px
 	.header-application
 		top: 85%
 		
-@media (min-height: 720px) and (max-width: 1024px) and (orientation: portrait)
+@media (min-height: 720px) and (max-width: 767px) and (orientation: portrait)
 	.modalDialog
 		padding: 155px 40px 100px 40px
 	.closeModal
@@ -266,6 +284,6 @@
 		&-icons
 			margin-bottom: 20px
 		.form-input
-			margin-bottom: 30px
+			margin-bottom: 20px
 		.form
 			margin-bottom: 10px

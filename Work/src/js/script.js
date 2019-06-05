@@ -15,17 +15,17 @@ $(document).ready(function(){
   // открытие модального окна
   
   width = $(window).width();
-    if (width <= 991) {
+    if (width <= 1024) {
         // смена блоков в секции features
-        
-        // лок экрана на смартфонах при нажатии на кнопку хедера
+    } else if (width > 1024) {
+        $(".features-block").removeClass("wow fadeIn");
+        $(".features-block").removeClass("wow fadeIn");
+    } else if (width < 767) {
+      // лок экрана на смартфонах при нажатии на кнопку хедера
         $(".header-btn").click(function() {
           lockScroll();
         });
-      } else if (width >991) {
-        $(".features-block").removeClass("wow fadeIn");
-        $(".features-block").removeClass("wow fadeIn");
-      }
+    } 
   
 });
 

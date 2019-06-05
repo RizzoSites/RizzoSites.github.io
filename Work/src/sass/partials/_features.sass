@@ -37,6 +37,9 @@
 			padding-left: 10px
 			.features-block__text
 				max-width: 200px
+		&__pointer
+			height: 80px
+			animation: cursor 1s ease infinite
 		&__block
 			display: flex
 			position: absolute
@@ -77,8 +80,10 @@
 		.features-text__hover
 			display: none
 
-
-@media (max-width: 1000px)
+@media (min-width: 1024px)
+	.features-cursor
+		display: none
+@media (max-width: 1024px)
 	.features
 		padding-top: 80px
 		padding-bottom: 80px
@@ -91,6 +96,12 @@
 			max-width: 350px
 			width: 100%
 			margin-bottom: 15px
+		&-cursor
+			height: 90px
+			width: 90px
+			position: absolute
+			top: 0px
+			left: 0
 			
 @media (max-width: 320px)
 	.features
@@ -114,3 +125,9 @@
 	&:focus
 		.features-block__block2
 			display: block
+
+@keyframes cursor
+	0% 
+		transform: translateY(0)
+	100%
+		transform: translateY(-10px)
