@@ -8,6 +8,7 @@ $(document).ready(function(){
   $('.closeModal').click(function() {
       $('body').removeClass('lock-scroll');   
       $('.modalDialog').removeClass('modal-active');
+      $('.modalDialog').css('transform', 'translateX(-1600px)');
   });
   // открытие модального окна
   
