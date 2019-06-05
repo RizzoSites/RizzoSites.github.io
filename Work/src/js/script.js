@@ -9,13 +9,15 @@ $(document).ready(function(){
       $('body').removeClass('lock-scroll');   
       $('.modalDialog').removeClass('modal-active');
   });
+    $('.open-btn').click(function() {
+    $('.modalDialog').toggleClass('modal-active');
+  });
   // открытие модального окна
   
   width = $(window).width();
     if (width <= 991) {
         // смена блоков в секции features
-        swap();
-        setInterval(swap, 3000);
+        
         // лок экрана на смартфонах при нажатии на кнопку хедера
         $(".header-btn").click(function() {
           lockScroll();
