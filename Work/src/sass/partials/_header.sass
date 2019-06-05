@@ -92,6 +92,7 @@
 		color: $purple
 	&-icons
 		display: flex
+		justify-content: center
 		a
 			text-decoration: none
 			margin-right: 40px
@@ -118,10 +119,10 @@
 				&:hover
 					opacity: 1
 					transform: scale(1.1)
-	&-form
-		margin-top: 40px
-		margin-bottom: 120px
 		width: 300px
+	.form
+		margin-top: 40px
+		margin-bottom: 30px
 		.form-input
 			padding-top: 5px
 			padding-bottom: 5px
@@ -187,11 +188,10 @@
 		padding: 65px 100px 90px 100px
 		z-index: 1000
 		width: 100%
-		&-form
-			margin-bottom: 40px
+		&
 		.closeModal
-			top: 30px
-			right: 40px
+			top: 10px
+			right: 20px
 	.header-btn__active
 		transform: translateX(500px)
 
@@ -208,21 +208,22 @@
 		&-title
 			font-size: 32px
 	.modalDialog
-		padding: 65px 40px 100px 40px
+		padding: 45px 40px 20px 40px
 		&-title
 			font-size: 26px
 			max-width: 300px 
+		&-subtitle
+				max-width: 150px
 		&-form
-			margin-top: 20px
-			margin-bottom: 35px
+			margin-bottom: 0
 		.form-input
 			width: 80%
 			margin-bottom: 50px
 		.button-o
 			padding: 15px 60px
 		.closeModal
-			top: 20px
-			right: 30px
+			top: 10px
+			right: 20px
 @media (min-height: 740px) and (orientation: portrait)
 	.modalDialog
 		padding: 155px 40px 100px 40px
