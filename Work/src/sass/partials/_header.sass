@@ -65,7 +65,12 @@
 			transition: ease all .3s
 .wrapper
 	position: relative
-	overflow-x: hidden
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 1000
+	transition: 1s
 .modal-content
 	height: 100%
 	display: flex
@@ -78,7 +83,7 @@
 	transform: translateX(0%)!important
 .modalDialog
 	z-index: 100
-	position: fixed
+	position: absolute
 	top: 0
 	right: 0
 	height: 100vh
