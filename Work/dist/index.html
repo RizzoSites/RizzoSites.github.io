@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="home">
 		<div id="openModal" class="modalDialog">
 			<div class="modal-content">
 				<div class="closeModal">
@@ -53,6 +53,22 @@
 		</div>
 		<!-- /.modalDialog -->
 		<div class="container header-container">
+			<div class="header-nav">
+				<nav>
+					<a href="#home">Главная</a>
+					<a href="#info">Посети курс</a>
+					<a href="#about">О чём этот курс</a>
+					<a href="#course">Программа курса</a>
+					<a href="">Цены</a>
+					<a href="">Спикеры</a>
+					<a href="#feedback">Отзывы</a>
+				</nav>
+			</div>
+			<!-- /.header-nav -->
+			<div class="header-logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<!-- /.header-logo -->
 			<div class="header-main">
 				<h1 class="header-title">
 					Научись создавать управленческий учёт
@@ -86,7 +102,7 @@
 	</header>
 	<!-- /.header -->
 	<main>
-		<section class="info">
+		<section class="info" id="info">
 			<div class="container media-container">
 				<h2 class="section-title info-title">
 					Кому будет полезно
@@ -148,7 +164,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.info -->
-		<section class="about" data-parallax="scroll" data-image-src="img/about/bg.jpg">
+		<section class="about" id="about" data-parallax="scroll" data-image-src="img/about/bg.jpg">
 			<div class="container about-container">
 				<div class="about-block">
 					<h2 class="section-title about-block__title">О чем этот курс?</h2>
@@ -194,7 +210,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.about -->
-		<section class="features">
+		<section class="features" id="features">
 			<div class="container features-container">
 				<h2 class="section-title features-title">
 					Как проходит курс
@@ -275,7 +291,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.features -->
-		<section class="course">
+		<section class="course" id="course">
 			<div class="course-bg" data-parallax="scroll" data-image-src="img/course/bg.jpg">
 				<div class="container course-container">
 					<h2 class="section-title course-title">
@@ -340,7 +356,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.course -->
-		<section class="authors">
+		<section class="authors" id="authors">
 			<div class="container authors-container">
 				<h2 class="section-title authors-title">
 					Авторы и ведущие курса
@@ -400,7 +416,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.authors -->
-		<section class="feedback">
+		<section class="feedback" id="feedback">
 			<div class="container feedback-container">
 				<h2 class="section-title feedback-title">
 					Отзывы
