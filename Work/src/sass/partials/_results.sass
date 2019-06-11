@@ -1,0 +1,82 @@
+.results
+	padding-top: 80px
+	padding-bottom: 80px
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+	&-title
+		font-size: 30px
+		margin-bottom: 40px
+	&-blocks
+		display: flex
+		align-items: center
+		justify-content: center
+	&-block
+		display: flex
+		flex-direction: column
+		color: $black
+		&__text
+			position: relative
+			margin-bottom: 30px
+			font-family: 'Lato'
+			font-weight: 400
+			line-height: 30px
+			font-size: 20px
+			&:nth-child(1)
+				&::after
+					content: ''
+					position: absolute
+					bottom: -132px
+					left: 0
+					width: 660px
+					height: 130px
+					background: url(../img/results/line-1.png)
+			&:nth-child(2)
+				max-width: 350px
+				margin-bottom: 30px
+				margin-left: -30px
+				&::after
+					content: ''
+					position: absolute
+					bottom: -119px
+					left: 0
+					width: 660px
+					height: 131px
+					background: url(../img/results/line-2.png)
+			&:nth-child(3)
+				max-width: 350px
+				margin-bottom: 54px
+				margin-left: -85px
+				&::after
+					content: ''
+					position: absolute
+					bottom: -105px
+					left: 0
+					width: 477px
+					height: 120px
+					background: url(../img/results/line-3.png)
+			&:nth-child(4)
+				margin-bottom: 30px
+				margin-left: -85px
+			&:nth-child(5)
+				max-width: 320px
+				margin-left: -30px
+				&::after
+					content: ''
+					position: absolute
+					bottom: -28px
+					left: 0
+					width: 528px
+					height: 260px
+					background: url(../img/results/line-4.png)
+			&:nth-child(6)
+				max-width: 350px
+				&::after
+					content: ''
+					position: absolute
+					bottom: -7px
+					left: 0
+					width: 540px
+					height: 238px
+					background: url(../img/results/line-5.png)

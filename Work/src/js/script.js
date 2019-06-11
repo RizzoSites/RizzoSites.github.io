@@ -18,7 +18,16 @@ $(document).ready(function(){
     $('.modalDialog').toggleClass('modal-active');
     $('.header-btn').toggleClass('header-btn__active')
   });
-
+    // вызов модального окна по нажатию на кнопку "Записаться", кнопка "Отправить заявку" уезжает за границы
+    $('#sign-button').click(function() {
+    $('.sign-in__form').hide();
+    $('.cost-modal').show()
+  });
+    $('#modal-button').click(function() {
+    $('#openModal').hide();
+    $('.modal-thankfulness').show()
+  });
+  $('.cost-modal').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
   // Удаление анимации и локскрина на десктопе   
   width = $(window).width();
     if (width > 1024) {
