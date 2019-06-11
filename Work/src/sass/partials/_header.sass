@@ -19,23 +19,30 @@
 		align-items: center
 		z-index: 1000
 		box-shadow: 0px 4px 15px -8px rgba(0,0,0,0.75)
-		nav
-			width: 900px
+		ul
 			height: 100%
 			display: flex
 			margin: 0 auto
 			font-family: 'Lato'
 			font-weight: 400
 			line-height: 35px
-			a
-				color: $dark
-				text-decoration: none
-				margin-right: 32px
-				&:hover
-					border-bottom: 2px solid $purple
-					transition: ease-in-out .1s
+			li
 				&:last-child
-					margin-right: 0
+					a
+						margin-right: 0
+				a
+					color: $dark
+					text-decoration: none
+					margin-right: 32px
+					&:hover
+						border-bottom: 2px solid $purple
+						transition: ease-in-out .1s
+		&__img
+			position: absolute
+			left: 0
+			height: 180px
+		.header-nav__active
+			border-bottom: 2px solid $purple
 	&-logo
 		max-width: 300px
 		position: absolute
@@ -172,7 +179,7 @@
 		cursor: pointer
 .mouse-pointer
 	position: absolute
-	bottom: -50px
+	bottom: -80px
 	left: 50%
 	transform: translateX(-50%)
 	img

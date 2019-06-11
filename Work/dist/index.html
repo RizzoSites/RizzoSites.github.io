@@ -69,15 +69,16 @@
 			<!-- /.cost-modal -->
 		<div class="container header-container">
 			<div class="header-nav">
-				<nav>
-					<a href="#home">Главная</a>
-					<a href="#info">Посети курс</a>
-					<a href="#about">О чём этот курс</a>
-					<a href="#course">Программа курса</a>
-					<a href="">Цены</a>
-					<a href="">Спикеры</a>
-					<a href="#feedback">Отзывы</a>
-				</nav>
+				<img src="img/nav-logo.png" alt="" class="header-nav__img">
+				<ul class="nav">
+					<li><a href="#home" id="m1">Главная</a></li>
+					<li><a href="#info" id="m2">Посети курс</a></li>
+					<li><a href="#about" id="m3">О чём этот курс</a></li>
+					<li><a href="#course" id="m4">Программа курса</a></li>
+					<li><a href="#cost" id="m5">Цены</a></li>
+					<li><a href="#authors" id="m6">Спикеры</a></li>
+					<li><a href="#feedback" id="m7">Отзывы</a></li>
+				</ul>
 			</div>
 			<!-- /.header-nav -->
 			<div class="header-logo">
@@ -371,7 +372,7 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.course -->
-		<section class="results">
+		<section class="results" id="results">
 			<div class="container results-container">
 				<h2 class="section-title results-title">
 					По окончанию курса
@@ -405,11 +406,58 @@
 					<!-- /.results-logo -->
 				</div>
 				<!-- /.results-blocks -->
+
+				<!-- блок для смартфонов -->
+				<div class="results-block__mobile">
+					<div class="results-block__separator">
+						<div class="results-block__number">1</div>
+							<span class="results-block__text__mobile">
+								Научитесь сводить любые табличные данные
+							</span>
+					</div>
+					<!-- /.results-block__separator -->
+					<div class="results-block__separator">
+						<div class="results-block__number">2</div>
+							<span class="results-block__text__mobile">
+								Проанализируете любой бизнес по формуле "Дюпон"
+							</span>
+					</div>
+					<!-- /.results-block__separator -->
+					<div class="results-block__separator">
+						<div class="results-block__number">3</div>
+							<span class="results-block__text__mobile">
+								Разработаете любые модели управленческого учета
+							</span>
+					</div>
+					<!-- /.results-block__separator -->
+					<div class="results-block__separator">
+						<div class="results-block__number">4</div>
+							<span class="results-block__text__mobile">
+								Автоматизируете все финансы и расчеты
+							</span>
+					</div>
+					<!-- /.results-block__separator -->
+					<div class="results-block__separator">
+						<div class="results-block__number">5</div>
+							<span class="results-block__text__mobile">
+								Значительно сократите время на операционное управление
+							</span>
+					</div>
+					<!-- /.results-block__separator -->
+					<div class="results-block__separator">
+						<div class="results-block__number">6</div>
+							<span class="results-block__text__mobile">
+								Сертификат академии “Автоматизированные финансы”
+							</span>
+					</div>
+					<!-- /.results-block__separator -->
+				</div>
+				<!-- /.results-block__mobile -->
 			</div>
 			<!-- /.container -->
 		</section>
 		<!-- /.results -->
-		<section class="cost" data-parallax="scroll" data-image-src="img/cost-bg.jpg">
+		<section class="cost" id="cost" data-parallax="scroll" data-image-src="img/cost-bg.jpg">
 			<div class="container cost-container">
 				<h2 class="section-title cost-title">
 					Участие на курсе
@@ -608,6 +656,23 @@
 		</section>
 		<!-- /.feedback -->
 	</main>
+	<footer class="footer">
+		<div class="footer-nav">
+			<div class="container">
+				<nav>
+					<a href="#home">Главная</a>
+					<a href="#info">Посети курс</a>
+					<a href="#about">О чём этот курс</a>
+					<a href="#course">Программа курса</a>
+					<a href="#cost">Цены</a>
+					<a href="#authors">Спикеры</a>
+					<a href="#feedback">Отзывы</a>
+				</nav>
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.footer-nav -->
+	</footer>
 	<script src="parallax/parallax.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/wow.min.js"></script>
@@ -617,5 +682,6 @@
      <script>
       	 new WOW().init();
      </script>
+
 </body>
 </html>

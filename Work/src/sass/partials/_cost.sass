@@ -20,14 +20,13 @@
 		flex-direction: column
 		font-family: 'Lato'
 		&__blocks
-			height: 178px
+			height: 170px
 			width: 476px
 			margin-bottom: 20px 
 			display: flex
-			border: 4px solid $white
 		&__block
-			height: 100%
-			width: 50%
+			height: 170px
+			width: 238px
 			padding-left: 10px
 			padding-right: 10px
 			display: flex
@@ -35,7 +34,15 @@
 			text-align: center
 			&:nth-child(1)
 				background-color: #118613
-				border-top: 1px solid $white
+				border:
+					top: 4px solid $white
+					bottom: 4px solid $white
+					left: 4px solid $white
+			&:nth-child(2)
+				border:
+					top: 4px solid $white
+					right: 4px solid $white
+					bottom: 4px solid $white
 			&__title
 				font-weight: 300
 				font-size: 16px
@@ -129,3 +136,62 @@
 		height: 530px
 	100%
 		height: 0px
+
+@media (max-width: 1024px)
+	.cost
+		height: 1110px
+		padding-top: 40px
+		padding-bottom: 40px
+		&-container
+			padding-left: 20px
+			padding-right: 20px
+			text-align: center
+			align-items: center
+		&-title
+			max-width: 300px
+		&-blocks
+			flex-direction: column
+			align-items: center
+		&-block
+			align-items: center
+			max-width: 560px
+			padding-left: 10px
+			padding-right: 10px
+			&__blocks
+				height: 320px
+				margin-bottom: 30px
+				flex-direction: column
+				align-items: center
+				text-align: center
+				margin: 0 auto
+			&__block
+				height: 320px
+				width: 300px
+				border: 3px solid $white!important
+				border-bottom: none!important
+				&:last-child
+					border-bottom: 3px solid $white!important
+			&__advantages
+				padding-left: 40px
+				margin-bottom: 30px
+			&__advantage
+				font-size: 18px
+				text-align: left
+				max-width: 340px
+		&-text
+			max-width: 350px
+			margin-top: 40px
+			font-size: 18px
+		&-price
+			span
+				font-size: 30px
+	.sign-blocks
+		display: none
+@media (max-width: 360px)
+	.cost
+		&-text
+			max-width: 290px
+			font-size: 15px
+		&-block
+			&__advantage
+				font-size: 17px
