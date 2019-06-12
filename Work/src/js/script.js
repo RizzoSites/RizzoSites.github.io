@@ -65,7 +65,7 @@ $(document).ready(function(){
    
     // код, с помощью которого второе и третье модальное окно исчезает через 5 секунд после появления
   $('.cost-modal').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
-  $('.modal-thankfulness').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
+  
   // Удаление анимации и локскрина на десктопе   
   width = $(window).width();
     if (width > 1024) {
