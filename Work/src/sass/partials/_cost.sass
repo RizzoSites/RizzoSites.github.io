@@ -1,6 +1,6 @@
 .cost
 	position: relative
-	height: 830px
+	min-height: 830px
 	&-container
 		display: flex
 		flex-direction: column
@@ -12,7 +12,6 @@
 	&-blocks
 		display: flex
 		align-items: flex-end
-		height: 720px
 	&-block
 		padding-bottom: 40px
 		max-width: 480px
@@ -77,7 +76,7 @@
 	transition: .3s all ease-in-out
 .sign-in__form
 	position: absolute
-	height: 530px
+	height: 560px
 	width: 390px
 	padding: 35px 40px
 	background-color: #fff
@@ -107,7 +106,7 @@
 	display: flex
 	flex-direction: column
 	align-items: center
-	height: 530px
+	height: 560px
 	width: 390px
 	background-color: #fff
 	text-align: center
@@ -139,22 +138,24 @@
 
 @media (max-width: 1024px)
 	.cost
-		height: 1110px
-		padding-top: 40px
-		padding-bottom: 40px
+		padding-top: 10px
 		&-container
 			padding-left: 20px
 			padding-right: 20px
 			text-align: center
 			align-items: center
+			height: 100%
 		&-title
 			max-width: 300px
+			padding-top: 30px
+			margin-bottom: 0
 		&-blocks
 			flex-direction: column
 			align-items: center
 		&-block
 			align-items: center
 			max-width: 560px
+			padding-top: 30px
 			padding-left: 10px
 			padding-right: 10px
 			&__blocks
@@ -185,8 +186,17 @@
 		&-price
 			span
 				font-size: 30px
+		&-modal
+			width: 340px
+			&__title
+				font-size: 24px
 	.sign-blocks
-		display: none
+		margin-bottom: 40px
+		margin-left: 0
+		height: 560px
+		width: 340px
+	.sign-in__form
+		width: 340px
 @media (max-width: 360px)
 	.cost
 		&-text
@@ -195,3 +205,11 @@
 		&-block
 			&__advantage
 				font-size: 17px
+		&-modal
+			width: 320px
+			&__title
+				font-size: 22px
+	.sign-blocks
+		width: 320px
+	.sign-in__form
+		width: 320px

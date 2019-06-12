@@ -60,6 +60,7 @@ $(document).ready(function(){
     $('#modal-button').click(function() {
     $('#openModal').hide();
     $('.modal-thankfulness').show()
+    $('body').removeClass('lock-scroll');
   });
    
     // код, с помощью которого второе и третье модальное окно исчезает через 5 секунд после появления
