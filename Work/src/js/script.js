@@ -6,7 +6,7 @@ $(document).ready(function(){
   $(window).on("scroll", function() { 
     var scro= $(window).scrollTop();            
     var scr=0;    // начало страницы - хедер
-    var scr2=800;   // начало меню "посети курс"
+    var scr2=780;   // начало меню "посети курс"
     var scr3=1500;  // начало меню "о чём этот курс
     var scr4=2750;  // начало меню "программа курса"
     var scr5=4180;  // начало меню "спикеры"
@@ -16,7 +16,10 @@ $(document).ready(function(){
     if ( $(window).scrollTop() >= scr && scro <= scr2 ) { $('#m1').addClass('active');}
      else $('#m1').removeClass('active');
 /*      положение  скрола относительно пункта "посети курс"   */
-  if ( scro > scr2 && scro <= scr3 ) {  $('#m2').addClass('active');}
+  if ( scro > scr2 && scro <= scr3 ) {  
+    $('#m2').addClass('active');
+    document.getElementById('header-nav').style['box-shadow'] = '0px 4px 15px -8px rgba(0,0,0,0.75)';
+  }
      else $('#m2').removeClass('active');
 /*      положение  скрола относительно пункта "о чём этот курс"   */
     if ( scro > scr3 && scro <= scr4 ) {    $('#m3').addClass('active');}
