@@ -7,11 +7,11 @@ $(document).ready(function(){
     var scro= $(window).scrollTop();            
     var scr=0;    // начало страницы - хедер
     var scr2=780;   // начало меню "для кого"
-    var scr3=1800;  // начало меню "о чём курс
-    var scr4=2750;  // начало меню "программа"
-    var scr5=4180;  // начало меню "преподаватели"
-    var scr6=5500;  // начало меню "цена"
-    var scr7=6000;  // начало меню "отзывы"
+    var scr3=1900;  // начало меню "о чём курс
+    var scr4=3200;  // начало меню "программа"
+    var scr5=4500;  // начало меню "преподаватели"
+    var scr6=5170;  // начало меню "цена"
+    var scr7=5700;  // начало меню "отзывы"
 /*      положение  скрола относительно пункта хедера    */
     if ( $(window).scrollTop() >= scr && scro <= scr2 ) { $('#m1').addClass('active');}
      else $('#m1').removeClass('active');
@@ -37,7 +37,49 @@ $(document).ready(function(){
   if ( scro > scr7 ) {    $('#m7').addClass('active');}
      else $('#m7').removeClass('active');
     });
-
+// форма отправки header
+  $("#form").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('#openModal').hide();
+      $('#header-thankfulness').show()
+      $('body').removeClass('lock-scroll');
+      $("#form").trigger("reset");
+    });
+    return false;
+  });
+// форма отправки cost
+   $("#sign-in__form").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('.sign-in__form').hide();
+      $('.cost-modal').show()
+      $("#sign-in__form").trigger("reset");
+    });
+    return false;
+  });
+// отправка программы по почте
+   $("#form-results").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "mail-program.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+     $('#results-overflow').hide();
+     $('#results-thankfulness').show();
+      $("#form-results").trigger("reset");
+    });
+    return false;
+  });
   // вызов модального окна по нажатию на кнопку "Отправить заявку"
   $('.header-btn').click(function() {
     $(this).toggleClass('header-btn__active')
@@ -54,21 +96,20 @@ $(document).ready(function(){
     $('.modalDialog').toggleClass('modal-active');
     $('.header-btn').toggleClass('header-btn__active')
   });
-    // по нажатии кнопки "Отправить" скрыть первое модальное окно и вызвать второе в секции cost
-    $('#sign-button').click(function() {
-    $('.sign-in__form').hide();
-    $('.cost-modal').show()
+    // по нажатии кнопки "Скачать программу" вызвать первое модальное окно секции course
+     $('#results-button').click(function() {
+     $('#results-button').hide();
+     $('#results-overflow').show();
   });
     // по нажатии кнопки "Отправить" скрыть первое модальное окно и вызвать второе в секции header
-    $('#modal-button').click(function() {
-    $('#openModal').hide();
-    $('.modal-thankfulness').show()
-    $('body').removeClass('lock-scroll');
+    $('.results-modal__close').click(function() {
+    $('#results-overflow').hide();
+    $('#results-button').show();
   });
-   
-    // код, с помощью которого второе и третье модальное окно исчезает через 5 секунд после появления
+    // код, с помощью которого модальные окна исчезает через определённое время после появления
   $('.cost-modal').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
-  $('.modal-thankfulness').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
+  $('#header-thankfulness').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
+  $('#results-thankfulness').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
   // Удаление анимации и локскрина на десктопе   
   width = $(window).width();
     if (width > 1024) {

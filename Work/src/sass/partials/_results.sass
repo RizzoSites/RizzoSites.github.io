@@ -1,5 +1,6 @@
 .results
-	padding-top: 80px
+	position: relative
+	padding-top: 40px
 	&-container
 		display: flex
 		flex-direction: column
@@ -82,9 +83,81 @@
 					width: 530px
 					height: 238px
 					background: url(../img/results/line-5.png)
-
+	.results-modal
+		position: absolute
+		top: 50%
+		right: 50%
+		height: 520px
+		width: 530px
+		transform: translate(50%, -50%)
+		background-color: #fff
+		border-radius: 20px
+		text-align: center
+		z-index: 999
+		&__close
+			margin-right: -420px
+			transform: translateY(-15px)
+			cursor: pointer
+		&__content
+			padding: 0 100px
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			&__title
+				max-width: 350px
+				margin-bottom: 30px
+				font-family: 'CodePro'
+				font-size: 32px
+				font-weight: 400
+				color: $dark
+			&__subtitle
+				margin-bottom: 20px
+				font-family: 'Lato'
+				font-size: 24px
+				font-weight: 400
+				color: $purple
+			.form-text
+				margin-bottom: 20px
+				font-size: 22px
+			&:last-child
+				margin-bottom: 0
+			.button
+				margin-top: 20px
+	.modal-thankfulness
+		display: none
+		position: fixed
+		top: 50%
+		right: 50%
+		height: 520px!important
+		width: 530px
+		transform: translate(50%, -50%)
+		border-radius: 20px
+		overflow: hidden
+		box-shadow: 0 10px 20px rgba(39, 39, 39, 0.15)
+		animation: hide 2s ease-out 
+		animation-delay: 3s
+		z-index: 999
+		&__content
+			padding: 100px 30px	
+		&__text
+			max-width: 300px
+#results-button
+	margin-bottom: 70px
+	z-index: 1
+.results-overflow
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background-color: rgba(0,0,0,0.4)
+	z-index: 1	
 @media (max-width: 1024px)
 	.results
+		padding-top: 10px
 		padding-bottom: 0
 		&-container
 			text-align: center
@@ -124,11 +197,23 @@
 					margin-bottom: 0!important
 		&-logo
 			display: none
+	.results-modal
+		position: fixed!important
+		border-radius: 10px
+		&__content
+			padding: 0px 30px
+		&__close
+			margin-right: -260px!important
+			transform: translateY(-25px)!important
 		.button-container
 			margin-top: 40px
 			order: 10
-@media (max-width: 330px)
-	.results
-		.button-container
-			button
-				padding: 20px 40px
+@media (min-width: 650px) and (max-width: 1024px)
+	.results-modal__close
+		margin-right: -420px!important
+@media (max-width: 360px)
+	.results-modal__content
+		padding: 0px 130px!important
+	.results-modal__close
+		margin-right: -220px!important
+		transform: translateY(-15px)!important

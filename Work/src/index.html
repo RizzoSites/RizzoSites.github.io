@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Лендинг</title>
+	<title>КУРС | Автоматизация ваших финансов</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	<link rel="stylesheet" href="css/style.css">
@@ -22,7 +22,7 @@
 				</h2>
 				<!-- /.openmodal-title -->
 				<div class="modalDialog-subtitle">
-					Начало курса  20 июня
+					Начало курса <br> 2 июля
 				</div>
 				<!-- /.modaldialog-subtitle -->
 				<div class="modalDialog-icons">
@@ -37,22 +37,20 @@
 					</a>
 				</div>
 				<!-- /.modalDialog-icons -->
-				<div class="form" id="form">
-					<form action="#" class="modalDialog-form">
-						<input type="text" name="name" placeholder="Имя" class="form-text form-input">
-						<input type="tel" name="phone" placeholder="Телефон" class="form-text form-input">
-						<input type="email" name="email-address" placeholder="E-Mail" class="form-text form-input">
+				<div class="form">
+					<form class="modalDialog-form" id="form">
+						<input type="text" name="name" required placeholder="Имя" class="form-text form-input">
+						<input type="tel" name="phone" required placeholder="Телефон" class="form-text form-input">
+						<input type="email" name="email" required placeholder="E-Mail" class="form-text form-input">
+						<input type="submit" value="Отправить" class="button button-o" id="form-button">
 					</form>
 				</div>
 				<!-- /.form -->
-				<button class="button button-o" type="submit" id="modal-button">
-					Отправить
-				</button>
 			</div>
 			<!-- /.modalContent -->
 		</div>
 		<!-- /.modalDialog -->
-		<div class="modal-thankfulness">
+		<div class="modal-thankfulness" id="header-thankfulness">
 			<div class="modal-thankfulness__content">
 				<img src="img/modal-thank.png" alt="">
 				<h2 class="modal-thankfulness__title">
@@ -64,9 +62,9 @@
 				</p>
 				<!-- /.modal-thankfulness__text -->
 				</div>
-				<!-- /.cost-modal__content -->
+				<!-- /.modal-thankfulness_content -->
 			</div>
-			<!-- /.cost-modal -->
+			<!-- /.modal-thankfulness -->
 		<div class="container header-container">
 			<div class="header-nav" id="header-nav">
 				<img src="img/nav-logo.png" alt="" class="header-nav__img">
@@ -119,7 +117,7 @@
 	<!-- /.header -->
 	<main>
 		<section class="info" id="info">
-			<div class="container desktop-container media-container">
+			<div class="container media-container">
 				<h2 class="section-title info-title">
 					Для кого этот курс? 
 				</h2>
@@ -129,40 +127,56 @@
 			<div class="container info-container">
 				<div class="info-blocks">
 					<div class="info-block">
-						<img src="img/info/img-1.png" alt="">
-						<h2 class="info-block__title">
-							Собственников бизнеса
-						</h2>
-						<!-- /.info-title -->
-						<p class="info-block__text">
-							<span>Вы хотите:<span> <br>- Автоматизировать финансы компании <br>- Увеличить финансовую эффективность вашего бизнеса <br>- Сократить время на операционное управление <br>- Внедрить учетную систему в компании <br>- Видеть и контролировать эффективность каждого процесса <br> - Составлять ТЗ внешним разработчикам и проверять их компетенцию.
-						</p>
-						<!-- /.info-text -->
+						<div class="info-block__separator">
+							<img src="img/info/img-1.png" alt="">
+							<h2 class="info-block__title">
+								Собственников бизнеса
+							</h2>
+							<!-- /.info-title -->
+						</div>
+						<!-- /.info-block__separator -->
+						<div class="info-block__text">
+							<p class="info-block__text__item">
+								- Вы хотите автоматизировать финансы компании <br>- Увеличить финансовую эффективность вашего бизнеса <br>- Сократить время на операционное управление <br>- Внедрить учетную систему в компании <br>- Видеть и контролировать эффективность каждого процесса <br> - Составлять ТЗ внешним разработчикам и проверять их компетенцию.
+							</p>
+						</div>
+						<!-- /.info-block__text-->
 					</div>
 					<!-- /.info-block -->
 					<div class="info-block info-block__mobile">
-						<img src="img/info/img-2.png" alt="">
-						<h2 class="info-block__title">
-							Для <br>экономистов
-						</h2>
-						<!-- /.info-title -->
-						<p class="info-block__text">
-							- Автоматизируете учет в вашей компании <br> - Научитесь обрабатывать большой массив данных в Excel <br> - Получите навыки в смежной профессии <br> - Разберетесь в устройстве информационных систем, сможете проверять их работу выгружая данные и создавая отчеты в Excel <br> - Научитесь разрабатывать архитектуру учетной системы (справочник, атрибуты справочника, операции, журналы проводок, отчеты). <br> -  Научитесь делать ТЗ для информационных систем, научитесь говорить с программистом на одном языке
- 		
-						</p>
-						<!-- /.info-text -->
+						<div class="info-block__separator">
+							<img src="img/info/img-2.png" alt="">
+							<h2 class="info-block__title">
+								Для <br>экономистов
+							</h2>
+							<!-- /.info-title -->
+						</div>
+						<!-- /.info-block__separator -->
+						<div class="info-block__text">
+							<p class="info-block__text__item">
+								- Автоматизируете учет в вашей компании <br> - Научитесь обрабатывать большой массив данных в Excel <br> - Получите навыки в смежной профессии <br> - Разберетесь в устройстве информационных систем, сможете проверять их работу выгружая данные и создавая отчеты в Excel <br> - Научитесь разрабатывать архитектуру учетной системы (справочник, атрибуты справочника, операции, журналы проводок, отчеты). <br> -  Научитесь делать ТЗ для информационных систем, научитесь говорить с программистом на одном языке
+							</p>
+							<!-- /.info-text -->
+						</div>
+						<!-- /.info-block__text -->
 					</div>
 					<!-- /.info-block -->
 					<div class="info-block">
-						<img src="img/info/img-3.png" alt="">
-						<h2 class="info-block__title">
-							Для <br>Интеграторов
-						</h2>
-						<!-- /.info-title -->
-						<p class="info-block__text">
-							- Научитесь понимать ДДС, ОПУ, Баланс, связи между ними, научитесь делать проводки <br> - Формула Дюпона, финансовые коэффициенты <br> - Понимать и разрабатывать математические модели бизнеса <br> - Разрабатывать отчеты для бизнеса <br> - Понимать, что хочет пользователей (понимая экономику и учет компаний) <br> - Объяснять пользователям, как устроены и работают информационные системы
-						</p>
-						<!-- /.info-text -->
+						<div class="info-block__separator">
+							<img src="img/info/img-3.png" alt="">
+							<h2 class="info-block__title">
+								Для <br>Интеграторов
+							</h2>
+							<!-- /.info-title -->
+						</div>
+						<!-- /.info-block__separator -->
+						<div class="info-block__text">
+							<p class="info-block__text__item">
+								- Научитесь понимать ДДС, ОПУ, Баланс, связи между ними, научитесь делать проводки <br> - Формула Дюпона, финансовые коэффициенты <br> - Понимать и разрабатывать математические модели бизнеса <br> - Разрабатывать отчеты для бизнеса <br> - Понимать, что хочет пользователей (понимая экономику и учет компаний) <br> - Объяснять пользователям, как устроены и работают информационные системы
+							</p>
+							<!-- /.info-text -->
+						</div>
+						<!-- /.info-block__text -->
 					</div>
 					<!-- /.info-block -->
 				</div>
@@ -353,16 +367,59 @@
 				<!-- /.container -->
 			</div>
 			<!-- /.course-bg -->
+		</section>
+		<!-- /.course -->
+		<section class="results" id="results">
+			<div class="results-overflow" id="results-overflow">
+			<div class="results-modal" id="results-modal">
+				<div class="results-modal__content">
+					<div class="results-modal__close">
+						<img src="img/arrow.png" alt="">
+					</div>
+					<h2 class="results-modal__content__title">
+						Программа придёт вам на почту
+					</h2>
+					<!-- /.course-modal__content__title -->
+					<div class="results-modal__content__subtitle">
+						Начало курса 2 июля
+					</div>
+					<div class="form" id="course-form">
+						<form action="#" class="results-form" id="form-results">
+							<input type="text" name="name" placeholder="Имя" class="form-text form-input form-text" required>
+							<input type="tel" name="phone" placeholder="Телефон" class="form-text form-input" required>
+							<input type="email" name="email" placeholder="E-Mail" class="form-text form-input" required>
+							<input type="submit" value="Отправить" class="button button-o" id="results-modal__button">
+						</form>
+					</div>
+					<!-- /.form -->
+				</div>
+				<!-- /.course-modal__content -->
+			</div>
+			<!-- /.course-modal -->
+			</div>
+			<!-- /.results-overflow -->
+			<div class="modal-thankfulness" id="results-thankfulness">
+				<div class="modal-thankfulness__content">
+					<img src="img/modal-thank.png" alt="">
+					<h2 class="modal-thankfulness__title">
+						Спасибо!
+					</h2>
+					<!-- /.modal-thankfulness__title -->
+					<p class="modal-thankfulness__text">
+						Программа была отправлена вам на почту
+					</p>
+					<!-- /.modal-thankfulness__text -->
+				</div>
+				<!-- /.modal-thankfulness_content -->
+			</div>
+			<!-- /.modal-thankfulness -->
 			<div class="container button-container">
-				<button class="button">
+				<button class="button" id="results-button">
 					Скачать программу
 				</button>
 				<!-- /.button -->
 			</div>
 				<!-- /.container -->
-		</section>
-		<!-- /.course -->
-		<section class="results" id="results">
 			<div class="container results-container">
 				<h2 class="section-title results-title">
 					По окончанию курса
@@ -391,7 +448,7 @@
 					</div>
 					<!-- /.results-block -->
 					<div class="results-logo">
-						<img src="img/results/logo.jpg" alt="">
+						<img src="img/results/logo.png" alt="">
 					</div>
 					<!-- /.results-logo -->
 				</div>
@@ -553,14 +610,12 @@
 							Быстрая <span class="form-span__1">регистрация</span><span class="form-span__2">на курс</span>
 						</h2>
 						<!-- /.sign-in__form__title -->
-						<form action="#" id="sign-in__form">
-							<input type="text" name="name" placeholder="Имя" class="form-text form-input">
-							<input type="tel" name="phone" placeholder="Телефон" class="form-text form-input">
-							<input type="email" name="email-address" placeholder="E-Mail" class="form-text form-input">
+						<form id="sign-in__form">
+							<input type="text" name="name" placeholder="Имя" class="form-text form-input" required>
+							<input type="tel" name="phone" placeholder="Телефон" class="form-text form-input" required>
+							<input type="email" name="email" placeholder="E-Mail" class="form-text form-input" required>
+							<input type="submit" value="Отправить" class="button button-o" id="sign-button">
 						</form>
-						<button class="button button-o" type="submit" id="sign-button">
-							Отправить
-						</button>
 					</div>
 					<!-- /.sign-in__form -->
 					<div class="cost-modal">
@@ -640,11 +695,11 @@
 			<div class="container">
 				<nav>
 					<a href="#home">Главная</a>
-					<a href="#info">Посети курс</a>
-					<a href="#about">О чём этот курс</a>
-					<a href="#course">Программа курса</a>
-					<a href="#cost">Цены</a>
-					<a href="#authors">Спикеры</a>
+					<a href="#info">Для кого</a>
+					<a href="#about">О чём курс</a>
+					<a href="#course">Программа</a>
+					<a href="#cost">Цена</a>
+					<a href="#authors">Преподаватели</a>
 					<a href="#feedback">Отзывы</a>
 				</nav>
 			</div>
