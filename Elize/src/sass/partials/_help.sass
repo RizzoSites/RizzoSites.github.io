@@ -1,0 +1,70 @@
+.help
+	background: url(../img/help/help.jpg) no-repeat center 
+	background-size: cover
+	padding-top: 40px
+	padding-bottom: 40px
+	&-container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	&-block
+		background-color: #fbf7f7
+		opacity: 0.9
+	&-tab
+		display: flex
+		&__links
+			padding: 10px
+			background-color: transparent
+			border:
+				top: 2px solid #fff
+				right: 0px
+				bottom: 2px solid #fff
+				left: 2px solid #fff
+			text-transform: uppercase
+			font-size: 12px
+			color: $dark
+			outline: none
+			cursor: pointer
+			&:hover
+				background-color: #fff
+			&:last-child
+				border-right: 2px solid #fff
+		&__text
+			margin-bottom: 10px
+			&__bold
+				margin-bottom: 10px
+			&__o
+				display: inline-block
+		&__list
+			margin-left: 40px
+			margin-bottom: 10px
+			li
+				list-style: disc
+		&__title
+			margin-bottom: 10px
+			display: inline-block
+			text-transform: uppercase
+	&-tabcontent
+		display: none
+		padding: 40px
+		border: 1px solid #e8e6e6
+		font-family: 'WorkSans'
+		font-weight: 300
+		font-size: 15px
+		line-height: 25px
+		img
+			height: 500px
+	.tab-active
+		background-color: $pink
+#help-first
+	display: block
+.help-list
+	display: flex
+	&__o
+		flex-direction: column
+	.help-tab__text
+		margin-bottom: 0
+	span
+		margin-right: 10px
+

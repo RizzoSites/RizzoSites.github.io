@@ -5,21 +5,6 @@
 	&-container
 		display: flex
 		flex-direction: column
-	&-pagination
-		position: absolute
-		top: 40px
-		display: flex
-		font-family: 'WorkSans'
-		font-weight: 300
-		color: #111
-		letter-spacing: 1px
-		span
-			color: #c1c1c1
-	&-title
-		margin-bottom: 30px
-		font-family: 'WorkSans'
-		font-size: 42px
-		font-weight: 300
 	&-blocks
 		display: flex
 		flex-direction: column
@@ -69,6 +54,8 @@
 	&-pages
 		padding-top: 60px
 		padding-bottom: 40px
+		display: flex
+		align-items: center
 		a
 			margin-right: 20px
 			font-family: 'WorkSans'
@@ -77,8 +64,11 @@
 			text-decoration: none
 			color: $dark
 			&:hover
-				font-size: 24px
+				font-size: 22px
 				color: $pink
+		&__arrow
+			margin-left: 55px
+			cursor: pointer
 		.active-page
 			color: $pink
 

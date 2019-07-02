@@ -22,12 +22,33 @@
 			text-decoration: none
 			text-transform: uppercase
 			letter-spacing: 1px
+			transition: 0.3s
 			&:hover
 				color: #E0BBA6
 			&__active
 				color: #E0BBA6
+		&__list
+			position: relative
+			&:hover
+				.header-nav__drop
+					opacity: 1
+					z-index: 10
+					transition: 0.3s
 		&__drop
-			display: none
+			opacity: 0
+			z-index: -5
+			position: absolute
+			max-width: 110px
+			.header-nav__item
+				width: 100%
+				color: #fff
+				background-color: rgba(0,0,0,1)
+				&:hover
+					color: #fff
+				&__active
+					color: $pink
+			&__2
+				max-width: 130px
 	&-languages
 		&__item
 			margin-right: 15px
