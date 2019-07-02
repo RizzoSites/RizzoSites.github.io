@@ -1,0 +1,84 @@
+.blog
+	position: relative
+	padding-top: 100px
+	padding-bottom: 100px
+	&-container
+		display: flex
+		flex-direction: column
+	&-pagination
+		position: absolute
+		top: 40px
+		display: flex
+		font-family: 'WorkSans'
+		font-weight: 300
+		color: #111
+		letter-spacing: 1px
+		span
+			color: #c1c1c1
+	&-title
+		margin-bottom: 30px
+		font-family: 'WorkSans'
+		font-size: 42px
+		font-weight: 300
+	&-blocks
+		display: flex
+		flex-direction: column
+		padding-bottom: 80px
+		border-bottom: 1px solid #eaeaea
+		&__separator
+			display: flex
+			margin-bottom: 45px
+			&:last-child
+				margin-bottom: 0
+	&-block
+		position: relative
+		display: flex
+		flex-direction: column
+		padding-top: 15px
+		padding-bottom: 15px
+		width: 50%
+		&__title
+			margin-bottom: 20px
+			font-family: 'WorkSans'
+			font-weight: 300
+			font-size: 28px
+		&__text
+			max-width: 570px
+			line-height: 32px
+			color: $grey
+			font-family: 'WorkSans'
+			font-weight: 300
+			font-size: 18px
+		&__more
+			margin-top: 60px	
+			font-weight: 'WorkSans'
+			font-weight: 300
+			font-size: 18px		
+			text-transform: uppercase
+			text-decoration: none
+			color: $pink
+		&__date
+			position: absolute
+			bottom: 50px
+			right: 10px
+			transform: rotate(92deg)
+			font-family: 'WorkSans'
+			font-weight: 300
+			font-size: 16px
+			color: #BBB
+	&-pages
+		padding-top: 60px
+		padding-bottom: 40px
+		a
+			margin-right: 20px
+			font-family: 'WorkSans'
+			font-weight: 300
+			font-size: 20px
+			text-decoration: none
+			color: $dark
+			&:hover
+				font-size: 24px
+				color: $pink
+		.active-page
+			color: $pink
+
