@@ -1,30 +1,79 @@
 .about
-	padding-top: 90px
-	padding-bottom: 110px
-	&-container
-		display: flex
-		flex-direction: column
-		align-items: center
-		text-align: center
-	&-images
-		min-width: 810px
+	padding-top: 60px
+	padding-bottom: 70px
+	position: relative
+	&-pattern
+		&__1
+			position: absolute
+			top: -220px
+			height: 500px
+			width: 250px
+		&__2
+			position: absolute
+			top: 190px
+			left: -30px
+		&__3
+			position: absolute
+			height: 120px
+			width: 120px
+			top: 200px
+			left: 80px
+	&-blocks
 		display: flex
 		justify-content: space-between
-		align-items: center
-	&-arrow
-		margin-top: -65px
-	.section-title
-		position: relative
-		margin-bottom: 70px
-		&::after
-			content: ''
-			position: absolute
-			top: 80px
-			left: 50%
-			transform: translateX(-50%)
-			height: 1px
-			width: 100px
-			background-color: #f2d699
-	.section-text
-		margin-bottom: 45px
-		max-width: 900px
+	&-block
+		display: flex
+		flex-direction: column
+		width: 540px
+		color: $dark
+		&__title
+			margin-bottom: 20px
+			z-index: 900
+		&__text
+			position: relative
+			font-size: 22px
+			font-weight: 400
+			color: #808080
+			line-height: 32px
+			&::before
+				content: ''
+				position: absolute
+				bottom: -40px
+				height: 12px
+				width: 150px
+				border-radius: 5px
+				background-color: $yellow
+		&__list
+			position: relative
+			margin-top: 100px
+			display: flex
+			flex-direction: column
+			font-family: 'Rubik'
+			font-size: 25px
+			font-weight: 500
+			&::before
+				content: ''
+				position: absolute
+				top: -60px
+				right: -200px
+				height: 360px
+				width: 260px
+				background: url(../img/about/dog.png) no-repeat
+			&__title
+				margin-bottom: 30px
+			&__separator
+				display: flex
+				align-items: center
+				margin-bottom: 20px
+			&__pattern
+				height: 12px
+				width: 12px
+				margin-right: 20px
+				background-color: #0074dc
+				border-radius: 10px
+			&__text
+				font-size: 20px
+				font-weight: 400
+	&-img
+		height: 450px
+		margin-top: 40px

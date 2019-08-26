@@ -1,182 +1,66 @@
 .header
-	background: url(../img/header-bg.jpg) no-repeat center
-	background-size: cover		
-	height: 100vh
-	position: relative
-	color: #fff
-	&-container
+	height: 920px
+	background: url(../img/header/header.png) center no-repeat
+	background-size: cover
+	padding-top: 30px
+	&-head
+		margin-bottom: 120px
 		display: flex
-		flex-direction: column
-		height: 100%
-	&-navbtn
-		display: none
-		height: 130px
-		width: 160px
-		background: #dabe92
-		border-radius: 50%
-		box-shadow: 0 0 100vw #afeeee 
-		position: fixed
-		top: -60px
-		right: -90px
-		z-index: 1000
-		cursor: pointer
-		transition: .4s ease-in-out 
-		z-index: 1000
-		&__inner
-			position: relative
-			width: 100%
-			height: 100%
-			z-index: 1000
-			span
-				position: absolute
-				width: 30px
-				height: 2px
-				background-color: #000
-				display: block
-				transition: .5s ease-in-out
-				top: 63%
-				left: 14%
-				&::before, &::after
-					position: absolute
-					width: 30px
-					height: 2px
-					background-color: #000
-					display: block
-					transition: .5s ease-in-out
-				&::before
-					content: ''
-					top: -10px
-				&::after
-					content: ''
-					bottom: -10px
-		&__active
-			span
-				transform: rotate(45deg)
-				&::after
-					bottom: 0
-					transform: rotate(90deg)
-				&::before
-					top: 0
-					transform: rotate(90deg)
-	&-nav
-		padding-top: 40px
-		ul
-			display: flex
-			list-style: none
-		&__item
-			margin-left: 35px
-			color: #fff
-			font-family: 'Roboto'
-			font-size: 16px
-			text-transform: uppercase
-			text-decoration: none
-			transition: .2s
-			&:hover
-				color: #d9b126 
-	&-main
-		flex: 1
-		display: flex
-		flex-direction: column
-		justify-content: center
 		align-items: center
-		&__title
-			margin-bottom: 25px
-			font-family: 'Akrobat'
-			font-size: 72px
-			font-weight: 300
-		&__subtitle
-			display: flex
-			margin-bottom: 40px
-			font-family: 'Akrobat'
-			font-size: 48px
-			font-weight: 400
-			span
-				margin-left: 6px
-				color: #d9b126
-			p
-				margin-right: 6px
-		&__button
-			padding: 15px 60px	
-			border: 1px solid #fff
-			color: #fff
-			font-family: 'Calibri'
-			font-size: 22px
-			font-weight: 400
-			text-transform: uppercase
-			text-decoration: none
-			transition: .2s
-			cursor: pointer
-			&:hover
-				background-color: #fff
-				color: #000
-
-	&-arrow
-		text-align: center
+	&-logo
+		margin-right: 130px
+		display: flex
+		align-items: center
+		color: #fff
+		font-family: 'Rubik'
+		font-weight: 500
+		font-size: 25px
+		text-decoration: none
+		text-transform: uppercase
 		img
-			transform: translateY(-20px)
-			cursor: pointer
-
-    
-@keyframes fadeInRight 
-  0% 
-    opacity: 0
-    left: 50px
-  100%
-    opacity: 1
-    left: 0
-    transform: rotate(0deg)
-
-@media (max-width: 1200px)
-	.header-nav 
-		position: fixed
-		background: #2a3140
-		top: 0
-		right: 0
-		width: 100%
-		height: 100%
-		opacity: 0
-		transform-origin: right top
-		transform: scale(0)
-		visibility: hidden
-		transition: all 0.4s ease-in-out
-		overflow: hidden
-		z-index: 999   
-		&-open 
-			display: block!important
-			opacity: 0.99
-			visibility: visible
-			transform: scale(1)
-			li 
-				display: block
-				animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards
-				animation-delay: 0.3s
-				transform: rotate(-7deg)
-				transform-origin: right bottom
-	.header-navMenu
-		position: absolute
-		display: flex!important
-		flex-direction: column
-		align-items: center 
-		justify-content: center
-		height: 100%
-		width: 54%
-		top: 0%
-		left: 47%
-		transform: translate(-43%)
-		text-align: center
-		ul 
-			display: flex
-			flex-direction: column
-			margin: 0
-			li
-				padding: 5px
-				display: block
-				position: relative
-				opacity: 0
-				width: 100%
+			margin-right: 30px
+	&-nav
+		display: flex
+		li
+			&:last-child
 				a
-					color: #fff
-					text-decoration: none
-					font-size: 50px
-					margin: 5px 0
-					transition: 0.2s
+					margin-right: 75px
+
+		&__item
+			color: #fff
+			font-family: 'CodePro'
+			font-weight: 400
+			font-size: 22px
+			text-decoration: none
+			margin-right: 65px
+	&-phone
+		color: #fff
+		font-size: 25px
+		border: 2px solid #fff
+		border-radius: 5px
+		padding: 15px 25px	
+		text-decoration: none
+	&-main
+		display: flex
+		flex-direction: column
+		width: 670px
+	&-title
+		margin-bottom: 10px
+		font-size: 55px
+		font-weight: 500
+		text-transform: uppercase
+	&-subtitle
+		margin-bottom: 20px
+		font-size: 40px
+		font-weight: 400
+	&-text
+		margin-bottom: 120px
+		font-size: 20px
+		font-weight: 300
+		span
+			font-size: 30px
+			margin-right: 10px
+
+@media (min-width: 1681px) and (max-width: 1920px)
+	.header
+		height: 990px
