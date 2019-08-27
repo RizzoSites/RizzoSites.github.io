@@ -16,7 +16,7 @@ html, body
 	margin: 0 auto
 
 .button
-	padding: 18px
+	padding: 16px
 	width: 260px
 	border-radius: 5px
 	background-color: $yellow
@@ -26,7 +26,9 @@ html, body
 	font-weight: 400
 	text-align: center
 	text-transform: uppercase
-	text-decoration: none
+	text-decoration: none 
+	&:hover
+		box-shadow: 0px 0px 70px 10px rgba(255,201,0,0.2)
 
 .section-title
 	font-size: 50px	
@@ -61,7 +63,19 @@ html, body
 	font-size: 22px
 	font-weight: 400
 	cursor: pointer
+	&:hover
+		box-shadow: 0px 8px 20px 0px rgba(0, 116, 220, 0.3)
 
+
+@media (min-width: 1681px) and (max-width: 1920px)
+	.button
+		padding: 19px
 @media (max-width: 1680px)
 	.container
 		max-width: 1400px
+@media (max-width: 1500px)
+	.container
+		max-width: 1200px
+	.section-title
+		font-size: 45px
+

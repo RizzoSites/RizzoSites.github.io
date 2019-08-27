@@ -6,21 +6,36 @@
 		&__1
 			position: absolute
 			top: -220px
-			height: 500px
-			width: 250px
+			height: 460px
+			width: 290px
 		&__2
 			position: absolute
 			top: 190px
-			left: -30px
+			left: -40px
 		&__3
 			position: absolute
 			height: 120px
 			width: 120px
-			top: 200px
-			left: 80px
+			top: 190px
+			left: 70px
+		&__4
+			position: absolute
+			height: 120px
+			width: 120px
+			top: -150px
+			left: 200px
 	&-blocks
 		display: flex
 		justify-content: space-between
+		position: relative
+		&__separator
+			display: flex
+	&-dog
+		height: 360px
+		width: 260px
+		position: absolute
+		left: 480px
+		top: 210px
 	&-block
 		display: flex
 		flex-direction: column
@@ -51,14 +66,6 @@
 			font-family: 'Rubik'
 			font-size: 25px
 			font-weight: 500
-			&::before
-				content: ''
-				position: absolute
-				top: -60px
-				right: -200px
-				height: 360px
-				width: 260px
-				background: url(../img/about/dog.png) no-repeat
 			&__title
 				margin-bottom: 30px
 			&__separator
@@ -77,3 +84,58 @@
 	&-img
 		height: 450px
 		margin-top: 40px
+
+@media (max-width: 1500px)
+	.about
+		padding-top: 60px
+		padding-bottom: 50px
+		&-pattern
+			&__1
+				height: 420px
+				width: 280px
+				top: -215px
+			&__2
+				top: 230px
+			&__3
+				top: 185px
+				left: 50px
+			&__4
+				top: -130px
+		&-block
+			&__text
+				font-size: 21px
+				&::before
+					height: 8px
+			&__list
+				&::before
+					right: -140px
+				&__title
+					font-size: 22px
+				&__pattern
+					height: 10px
+					width: 10px
+				&__text
+					font-size: 19px
+		&-dog
+			left: 440px
+			height: 310px
+			width: 210px
+			top: 210px
+		&-img
+			height: 390px
+			margin-top: 70px
+@media (max-width: 1370px)
+	.about
+		padding-top: 20px
+		&-pattern
+			&__1
+				height: 340px
+				width: 230px
+				top: -205px
+			&__2
+				top: 220px
+			&__3
+				top: 150px
+				left: 40px
+			&__4
+				left: 180px
