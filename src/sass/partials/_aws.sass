@@ -1,0 +1,129 @@
+.aws
+	background-image: url(../img/aws/header.png)
+	height: 860px
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+	&-advantages
+		position: relative
+		padding-bottom: 200px
+		.advantages-pattern
+			top: -150px
+			&__2
+				top: 130px
+		.section-title
+			margin-bottom: 90px
+		&__blocks
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+		&__block
+			display: flex
+			width: 450px
+			img
+				margin-right: 15px
+			&__text
+				color: $dark
+				line-height: 27px
+			&:nth-child(1)
+				margin-bottom: 40px
+			&:nth-child(2)
+				margin-bottom: 40px
+				img
+					margin-right: 27px
+			&:nth-child(3)
+				margin-bottom: 40px
+			&:nth-child(4)
+				img
+					margin-right: 18px
+			&:nth-child(5)
+				img
+					margin-right: 16px
+			&:nth-child(6)
+				img
+					margin-right: 47px
+	.header
+		&-title
+			max-width: 450px
+		&-text
+			max-width: 320px
+			line-height: 27px
+		&-head
+			margin-bottom: 210px
+.systems
+	position: relative
+	padding-top: 60px
+	padding-bottom: 70px
+	&-blocks
+		display: flex
+		position: relative
+	&-block
+		width: 100%
+		max-width: 640px
+		display: flex
+		flex-direction: column
+		&__separator
+			display: flex
+		&__text
+			margin-bottom: 30px
+			line-height: 30px
+			font-size: 22px
+			font-weight: 400
+			color: $dark
+			span
+				font-weight: 500
+			&:last-child
+				margin-bottom: 0
+	&-title
+		max-width: 630px
+		margin-bottom: 30px
+		z-index: 900
+	&-img
+		position: absolute
+		height: 700px
+		right: 0
+		top: -10px
+	.about-pattern__1
+		z-index: -1
+
+@media (max-width: 1500px)
+	.aws
+		height: 720px
+		&-advantages
+			.advantages-pattern
+				top: -120px
+				&__2
+					top: 70px
+			&__block
+				width: 380px
+				&__text
+					font-size: 18px
+		.header
+			&-main
+				margin-top: -70px
+	.systems
+		&-block
+			&__text
+				font-size: 21px
+		&-title
+			max-width: 570px
+		&-img
+			height: 570px
+			top: 10px
+@media (max-width: 1370px)
+	.aws
+		height: 690px
+		&-advantages
+			&__block
+				&__text
+					font-size: 18px
+		.header
+			&-main
+				margin-top: -80px
+	.systems
+		&-block
+			&__text
+				font-size: 19px
+		&-title
+			max-width: 500px
