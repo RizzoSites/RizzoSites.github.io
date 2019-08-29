@@ -1,6 +1,5 @@
 .aws
 	background-image: url(../img/aws/header.png)
-	height: 860px
 	&-container
 		display: flex
 		flex-direction: column
@@ -53,8 +52,8 @@
 			margin-bottom: 210px
 .systems
 	position: relative
-	padding-top: 60px
-	padding-bottom: 70px
+	padding-top: 120px
+	padding-bottom: 200px
 	&-blocks
 		display: flex
 		position: relative
@@ -81,18 +80,29 @@
 		z-index: 900
 	&-img
 		position: absolute
-		height: 700px
+		height: 740px
 		right: 0
-		top: -10px
-	.about-pattern__1
-		z-index: -1
+		top: 15px
+	.about-pattern
+		&__1
+			z-index: -1
+			top: -145px
+		&__2
+			top: 270px
+			left: -20px
+		&__3
+			top: 230px
+		&__4
+			left: 190px
+			top: -100px
+
 
 @media (max-width: 1500px)
 	.aws
 		height: 720px
 		&-advantages
 			.advantages-pattern
-				top: -120px
+				top: -110px
 				&__2
 					top: 70px
 			&__block
@@ -105,12 +115,15 @@
 	.systems
 		&-block
 			&__text
-				font-size: 21px
+				font-size: 20px
 		&-title
 			max-width: 570px
 		&-img
-			height: 570px
-			top: 10px
+			height: 580px
+			top: 75px
+		.about-pattern
+			&__2
+				left: -30px
 @media (max-width: 1370px)
 	.aws
 		height: 690px
@@ -122,8 +135,21 @@
 			&-main
 				margin-top: -80px
 	.systems
+		padding-top: 80px
 		&-block
-			&__text
-				font-size: 19px
+			max-width: 570px
 		&-title
 			max-width: 500px
+		&-img
+			height: 640px
+			top: 45px
+		.about-pattern
+			&__1
+				z-index: -1
+				top: -145px
+			&__3
+				top: 180px
+				left: 30px
+			&__4
+				left: 170px
+				top: -90px
