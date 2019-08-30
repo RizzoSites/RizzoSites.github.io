@@ -1,2 +1,189 @@
 .work
 	height: 500px
+	position: relative
+	&-container
+		display: flex
+		flex-direction: column
+	&-slider
+		max-width: 600px
+		&__item
+			padding-left: 20px
+			padding-right: 20px
+			color: $dark
+			&:nth-child(2)
+				.work-slider__item__pattern
+					background-color: #38929a
+			&:nth-child(3)
+				.work-slider__item__pattern
+					width: 26px
+			&:nth-child(4)
+				.work-slider__item__pattern
+					width: 14px
+					height: 120px
+				.work-slider__item__pattern
+					background-color: #cd531f
+			&:nth-child(5)
+				.work-slider__item__pattern
+					width: 13px
+					height: 123px
+				.work-slider__item__pattern
+					background-color: #733999
+			&:nth-child(6)
+				.work-slider__item__pattern
+					width: 22px
+					transform: translateY(4px)
+				.work-slider__item__pattern
+					background-color: #733999
+			&:nth-child(7)
+				.work-slider__item__pattern
+					width: 17px
+					height: 130px
+				.work-slider__item__pattern
+					background-color: #38929a
+			&:nth-child(8)
+				.work-slider__item__pattern
+					width: 22px
+					transform: translateY(4px)
+				.work-slider__item__pattern
+					background-color: #51a887
+			&__separator
+				display: flex
+			&__pattern
+				display: block
+				margin-right: 20px
+				width: 25px
+				border-radius: 10px
+				background-color: #df9b25
+			&__title
+				font-size: 35px
+				font-weight: 500
+				line-height: 50px
+			&__text
+				font-size: 23px
+				font-weight: 400
+				line-height: 35px
+			&__descr
+				height: 165px!important
+		&__pagination
+			position: relative
+			margin-top: 60px
+			margin-left: 70px
+			font-size: 30px
+			color: #808080
+			font-weight: 300
+			span
+				color: $dark
+				font-size: 35px
+				font-weight: 400
+	&-img
+		&__main
+			position: absolute
+			right: 130px
+			height: 270px
+			top: 57%
+			transform: translateY(-50%)
+		&__1
+			position: absolute
+			right: 670px
+			top: 360px
+			height: 150px
+			&__active
+				display: none
+				position: absolute
+				right: 560px
+				top: 300px
+				height: 300px
+				&__active
+					display: block
+					position: absolute
+					right: 593px
+					top: 286px
+					height: 305px
+		&__2
+			position: absolute
+			right: 390px
+			top: 330px
+			height: 130px
+		&__3
+			position: absolute
+			right: 160px
+			top: 260px
+			height: 110px
+		&__4
+			position: absolute
+			right: 150px
+			top: 156px
+			height: 85px
+		&__5
+			position: absolute
+			right: 270px
+			top: 170px
+			height: 75px
+		&__6
+			position: absolute
+			right: 690px
+			top: 250px
+			height: 75px
+		&__7
+			position: absolute
+			right: 840px
+			top: 320px
+			height: 65px
+	.section-title
+		text-align: center
+		margin-bottom: 200px
+
+@media (max-width: 1500px)
+	.work
+		&-slider
+			&__item
+				&:nth-child(6)
+					.work-slider__item__pattern
+						width: 15px!important
+				&:nth-child(8)
+					.work-slider__item__pattern
+						width: 15px!important
+				&__title
+					font-size: 25px
+				&__text
+					font-size: 20px
+					max-width: 460px
+				&__pattern
+					width: 13px!important
+			&__pagination
+				margin-top: 50px
+				font-size: 25px
+				span
+					font-size: 30px
+		&-img
+			&__main
+				height: 230px
+				top: 57%
+				right: 110px
+			&__1
+				right: 555px
+				top: 360px
+				height: 130px
+			&__2
+				top: 330px
+				right: 330px
+				height: 110px
+			&__3
+				top: 280px
+				height: 90px
+			&__4
+				top: 186px
+				right: 140px
+				height: 70px
+			&__5
+				top: 190px
+				right: 240px
+				height: 60px
+			&__6
+				right: 610px
+				top: 270px
+				height: 60px
+			&__7
+				right: 700px
+				top: 313px
+				height: 50px
