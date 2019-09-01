@@ -25,9 +25,9 @@ $(document).ready(function(){
     }
 
     if ($('.work-slider__item__4').hasClass('slick-active')) {
-    	$('.work-img__4').toggleClass('work-img__3__active')
+    	$('.work-img__4').toggleClass('work-img__4__active')
     } else {
-    	$('.work-img__4').removeClass('work-img__3__active')
+    	$('.work-img__4').removeClass('work-img__4__active')
     }
 
     if ($('.work-slider__item__5').hasClass('slick-active')) {
