@@ -1,0 +1,288 @@
+.devops
+	height: 870px
+	background-image: url(../img/devops/header.png)
+	&-text
+		line-height: 35px
+		font-size: 23px
+	&-about
+		position: relative
+		padding-top: 40px
+		padding-bottom: 120px
+		.about-pattern__2
+    		height: 120px
+    		width: 120px
+    		top: 30px
+    		left: -80px
+		.about-pattern__4
+    		top: -150px
+    		left: 90px
+		.about-pattern__3
+    		top: -110px
+    		left: -40px
+		&__blocks
+			display: flex
+			justify-content: space-between
+		&__block
+			color: $dark
+			width: 400px
+			display: flex
+			&__number
+				display: inline-block
+				margin-top: -16px
+				margin-right: 25px
+				opacity: 0.4
+				color: #006dd5
+				font-family: 'CodePro'
+				font-weight: 400
+				font-size: 150px
+			&__text
+				font-size: 23px
+				font-weight: 400
+				line-height: 30px
+	.header-head
+		margin-bottom: 180px
+	&-message
+		padding-top: 120px
+.manage
+	&-work
+		position: relative
+		padding-bottom: 120px
+		color: $dark
+		&__container
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__subtitle
+			position: relative
+			font-size: 23px
+			font-weight: 400
+			line-height: 28px
+			text-align: center
+			&::before
+				content: ''
+				position: absolute
+				bottom: -45px
+				height: 12px
+				width: 150px
+				left: 50%
+				transform: translateX(-50%)
+				border-radius: 5px
+				background-color: #006dd5
+		&__blocks
+			background: url(../img/step.png) center no-repeat / cover
+			position: relative
+			display: flex
+			top: 40px
+			margin-top: 80px
+			height: 735px
+			width: 100%
+		&__block
+			width: 270px
+			position: absolute
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			img
+				margin-bottom: 10px
+			&:nth-child(1)
+				top: 70px
+				left: 20px
+			&:nth-child(2)
+				top: 380px
+				left: 370px
+			&:nth-child(3)
+				top: 70px
+				left: 700px
+			&:nth-child(4)
+				top: 380px
+				left: 1030px
+			&__title
+				margin-bottom: 10px
+				font-weight: 400
+				font-size: 22px
+			&__text
+				color: #808080
+				line-height: 26px
+				font-size: 18px
+		.advantages-pattern
+			top: 135px
+		.advantages-pattern__2
+			top: 380px
+		.section-title
+			margin-bottom: 30px
+	&-features
+		&__blocks
+			display: flex
+			justify-content: space-between
+		&__block
+			width: 660px
+			display: flex
+			flex-direction: column
+			color: $dark
+			&__separator
+				span
+					font-weight: 500
+			&__text
+				margin-bottom: 10px
+				font-size: 22px
+				font-weight: 400
+				line-height: 32px
+		.section-title
+			margin-bottom: 90px
+			text-align: center
+.features-prices
+	padding-top: 100px
+	&__title
+		margin-bottom: 30px
+		font-size: 30px
+		font-weight: 500
+		text-align: center
+		text-transform: uppercase
+		color: $dark
+	&__blocks
+		display: flex
+		justify-content: space-between
+	&__block
+		position: relative
+		width: 400px
+		border-radius: 10px
+		box-shadow: 0 0 29px 2px rgba(0, 117, 222, 0.15)
+		padding: 50px 50px
+		text-align: center
+		color: $dark
+		&:nth-child(1)
+			.features-prices__button
+				margin-top: 100px
+		&:hover
+			background-color: #0071da
+			color: #fff
+			.features-prices__price
+				color: #fff
+			.features-prices__button
+				background-color: $yellow
+				color: #fff
+			.features-prices__block__text
+				&::before
+					background-color: #fff
+				
+		&__title
+			display: inline-block
+			line-height: 40px
+			font-size: 30px
+			font-weight: 500
+			margin-bottom: 20px
+		&__text
+			position: relative
+			margin-left: 10px
+			text-align: left
+			line-height: 30px
+			font-size: 20px
+			font-weight: 400
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 110px
+			&::before
+				content: ''
+				position: absolute
+				left: -20px
+				margin-top: 10px
+				margin-right: 10px
+				background-color: #0071da
+				height: 10px
+				width: 10px
+				border-radius: 50%
+	&__price
+		margin-bottom: 10px
+		font-weight: 400
+		font-size: 30px
+		line-height: 50px
+		color: #0075dd
+		span
+			font-weight: 500
+			font-size: 55px
+	&__button
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)
+		margin-top: 40px
+		background-color: transparent
+		color: $dark
+		border: 2px solid $yellow
+		box-shadow: none
+@media (max-width: 1500px)
+	.devops
+		height: 770px
+		&-about
+			padding-top: 60px
+			.about-pattern__2
+    			height: 120px
+    			width: 120px
+    			top: 60px
+    			left: -80px
+			.about-pattern__4
+    			top: -120px
+    			left: 90px
+			.about-pattern__3
+    			top: -80px
+    			left: -40px
+			&__block
+				width: 360px
+				&__number
+					font-size: 120px
+					margin-top: -8px
+				&__text
+					font-size: 18px
+		&-text
+			font-size: 20px
+			max-width: 550px
+			line-height: 31px
+	.manage
+		&-work
+			.advantages-pattern__2
+				top: 290px
+			&__blocks
+				height: 600px
+			&__block
+				&:nth-child(1)
+					top: 30px
+					left: -10px
+				&:nth-child(2)
+					top: 300px
+					left: 295px
+				&:nth-child(3)
+					top: 30px
+					left: 578px
+				&:nth-child(4)
+					left: 870px
+					top: 300px
+		&-features
+			&__block
+				width: 570px
+				&__text
+					font-size: 18px
+					line-height: 27px
+	.features-prices
+		&__block
+			width: 360px
+			&__title
+				font-size: 25px
+				line-height: 35px
+				margin-bottom: 10px
+			&__text
+				font-size: 16px
+				line-height: 27px
+		&__price
+			font-size: 25px
+			span
+				font-size: 45px
+
+@media (max-width: 1450px)
+	.devops
+		height: 730px
+@media (max-width: 1370px)
+	.devops
+		height: 700px
+		.header-head
+			margin-bottom: 160px
