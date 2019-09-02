@@ -1,0 +1,184 @@
+.management
+	background-image: url(../img/management/header.png)
+	.header-title
+		max-width: 400px
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+	&-descr
+		position: relative
+		padding-top: 50px
+		color: $dark
+		.section-title
+			margin-bottom: 30px
+		.about-pattern
+			&__1
+				top: -200px
+			&__4
+				top: -120px
+				left: 190px
+	&-work
+		padding-top: 180px
+		.manage-work__block
+			width: 210px
+			&:nth-child(1)
+				left: 70px
+				top: 70px
+			&:nth-child(2)
+				left: 395px
+			&:nth-child(3)
+				top: 170px
+				left: 725px
+			&:nth-child(4)
+				left: 1060px
+		.manage-work__blocks
+			margin-top: 0
+		.advantages-pattern
+			top: 70px
+		.advantages-pattern__2
+			top: 320px
+		&__title
+			max-width: 900px
+			text-align: center
+			margin: 0 auto
+	.demo-pattern
+		z-index: -1
+
+.manage-features
+	position: relative
+	.message-pattern
+		z-index: -1
+		&__1
+			left: -190px
+			top: 210px
+		&__2
+			top: 300px
+			left: 180px
+		&__3
+			z-index: -1
+			left: -20px
+			top: 540px
+	.demo-pattern
+		&__3
+			top: 1080px
+			right: -150px
+		&__2
+			top: 1280px
+.features
+	&-prices
+		z-index: 900
+		padding-top: 70px
+		&__blocks
+			margin-bottom: 80px
+		&__block
+			width: 320px
+		&__price
+			font-size: 25px
+			span
+				font-size: 40px
+		&__note
+			font-size: 22px
+			line-height: 30px
+			font-weight: 400
+			color: $dark
+			text-align: center
+.manage-features
+	padding-bottom: 120px
+@media (max-width: 1500px)
+	.management
+		&-work
+			.manage-work__block
+				&:nth-child(1)
+					left: 40px
+					top: 10px
+				&:nth-child(2)
+					left: 324px
+					top: 310px
+				&:nth-child(3)
+					top: 110px
+					left: 605px
+				&:nth-child(4)
+					left: 900px
+					top: 310px
+			.advantages-pattern__2
+				top: 230px
+		&-descr
+			.about-pattern
+				&__1
+					top: -170px
+				&__2
+					top: 210px
+				&__3
+					left: 70px
+					top: 175px
+				&__4
+					top: -80px
+					left: 190px
+	.features
+		&-prices
+			&__block
+				width: 280px
+			&__price
+				font-size: 25px
+				span
+					font-size: 40px
+			&__button
+				padding: 15px
+				width: 230px
+	.manage-features
+		.demo-pattern
+			&__2
+				right: 20px
+			&__3
+				top: 1040px
+				height: 320px	
+		.message-pattern
+			&__1
+				height: 320px
+				left: -180px
+			&__2
+				height: 150px
+				top: 310px
+				left: 140px
+			&__3
+				top: 500px
+				left: -28px
+				height: 90px
+	.manage-work__subtitle,
+	.features-prices__note
+		max-width: 1180px
+		font-size: 21px
+@media (max-width: 1370px)
+	.management
+		&-descr
+			.about-pattern
+				&__1
+					top: -130px
+				&__2
+					left: -30px
+					top: 200px
+				&__3
+					top: 155px
+					left: 60px
+				&__4
+					left: 160px
+	.manage-features
+		.demo-pattern
+			&__2
+				height: 270px!important
+			&__3
+				top: 1060px
+				height: 300px
+		.message-pattern
+			&__1
+				height: 320px
+				left: -210px
+			&__2
+				height: 150px
+				top: 310px
+				left: 140px
+			&__3
+				top: 490px
+				left: -28px
+				height: 90px
