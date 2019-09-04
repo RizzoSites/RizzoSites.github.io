@@ -1,0 +1,225 @@
+.about-us
+	background-image: url(../img/about-us/header.png)
+	position: relative
+	height: 860px
+	.header
+		&-text
+			max-width: 400px
+			line-height: 27px
+			font-size: 21px
+		&-tab
+			position: relative
+			top: -320px
+			right: -820px
+			overflow: hidden
+			width: 600px
+			&__content
+				max-width: 600px
+				line-height: 30px
+				display: none
+				&__title
+					display: inline-block
+					margin-bottom: 15px
+					font-weight: 500
+					font-size: 30px
+				&__text
+					margin-bottom: 25px
+					font-weight: 300
+					font-size: 21px
+					line-height: 32px
+		&-tablinks
+			width: 100%
+			height: 130px
+			background-color: #fff
+			padding: 0 40px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&__link
+				position: relative
+				text-decoration: none
+				color: #808080
+				font-size: 25px
+				font-weight: 400
+				cursor: pointer
+				&:nth-child(1)
+					&::before
+						content: '01'
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						font-size: 80px
+						color: #0074dd
+						font-family: 'CodePro'
+						font-weight: 700
+						opacity: 0.2
+				&:nth-child(2)
+					&::before
+						content: '02'
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						font-size: 80px
+						color: #0074dd
+						font-family: 'CodePro'
+						font-weight: 700
+						opacity: 0.2
+				&:nth-child(3)
+					&::before
+						content: '03'
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						font-size: 80px
+						color: #0074dd
+						font-family: 'CodePro'
+						font-weight: 700
+						opacity: 0.2
+				&:hover
+					color: #0074dd
+		&-head
+			margin-bottom: 180px
+.about
+	&-management
+		position: relative
+		padding-top: 120px
+		padding-bottom: 120px
+		color: $dark
+		&__container
+			display: flex
+			flex-direction: column
+			max-width: 1300px
+		&__blocks
+			display: flex
+			justify-content: space-between
+		&__block
+			display: flex
+			flex-direction: column
+			align-items: center
+			max-width: 550px
+			img
+				height: 500px
+			&__title
+				font-size: 35px
+				font-weight: 500
+				margin-top: -30px
+				margin-bottom: 25px
+			&__text
+				font-size: 22px
+				font-weight: 400
+				line-height: 32px
+				text-align: center
+		.about-pattern
+			&__2
+				height: 120px
+				width: 120px
+				top: -80px
+				left: -25px
+			&__4
+				top: -120px
+				left: 110px
+			&__3
+				top: 60px
+				left: -50px
+		.section-title
+			text-align: center
+
+.about-us__pattern
+	position: absolute
+	&__1
+		right: 0
+		bottom: -10px
+		transform: rotate(180deg)
+		height: 450px
+	&__2
+		right: -10px
+		bottom: 370px
+		height: 150px
+		transform: rotate(180deg)
+	&__3
+		right: 180px
+		bottom: 40px
+		height: 150px
+	&__4
+		right: 80px
+		bottom: 330px
+		height: 150px
+#London
+	display: block
+
+@media (max-width: 1500px)
+	.about-us
+		height: 730px
+		.header
+			&-tab
+				right: -590px
+				&__content
+					&__title
+						font-size: 25px
+					&__text
+						font-size: 18px
+						line-height: 30px
+			&-tablinks
+				height: 100px
+				&__link
+					&:nth-child(1)
+						&::before
+							font-size: 70px
+					&:nth-child(2)
+						&::before
+							font-size: 70px
+					&:nth-child(3)
+						&::before
+							font-size: 70px
+			&-head
+				margin-bottom: 200px
+	.about-management
+		&__container
+			max-width: 1170px
+		&__block
+			max-width: 510px
+			&__title
+				font-size: 30px
+			&__text
+				font-size: 18px
+				line-height: 31px
+	.about-us__pattern
+		&__1
+			right: -30px
+			bottom: -30px
+			height: 360px
+		&__2
+			right: -10px
+			bottom: 275px
+			height: 110px
+		&__3
+			height: 110px
+			right: 125px
+		&__4
+			height: 110px
+			right: 60px
+			bottom: 230px
+@media (max-width: 1370px)
+	.about-us
+		height: 690px
+		.header-head
+			margin-bottom: 180px
+	.about-us__pattern
+		&__1
+			right: -30px
+			bottom: -60px
+			height: 360px
+		&__2
+			right: -10px
+			bottom: 245px
+			height: 110px
+		&__3
+			height: 110px
+			right: 125px
+		&__4
+			height: 110px
+			right: 60px
+			bottom: 210px
