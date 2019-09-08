@@ -39,7 +39,6 @@
 	&-block
 		display: flex
 		flex-direction: column
-		width: 540px
 		color: $dark
 		&__title
 			margin-bottom: 20px
@@ -124,6 +123,10 @@
 		&-img
 			height: 390px
 			margin-top: 70px
+@media (min-width: 1100px)
+	.about
+		&-block
+			width: 540px
 @media (max-width: 1370px)
 	.about
 		padding-top: 20px
@@ -139,3 +142,45 @@
 				left: 40px
 			&__4
 				left: 180px
+
+@media (max-width: 1099px)
+	.about
+		padding-top: 70px
+		padding-bottom: 0
+		&-pattern
+			&__1
+				display: none
+			&__2
+				display: none
+			&__3
+				display: none
+			&__4
+				display: none
+		&-blocks
+			flex-direction: column
+		&-block
+			&__text
+				font-size: 18px
+		&-img
+			display: none
+		&-dog
+			display: none
+		.container
+			padding-left: 25px
+			padding-right: 25px
+@media (min-width: 768px) and (max-width: 1099px)
+	.about
+		.container
+			padding-left: 40px
+			padding-right: 40px
+		&-block
+			text-align: center
+			&__text
+				&::before
+					left: 50%
+					transform: translateX(-50%)
+			&__list
+				text-align: left
+		&-blocks
+			&__separator
+				flex-direction: column

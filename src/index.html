@@ -11,6 +11,10 @@
 	<header class="header">
 		<div class="container">
 			<div class="header-head">
+				<div class="header-navbtn">
+					<span></span>
+				</div>
+				<!-- /.header-navbtn -->
 				<a href="index.html" class="header-logo">
 					<img src="img/logo.png" alt="logo">
 					Husky
@@ -21,14 +25,18 @@
 						<a href="index.html" class="header-nav__item">Home</a>
 					</li>
 					<li>
-						<a href="#" class="header-nav__item">Cloud</a>
+						<a href="#" class="header-nav__item">Cloud
+							<span class="sub-menu__trigger" onclick="hide(event, $(this));"></span>
+						</a>
 						<ul class="sub-menu">
 							<li><a href="cloud.html" class="header-nav__item">Cloud technologies</a></li>
 							<li><a href="aws.html" class="header-nav__item">Amazon Web Services</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="header-nav__item">Managed it</a>
+						<a href="#" class="header-nav__item">Managed it
+							<span class="sub-menu__trigger" onclick="hide(event, $(this));"></span>
+						</a>
 						<ul class="sub-menu">
 							<li><a href="management.html" class="header-nav__item">Server Management</a></li>
 							<li><a href="devops.html" class="header-nav__item">DevOps</a></li>
@@ -246,7 +254,7 @@
 						<form action="#">
 							<input type="text" name="name" placeholder="Name" class="form-text form-input" required>
 							<input type="email" name="email" placeholder="Email Address" class="form-text form-input" required>
-							<input name="task" placeholder="Describe ypue task shortly" class="form-text form-input" required>
+							<input name="task" placeholder="Describe your task shortly" class="form-text form-input" required>
 							<input type="submit" value="SUBMIT" class="form-button">
 						</form>
 					</div>

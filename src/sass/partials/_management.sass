@@ -182,3 +182,68 @@
 				top: 490px
 				left: -28px
 				height: 90px
+
+@media (max-width: 1099px)
+	.devops
+		height: 100vh
+	.management-container
+		padding-left: 25px
+		padding-right: 25px
+	.manage
+		&-work
+			&__container
+				padding-left: 25px
+				padding-right: 25px
+			&__subtitle
+				font-size: 17px
+			&__blocks
+				background: none
+				flex-direction: column
+				align-items: center
+			&__block
+				position: static
+				margin-top: 0
+				margin-bottom: 30px
+				&:last-child
+					margin-bottom: 0
+		&-features
+			padding-bottom: 0
+			.section-title
+				margin-bottom: 60px
+			&__blocks
+				flex-direction: column
+				align-items: center
+			&__block
+				width: 100%
+	.management
+		background-image: url(../img/header-mob.png)
+		&-descr
+			padding-top: 70px
+		&-work
+			padding-top: 100px
+			padding-bottom: 100px
+			&__block
+				&__text
+					font-size: 17px
+		&-features
+			&__container
+				padding-left: 25px
+				padding-right: 25px
+	.features
+		&-prices
+			padding-top: 70px!important
+			&__blocks
+				flex-direction: column
+				align-items: center
+			&__block
+				margin-bottom: 30px
+				&:last-child
+					margin-bottom: 0
+			&__note
+				font-size: 17px!important
+
+@media (min-width: 768px) and (max-width: 1099px)
+	.manage
+		&-work
+			&__subtitle
+				max-width: 660px

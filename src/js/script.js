@@ -95,7 +95,13 @@ $(document).ready(function(){
     }
   });
 
+
 });
+
+ function hide(e, el){
+  e.preventDefault();
+  el.parent().parent().children('ul.sub-menu').toggle();
+}
 
 function openCity(evt, cityName) {
   // Declare all variables
@@ -118,3 +124,32 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
+function openAboutMobile(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("header-tab__content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("header-tablinks__link");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+$('.header-navbtn').click(function() {
+    $(this).toggleClass('header-navbtn__active');
+    $('.header-nav').toggle('fast');
+  });
+
+$('.sub-menu__trigger').click(function() {
+   $(this).toggleClass('sub-menu__trigger__active')
+});  

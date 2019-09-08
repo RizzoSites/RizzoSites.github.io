@@ -148,3 +148,74 @@
 @media (max-width: 1370px)
 	.cloud
 		height: 690px
+@media (max-width: 1099px)
+	.cloud
+		background-image: url(../img/header-mob.png)
+		height: 100vh
+	.managing
+		padding-top: 70px
+		padding-bottom: 70px
+		.section-title
+			margin-bottom: 50px
+		&-subtitle
+			text-align: left
+			font-size: 17px
+			&::before
+				left: 0
+				transform: none
+		&-blocks
+			flex-direction: column
+			align-items: center
+		&-block
+			width: 100%
+			margin-right: 0
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+		&-text
+			&__o
+				font-size: 17px
+				text-align: left
+		.container
+			padding-left: 25px
+			padding-right: 25px
+		&-container
+			padding-left: 25px
+			padding-right: 25px
+	.help
+		padding-bottom: 30px
+		&-blocks
+			flex-direction: column
+			align-items: center
+		&-block
+			flex-direction: column
+			align-items: center
+			text-align: center
+			margin-top: 0!important
+			margin-bottom: 30px!important
+			&:last-child
+				margin-bottom: 0
+			img
+				margin-right: 
+
+		&-separator
+			display: flex
+			flex-direction: column
+		&-text
+			max-width: 250px
+		.section-title
+			margin-bottom: 60px
+			text-align: center
+
+@media (min-width: 768px) and (max-width: 1099px)
+	.managing
+		.container
+			padding-left: 40px
+			padding-right: 40px
+	.help
+		&-blocks
+			justify-content: center
+			flex-flow: row wrap
+			align-items: flex-start!important
+		&-block
+			width: 350px

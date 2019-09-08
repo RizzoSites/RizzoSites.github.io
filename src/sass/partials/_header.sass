@@ -30,9 +30,6 @@
 			&:last-child
 				a
 					margin-right: 75px
-			&:hover
-				.sub-menu
-					display: block!important
 		a
 			transition: 0.1s
 			&:hover
@@ -45,6 +42,12 @@
 			font-size: 20px
 			text-decoration: none
 			margin-right: 65px
+	&-navbtn
+		display: none
+		position: relative
+		height: 40px
+		width: 40px
+		cursor: pointer
 	&-phone
 		color: #fff
 		font-size: 25px
@@ -110,7 +113,13 @@
 		font-family: 'Rubik'
 		font-size: 15px
 		font-weight: 300
-		
+@media (min-width: 1100px)
+	.header
+		&-nav
+			li
+				&:hover
+					.sub-menu
+						display: block
 @media (min-width: 1681px) and (max-width: 1920px)
 	.header
 		height: 990px
@@ -125,7 +134,7 @@
 				margin-right: 55px
 		&-phone
 			font-size: 20px
-			padding: 15px 22px
+			padding: 15px 28px
 		&-logo
 			margin-right: 80px
 			font-size: 21px
@@ -139,3 +148,156 @@
 			margin-bottom: 100px
 			span
 				font-size: 25px
+
+@media (max-width: 1099px)
+	.header
+		background-image: url(../img/header-mob.png)
+		height: 100vh
+		.container
+			display: flex
+			flex-direction: column
+			height: 100%
+			justify-content: center
+		&-nav
+			display: none
+			padding: 10px 5px
+			position: absolute
+			background-color: $dark
+			width: 100%
+			&__item
+				padding: 10px
+				display: inline-block
+				font-size: 16px
+			&__active
+				display: block
+		&-navbtn
+			display: block
+			order: 5
+			margin-right: 25px
+			span
+				position: absolute
+				top: 16px
+				right: 0
+				border-radius: 4px
+				width: 100%
+				height: 2px
+				background-color: #fff
+				transition: 0.2s ease
+				&::before
+					content: ''
+					position: absolute
+					top: -10px
+					right: 0
+					border-radius: 4px
+					width: 100%
+					height: 2px
+					background-color: #fff
+					transition: 0.2s ease
+				&::after
+					content: ''
+					position: absolute
+					top: 10px
+					right: 0
+					border-radius: 4px
+					width: 100%
+					height: 2px
+					background-color: #fff
+					transition: 0.2s ease
+			&__active
+				span
+					height: 0
+					background-color: transparent
+					&::before
+						top: 0
+						transform: rotate(-45deg)
+					&::after
+						top: 0
+						transform: rotate(45deg)
+		&-phone
+			padding: 10px
+			font-size: 17px
+		&-head
+			justify-content: space-between
+			margin-bottom: 0
+		&-logo
+			padding-left: 25px
+			margin-right: 0
+			font-size: 16px
+			flex-direction: column
+			order: -1
+			img
+				margin-bottom: 5px
+				margin-right: 0
+				height: 50px
+		&-title
+			font-size: 40px
+		&-text
+			margin-bottom: 100px
+		&-subtitle
+			font-size: 27px
+			max-width: 200px
+		&-text
+			font-size: 17px
+			max-width: 300px
+			line-height: 21px
+			span
+				font-size: 18px
+				margin-right: 5px
+		&-main
+			width: 330px	
+			margin-top: 0
+			padding-left: 25px
+			padding-right: 25px
+		&-button
+			font-size: 20px
+			margin-top: -30px
+		.header-nav
+			top: 80px
+		.header-head
+			position: absolute
+			justify-content: space-between
+			margin-bottom: 0
+			top: 30px
+			width: 100%	
+	.sub-menu
+		width: 100%
+		padding: 0
+		max-width: none
+		background-color: $dark
+		li
+			margin-bottom: 0
+			a
+				color: #fff
+				font-family: 'CodePro'
+				font-weight: 400
+				font-size: 16px
+				width: 100%
+		&::before
+			content: none
+		&::after
+			content: none
+		&__trigger
+			position: absolute
+			right: 25px
+			top: 7px
+			height: 10px
+			width: 10px
+			border-top: 2px solid #fff
+			border-left: 2px solid #fff
+			transition: all .2s ease-in-out
+			transform: rotate(-135deg)
+			background: transparent
+			cursor: pointer
+			&__active
+				transform: rotate(45deg)
+				top: 13.5px
+@media (max-width: 320px)
+	.header-main
+		width: 280px
+	.header
+		&-title
+			font-size: 35px
+		&-subtitle
+			font-size: 23px
+		&-text
+			margin-bottom: 70px

@@ -74,7 +74,6 @@
 			display: flex
 			top: 40px
 			margin-top: 80px
-			height: 735px
 			width: 100%
 		&__block
 			width: 270px
@@ -244,8 +243,6 @@
 		&-work
 			.advantages-pattern__2
 				top: 290px
-			&__blocks
-				height: 600px
 			&__block
 				&:nth-child(1)
 					top: 30px
@@ -281,6 +278,12 @@
 				font-size: 45px
 	.devops-prices__block
 		width: 360px!important
+@media (min-width: 1471px)
+	.manage-work__blocks
+		height: 735px!important
+@media (min-width: 1100px)
+	.manage-work__blocks
+		height: 600px
 @media (max-width: 1450px)
 	.devops
 		height: 730px
@@ -289,3 +292,56 @@
 		height: 700px
 		.header-head
 			margin-bottom: 160px
+@media (max-width: 1099px)
+	.devops
+		background-image: url(../img/header-mob.png)
+		&-about
+			padding-top: 70px
+			padding-bottom: 70px
+			&__blocks
+				flex-direction: column
+			&__block
+				width: 100%
+				margin-bottom: 30px
+				&:nth-child(1)
+					span
+						margin-right: 45px
+				&:last-child
+					margin-bottom: 0						
+				&__number
+					font-size: 90px
+					margin-top: -5px
+				&__text
+					font-size: 17px
+			.container
+				padding-left: 25px
+				padding-right: 25px
+		&-prices
+			&__block
+				width: 100%!important
+		&-text
+			margin-bottom: 0
+		&-message
+			padding-top: 0
+	.manage
+		&-work
+			padding-bottom: 110px
+			&__blocks
+				margin-top: 70px
+		&-features
+			&__block
+				&__text
+					font-size: 17px
+					&:last-child
+						margin-bottom: 0
+			.container
+				padding-left: 25px
+				padding-right: 25px
+
+@media (max-width: 320px)
+	.features-prices__block
+		padding: 40px 40px
+	.features-prices__price
+		font-size: 22px!important
+		span
+			font-size: 27px!important
