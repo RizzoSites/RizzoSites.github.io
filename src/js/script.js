@@ -150,6 +150,11 @@ $('.header-navbtn').click(function() {
     $('.header-nav').toggle('fast');
   });
 
+$('.footer-navbtn').click(function() {
+    $(this).toggleClass('footer-navbtn__active');
+    $('.footer-nav').toggle('fast');
+  });
+
 $('.sub-menu__trigger').click(function() {
    $(this).toggleClass('sub-menu__trigger__active')
 });  

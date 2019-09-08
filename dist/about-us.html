@@ -11,6 +11,10 @@
 	<header class="header about-us">
 		<div class="container">
 			<div class="header-head">
+				<div class="header-navbtn">
+					<span></span>
+				</div>
+				<!-- /.header-navbtn -->
 				<a href="index.html" class="header-logo">
 					<img src="img/logo.png" alt="logo">
 					Husky
@@ -21,14 +25,18 @@
 						<a href="index.html" class="header-nav__item">Home</a>
 					</li>
 					<li>
-						<a href="#" class="header-nav__item">Cloud</a>
+						<a href="#" class="header-nav__item">Cloud
+							<span class="sub-menu__trigger" onclick="hide(event, $(this));"></span>
+						</a>
 						<ul class="sub-menu">
 							<li><a href="cloud.html" class="header-nav__item">Cloud technologies</a></li>
 							<li><a href="aws.html" class="header-nav__item">Amazon Web Services</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="header-nav__item">Managed it</a>
+						<a href="#" class="header-nav__item">Managed it
+							<span class="sub-menu__trigger" onclick="hide(event, $(this));"></span>
+						</a>
 						<ul class="sub-menu">
 							<li><a href="management.html" class="header-nav__item">Server Management</a></li>
 							<li><a href="devops.html" class="header-nav__item">DevOps</a></li>
@@ -184,27 +192,39 @@
 	<footer class="footer">
 		<div class="container footer-container">
 			<div class="header-head">
-				<a href="#" class="header-logo">
+				<div class="footer-navbtn">
+					<span></span>
+				</div>
+				<!-- /.header-navbtn -->
+				<a href="index.html" class="header-logo">
 					<img src="img/logo.png" alt="logo">
 					Husky
 				</a>
 				<!-- /.header-logo -->
-				<ul class="header-nav">
+				<ul class="footer-nav">
 					<li>
-						<a href="#" class="header-nav__item">Home</a>
+						<a href="index.html" class="header-nav__item">Home</a>
 					</li>
 					<li>
-						<a href="#" class="header-nav__item">Cloud</a>
-					</li>
-					<li>
-						<a href="#" class="header-nav__item">Managed it</a>
+						<a href="#" class="header-nav__item">Cloud
+							<span class="sub-menu__trigger" onclick="hide(event, $(this));"></span>
+						</a>
 						<ul class="sub-menu">
-							<li><a href="#" class="header-nav__item">Server Management</a></li>
-							<li><a href="#" class="header-nav__item">DevOps</a></li>
+							<li><a href="cloud.html" class="header-nav__item">Cloud technologies</a></li>
+							<li><a href="aws.html" class="header-nav__item">Amazon Web Services</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="#" class="header-nav__item">About us</a>
+						<a href="#" class="header-nav__item">Managed it
+							<span class="sub-menu__trigger" onclick="hide(event, $(this));"></span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="management.html" class="header-nav__item">Server Management</a></li>
+							<li><a href="devops.html" class="header-nav__item">DevOps</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="about-us.html" class="header-nav__item">About us</a>
 					</li>
 					<li>
 						<a href="#" class="header-nav__item">Contact</a>
