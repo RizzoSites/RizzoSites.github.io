@@ -4,6 +4,12 @@ let secondValue;
 let thirdValue;
 let fourthValue;
 let allValues;
+let discount = 0;
+
+let firstBlock,
+	secondBlock,
+	thirdBlock,
+	fourthBlock;
 
 
 $(document).ready(function() {
@@ -27,9 +33,15 @@ $(document).ready(function() {
 
     if (document.querySelector('input[name="linen"]:checked')) {
     	firstValue = '1: ' + document.querySelector('input[name="linen"]:checked').value;
+    	if (firstBlock !== true) {
+    		discount += 5;
+    		$('.modal-discount__number').html(discount + '%');
+    		firstBlock = true;
+    	}
     } else {
     	firstValue = '-';
     }
+
 	});
 
 	$("#stage-2").submit(function() { //Change
@@ -38,6 +50,11 @@ $(document).ready(function() {
 
    	if (document.querySelector('input[name="goods"]:checked')) {
     	secondValue = '2: ' + document.querySelector('input[name="goods"]:checked').value;
+    	if (secondBlock !== true) {
+    		discount += 5;
+    		$('.modal-discount__number').html(discount + '%');
+    		secondBlock = true;
+    	}
     } else {
     	secondValue = '-';
     }
@@ -49,6 +66,11 @@ $(document).ready(function() {
 
    	if (document.querySelector('input[name="gender"]:checked')) {
     	thirdValue = '3: ' + document.querySelector('input[name="gender"]:checked').value;
+    	if (thirdBlock !== true) {
+    		discount += 5;
+    		$('.modal-discount__number').html(discount + '%');
+    		thirdBlock = true;
+    	}
     } else {
     	thirdValue = '-';
     }
@@ -61,6 +83,11 @@ $(document).ready(function() {
 
    	if (document.querySelector('input[name="other"]:checked')) {
     	fourthValue = '4: ' + document.querySelector('input[name="other"]:checked').value;
+    	if (fourthBlock !== true) {
+    		discount += 5;
+    		$('.modal-discount__number').html(discount + '%');
+    		fourthBlock = true;
+    	}
     } else {
     	fourthValue = '-';
     }
@@ -76,7 +103,8 @@ $(document).ready(function() {
       data: { quiz : allValues,
       		  name : document.getElementById('contact-name').value,
       		  phone : document.getElementById('contact-phone').value,
-      		  email : document.getElementById('contact-email').value
+      		  email : document.getElementById('contact-email').value,
+      		  discount : discount
       		}
     }).done(function() {
       $("#contact-form").trigger("reset");
