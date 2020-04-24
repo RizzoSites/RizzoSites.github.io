@@ -17,6 +17,10 @@ $(document).ready(function() {
 		$('.overlay').removeClass('overlay-active');
 	});
 
+	$('.mobile-close').click(function() {
+   		$('.modal').removeClass('modal-active');
+   		$('.overlay').removeClass('overlay-active');
+   	});
 	$("#stage-1").submit(function() { //Change
 
    	event.preventDefault();
@@ -76,8 +80,13 @@ $(document).ready(function() {
       		}
     }).done(function() {
       $("#contact-form").trigger("reset");
+      $('.modal-questions__button').click(function() {
+      	$('.modal').removeClass('modal-active');
+      	$('.overlay').removeClass('overlay-active')
+      });
     });
     return false;
+
   });
 
 	// следующий вопрос викторины
