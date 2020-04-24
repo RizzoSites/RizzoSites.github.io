@@ -13,16 +13,17 @@ let firstBlock,
 
 
 $(document).ready(function() {
-
+	// открытие модалки по клику на кнопку в хедер
 	$('.header-body__button').click(function() {
 		$('.modal').toggleClass('modal-active');
 		$('.overlay').toggleClass('overlay-active');
 	});
+	// закрытие модалки по клику на крестик
 	$('.modal-note__close').click(function() {
 		$('.modal').removeClass('modal-active');
 		$('.overlay').removeClass('overlay-active');
 	});
-
+	// закрытие модалки на смартфонах по клику на крестик
 	$('.mobile-close').click(function() {
    		$('.modal').removeClass('modal-active');
    		$('.overlay').removeClass('overlay-active');
@@ -30,7 +31,11 @@ $(document).ready(function() {
 	$("#stage-1").submit(function() { //Change
 
    	event.preventDefault();
-
+   	// если ответил на вопрос - записать его в соответствующую переменную (здесь firstValue)
+   	// потом все эти переменные соберутся в allValues и отправятся на сервер
+   	// так же если ответил на вопрос - добавить в переменную discount 5%
+   	// и вывести discount на экран в modal-note
+   	// так же если добавились 5% - повесить блок на этот вопрос, чтобы больше от него 5% не добавлялись
     if (document.querySelector('input[name="linen"]:checked')) {
     	firstValue = '1: ' + document.querySelector('input[name="linen"]:checked').value;
     	if (firstBlock !== true) {
@@ -93,7 +98,6 @@ $(document).ready(function() {
     }
 	});
 
-	let lol = 'sasasasas';
 	// отправка формы contact
 	$("#contact-form").submit(function() {
 	  allValues = `${firstValue}\n${secondValue}\n${thirdValue}\n${fourthValue}.`;
