@@ -3,315 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<title>Детское бельё</title>
-	<meta name="description" content="Покупайте детское постельное белье по выгодным ценам в магазине SleepCookie. Постоянные акции и скидки. Доставка во все регионы России."> 
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
-
+	<title>Quiz</title>
 </head>
 <body>
 	
-	<div class="modal">
-		<div class="modal-block">
-			<div class="modal-questions">
-				<div class="modal-question modal-questions__first modal-questions__active">
-					<div class="modal-questions__container">
-						<span class="modal-questions__stage">
-							Шаг 1 из 4
-						</span>
-						<!-- /.modal-question__stage -->
-						<div class="modal-discount modal-discount__mobile">
-							<span class="modal-discount__number"></span>
-						</div>
-				<!-- /.modal-discount -->
-						<div class="modal-questions__nav">
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item"></div>
-							<!-- /.modal-questions__nav__item -->
-						</div>
-						<!-- /.modal-questions__nav -->
-						<h2 class="modal-questions__title">
-							Какое постельное белье Вам нравится больше?
-						</h2>
-						<!-- /.modal-question__title -->
-						<div class="modal-questions__first__images">
-							<img src="img/stage-1/img-1.jpg" alt="бельё">
-							<img src="img/stage-1/img-2.jpg" alt="бельё">
-							<img src="img/stage-1/img-3.jpg" alt="бельё">
-						</div>
-						<!-- /.modal-questions__first__images -->
-						<form action="" id="stage-1">
-    						<label class="radio"><input name="linen" type="radio" value="Вариант 1"><span></span>Вариант 1</label>
-    						<label class="radio"><input name="linen" type="radio" value="Вариант 2"><span></span>Вариант 2</label>
-    						<label class="radio"><input name="linen" type="radio" value="Вариант 3"><span></span>Вариант 3</label>
-    						<label class="radio radio-padding"><input name="linen" type="radio" value="Ещё не знаю"><span></span>Ещё не знаю</label>
-  						</form> 
-  						<div class="modal-questions__buttons">
-  							<button class="modal-questions__button" type="submit" form="stage-1" id="button-first">Следующий вопрос</button>
-  						</div>
-  						<!-- /.modal-question__buttons -->
-					</div>
-					<!-- /.modal-question__container -->
+	<header class="header">
+		<div class="container header-container">
+			<ul class="header-menu">
+				<a href="#" class="header-menu__item first">Комплексное продвижение 
+				цветочных магазинов</a>
+				<a href="#" class="header-menu__item">Главная</a>
+				<a href="#" class="header-menu__item">Наши города</a>
+				<a href="#" class="header-menu__item">Наш кейс</a>
+			</ul>
+			<!-- /.header-menu -->
+			<div class="header-body">
+				<h1 class="header-title">
+					<span>Пройдите опрос</span> и получите бесплатный анализ 
+					своего цветочного от <span>лучших маркетологов страны</span>
+				</h1>
+				<!-- /.header-title -->
+				<div class="header-subtitle">
+					Помогли заработать <span>более</span> <span>10 миллионов рублей</span>
+					цветочным магазинам по всей стране!
 				</div>
-				<!-- /.modal-question__first -->
-				<div class="modal-question modal-questions__second">
-					<div class="modal-questions__container">
-						<span class="modal-questions__stage">
-							Шаг 2 из 4
-						</span>
-						<div class="modal-discount modal-discount__mobile">
-							<span class="modal-discount__number"></span>
-						</div>
-						<!-- /.modal-discount -->
-						<div class="modal-questions__nav">
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item"></div>
-							<!-- /.modal-questions__nav__item -->
-						</div>
-						<!-- /.modal-questions__nav -->
-						<h2 class="modal-questions__title">
-							 Интересует ли Вас сопутствующие товары?
-						</h2>
-						<!-- /.modal-question__title -->
-						<form action="" id="stage-2">
-    						<label class="radio"><input name="goods" type="radio" value="Нюдовые расцветки с акварельными приглушенными рисунками"><span></span>Нюдовые расцветки с акварельными приглушенными рисунками </label>
-    						<label class="radio"><input name="goods" type="radio" value="Яркие расцветки с яркими детскими рисунками"><span></span>Яркие расцветки с яркими детскими рисунками </label>
-    						<label class="radio"><input name="goods" type="radio" value="Любимые Мульт-персонажи ребёнка"><span></span>Любимые Мульт-персонажи ребёнка</label>
-    						<label class="radio"><input name="goods" type="radio" value="Другое"><span></span>Другое </label>
-  						</form>
-  						<div class="modal-questions__buttons">
-  							<button class="modal-questions__button button-o" id="back-first">Назад</button> 
-  							<button class="modal-questions__button" type="submit" form="stage-2" id="button-second">Следующий вопрос</button> 
-  						</div>
-  						<!-- /.modal-questions__buttons -->
-					</div>
-					<!-- /.modal-questions__container -->
-				</div>
-				<!-- /.modal-questions__second -->
-				<div class="modal-question modal-questions__third">
-					<div class="modal-questions__container">
-						<span class="modal-questions__stage">
-							Шаг 3 из 4
-						</span>
-						<div class="modal-discount modal-discount__mobile">
-							<span class="modal-discount__number"></span>
-						</div>
-						<!-- /.modal-discount -->
-						<div class="modal-questions__nav">
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item "></div>
-							<!-- /.modal-questions__nav__item -->
-						</div>
-						<!-- /.modal-questions__nav -->
-						<h2 class="modal-questions__title">
-							 Для кого Вы выбираете постельное белье?
-						</h2>
-						<!-- /.modal-question__title -->
-						<div class="modal-questions__third__images">
-							<img src="img/stage-3/img-1.png" alt="girl">
-							<img src="img/stage-3/img-2.png" alt="boy">
-						</div>
-						<!-- /.modal-questions__third__images -->
-						<form action="" id="stage-3">
-    						<label class="radio"><input name="gender" type="radio" value="Девочка"><span></span>Девочка</label>
-    						<label class="radio"><input name="gender" type="radio" value="Мальчик"><span></span>Мальчик</label>
-  						</form>
-  						<div class="modal-questions__buttons">
-  							<button class="modal-questions__button button-o" id="back-second">Назад</button> 
-  							<button class="modal-questions__button" type="submit" form="stage-3" id="button-third">Следующий вопрос</button> 
-  						</div>
-  						<!-- /.modal-questions__buttons -->
-					</div>
-					<!-- /.modal-questions__container -->
-				</div>
-				<!-- /.modal-question modal-questions__second -->
-				<div class="modal-question modal-questions__fourth">
-					<div class="modal-questions__container">
-						<span class="modal-questions__stage">
-							Шаг 4 из 4
-						</span>
-						<div class="modal-discount modal-discount__mobile">
-							<span class="modal-discount__number"></span>
-						</div>
-						<!-- /.modal-discount -->
-						<div class="modal-questions__nav">
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-							<div class="modal-questions__nav__item modal-questions__nav__item__active"></div>
-							<!-- /.modal-questions__nav__item -->
-						</div>
-						<!-- /.modal-questions__nav -->
-						<h2 class="modal-questions__title">
-							 Интересует ли Вас сопутствующие товары?
-						</h2>
-						<!-- /.modal-question__title -->
-						<form action="" id="stage-4">
-    						<label class="radio"><input name="other" type="radio" value="Пелёнки"><span></span>Да, пеленки</label>
-    						<label class="radio"><input name="other" type="radio" value="Пледы"><span></span>Да, пледы</label>
-    						<label class="radio"><input name="other" type="radio" value="Покрывало на кровать"><span></span>Да, покрывало на кровать</label>
-    						<label class="radio"><input name="other" type="radio" value="Нет"><span></span>Нет</label>
-    						<label class="radio"><input name="other" type="radio" value="Другое"><span></span>Другое</label>
-  						</form>
-  						<div class="modal-questions__buttons">
-  							<button class="modal-questions__button button-o" id="back-third">Назад</button> 
-  							<button class="modal-questions__button" type="submit" form="stage-4" id="button-fourth">Следующий вопрос</button> 
-  						</div>
-  						<!-- /.modal-questions__buttons -->
-					</div>
-					<!-- /.modal-questions__container -->
-				</div>
-				<!-- /.modal-question modal-questions__fourth -->
-				<div class="modal-question modal-questions__fifth">
-					<img src="img/stage-5/img-1.png" alt="gift" class="modal-questions__fifth__pattern">
-					<img src="img/stage-5/img-2.png" alt="gift" class="modal-questions__fifth__pattern">
-					<div class="mobile-close">&times;</div>
-					<!-- /.mobile-close -->
-					<div class="modal-questions__container">
-						<h2 class="modal-questions__title">
-							<span>Спасибо за ответы, </span>получите каталог на почту, оставив контакты
-						</h2>
-						<!-- /.modal-questions__title -->
-						<p class="modal-questions__subtitle">
-							За вашим номером мы закрепим <span>персональную скидку 20% и подарок</span>
-						</p>
-						<form class="contact-form" id="contact-form">
-							<input type="text" name="name" placeholder="Имя" id="contact-name" required>
-							<input type="tel" name="phone" placeholder="Номер телефона" id="contact-phone" required>
-							<input type="text" name="email" placeholder="Почта" id="contact-email" required>
-						</form>
-						<!-- /.form -->
-						<div class="modal-questions__buttons">
-  							<button class="modal-questions__button" type="submit" form="contact-form">Отправить</button> 
-  						</div>
-  						<!-- /.modal-questions__buttons -->
-					</div>
-					<!-- /.modal-questions__container -->
-				</div>
-				<!-- /.modal-question modal-questions__fifth -->
-			</div>
-			<!-- /.modal-questions -->
-		</div>
-		<!-- /.modal-question -->
-		<div class="modal-note">
-			<img src="img/stage-5/close.png" alt="close" class="modal-note__close">
-			<div class="modal-note__container">
-				<p class="modal-note__text">
-					<span>Спасибо что экономите наше время.</span> За ответ <br>на каждый вопрос <br><span>вы получаете скидку</span>
+				<!-- /.header-subtitle -->
+				<button class="header-button button">Пройти опрос</button>
+				<p class="header-body__descr text-descr">
+					Нажимая на кнопку, вы соглашаетесь с тем, что теперь отбоя от клиентов у вас не будет
 				</p>
-				<!-- /.modal-note__text -->
-				<div class="modal-note__subtext">
-					Ваша скидка за ответы:
-				</div>
-				<!-- /.modal-note__subtext -->
-				<div class="modal-discount">
-					<span class="modal-discount__number"></span>
-				</div>
-				<!-- /.modal-discount -->
+				<!-- /.button-descr -->
 			</div>
-			<!-- /.modal-note__container -->
+			<!-- /.header-body -->
 		</div>
-		<!-- /.modal-note -->
-	</div>
-	<!-- /.modal -->
-	<div class="overlay">
-		<header class="header">
-			<div class="container">
-				<div class="header-head">
-					<div class="header-gps">
-						<img src="img/header/header-gps.png" alt="GPS">
-						<span>Доставка по всей России</span>
-					</div>
-					<!-- /.header-gps -->
-					<a href="" class="header-logo">
-						<img src="img/logo.png" alt="Logo">
-					</a>
-					<!-- /.header-logo -->
-					<div class="header-phone">
-						<a href="tel:+88004342312">
-							8 800 <span>434 23 12</span>				
-						</a>
-						<p>Консультация с 8:00 до 22:00</p>
-					</div>
-					<!-- /.header-phone -->
-				</div>
-				<!-- /.header-head -->
-				<div class="header-body">
-					<div class="header-body__block">
-						<h1 class="header-body__title">
-							<span>Узнайте за 1 минуту</span> какое
-							постельное белье подойдет вашему ребенку
-						</h1>
-						<!-- /.header-body__title -->
-						<div class="header-body__subtitle">
-							Ответьте на <span>4</span> вопроса и <span>получите:</span>
-						</div>
-						<!-- /.header-body__subtitle -->
-						<div class="header-body__features">
-							<div>
-								<div class="header-body__features__pattern">
-									1
-								</div>
-								<!-- /.header-body__features__block -->
-								<p>Каталог с более чем 100 моделями</p>
-							</div>
-							<div>
-								<div class="header-body__features__pattern">
-									2
-								</div>
-								<!-- /.header-body__features__block -->
-								<p>Скидку 20% на весь ассортимент</p>
-							</div>
-							<div>
-								<div class="header-body__features__pattern">
-									3
-								</div>
-								<!-- /.header-body__features__block -->
-								<p>Бесплатную доставку </p>
-							</div>
-						</div>
-						<!-- /.header-body__features -->
-						<button class="header-body__button">
-							Пройти тест
-						</button>
-							<span class="header-body__subtext">
-							и получить скидку
-						</span>
-						<!-- /.header-body__subtext -->
-					</div>
-					<!-- /.header-body__block -->
-				</div>
-				<!-- /.header-body -->
+		<!-- /.container -->
+	</header>
+	<!-- /.header -->
+	<section class="descr">
+		<div class="container descr-container">
+			<h2 class="descr-title">
+				Поторопитесь оставить <span>заявку</span>!
+			</h2>
+			<!-- /.descr-title -->
+			<div class="descr-subtitle">
+				Мы выбираем только <span>один</span> цветочный в городе
 			</div>
-			<!-- /.container -->
-		</header>
-		<!-- /.header -->
-	</div>
-	<!-- /.wrapper -->
-
-
+			<!-- /.descr-subtitle -->
+			<div class="descr-map">
+				<img src="img/descr/descr-map.png" alt="map">
+			</div>
+			<!-- /.descr-map -->
+			<div class="descr-content__container">
+			<!-- /.descr-text__container -->
+			<p class="text-descr">
+				Наша команда работает не более, чем с одним цветочным магазином в каждом городе. 
+				Это аргументировано тем, что мы работаем на качество, а не на количество. Также большое
+				значение имеет факт конкуренции. Прямо сейчас именно 
+				твой цветочный магазин может стать лучшим в городе!
+			</p>
+			<!-- /.descr-text -->
+			<button class="descr-button button">Стать лучшим</button>
+			</div>
+			<!-- /.descr-text__container -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.descr -->
 	<script src="js/script.js"></script>
 </body>
 </html>
