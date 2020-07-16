@@ -1,0 +1,327 @@
+.header
+	height: 103vh
+	&-container
+		display: flex
+		flex-direction: column
+		height: 100%
+	&-mobile
+		&__text
+			display: none!important
+	&-head
+		position: relative
+	&-navbtn
+		position: relative
+		display: none
+		right: 0px
+		top: 2px
+		height: 4px
+		width: 30px
+		cursor: pointer
+		z-index: 100
+		span
+			position: absolute
+			top: 16px
+			right: 0
+			border-radius: 4px
+			width: 100%
+			height: 4px
+			background-color: #fff
+			transition: 0.2s ease
+			&::before
+				content: ''
+				position: absolute
+				top: -10px
+				right: 0
+				border-radius: 4px
+				width: 100%
+				height: 4px
+				background-color: #fff
+				transition: 0.2s ease
+			&::after
+				content: ''
+				position: absolute
+				top: 10px
+				right: 0
+				border-radius: 4px
+				width: 100%
+				height: 4px
+				background-color: #fff
+				transition: 0.2s ease
+		&__active
+			span
+				height: 0
+				background-color: transparent
+				&::before
+					top: 0
+					transform: rotate(-45deg)
+				&::after
+					top: 0
+					transform: rotate(45deg)
+	&-nav
+		padding-top: 35px
+		display: flex
+		justify-content: center
+		align-items: center
+		&__mobile
+			display: none!important
+		&__item
+			display: inline-block
+			margin-right: 150px
+			text-decoration: none
+			color: #fff
+			line-height: 26px
+			&:first-child
+				max-width: 250px
+			&:last-child
+				margin-right: 0
+	&-title
+		margin-bottom: 85px
+		position: relative
+		font-size: 48px
+		max-width: 1200px
+		text-align: center
+		display: inline-block
+		color: #fff
+		font-weight: 400
+		line-height: 50px
+		z-index: 500
+		&::before
+			content: ''
+			position: absolute
+			display: inline-block
+			height: 145%
+			width: 100vw
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+			background: url('../img/header/text-pattern.png') no-repeat center / cover
+		span
+			color: #fa4580
+			display: inline-block
+			font-weight: 400
+		span
+			&:nth-child(2)
+				font-weight: 500
+				color: #fff
+		&__mobile
+			display: none
+	&-subtitle
+		margin-bottom: 100px
+		position: relative
+		font-size: 40px
+		max-width: 1040px
+		text-align: center
+		display: inline-block
+		color: #fff
+		font-weight: 300
+		z-index: 500
+		line-height: 45px
+		&::before
+			content: ''
+			position: absolute
+			display: inline-block
+			height: 145%
+			width: 100vw
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+			background: url('../img/header/text-pattern.png') no-repeat center / cover
+		span
+			display: inline-block
+			font-weight: 500
+		span
+			&:nth-child(2)
+				color: #fa4580
+				font-weight: 500
+		&__mobile
+			display: none!important
+	&-body
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		flex: 1
+		&__descr
+			max-width: 420px
+			position: relative
+			z-index: 400
+			&::before
+				content: ''
+				position: absolute
+				height: 4px
+				width: 447px
+				background: url('../img/header/descr-pattern.png') no-repeat
+				top: -20px
+				left: 50%
+				transform: translateX(-50%)
+			&::after
+				content: ''
+				position: absolute
+				height: 4px
+				width: 447px
+				background: url('../img/header/descr-pattern.png') no-repeat
+				bottom: -20px
+				left: 50%
+				transform: translateX(-50%)
+		&__text
+			&__mobile
+				display: none
+	&-button
+		position: relative
+		margin-bottom: 60px
+		&::before
+			content: ''
+			position: absolute
+			height: 154px
+			width: 100%
+			background: url('../img/header/button-pattern__1.png') no-repeat
+			bottom: -125px
+			left: -200px
+			z-index: 1
+			cursor: default
+		&::after
+			content: ''
+			position: absolute
+			height: 154px
+			width: 100%
+			background: url('../img/header/button-pattern__2.png') no-repeat
+			bottom: -125px
+			right: -400px
+			cursor: default
+
+@media (max-width: 1440px)
+	.header
+		&-title
+			font-size: 40px
+		&-subtitle
+			font-size: 34px
+
+@media (max-width: 1380px)
+	.header
+		height: 100vh
+		&-nav
+			&__item
+				font-size: 14px
+				line-height: 20px
+				&:first-child
+					max-width: 190px
+		&-title
+			font-size: 34px
+			max-width: 1000px
+			&::before
+				height: 135%
+		&-subtitle
+			font-size: 28px
+			max-width: 770px
+			&::before
+				height: 135%
+.overlay
+	background: url('../img/main.jpg') no-repeat center
+	background-size: cover
+
+@media (max-width: 1024px)
+	.header
+		&-container
+			padding: 20px
+		&-navbtn
+			display: inline-block
+			&__active
+				position: fixed
+		&-navbtn
+			&__active
+				right: 17px
+				top: 22px
+		&-nav
+			display: none
+			&__mobile
+				display: block
+				&__active
+					position: fixed
+					display: block!important
+					top: 0
+					right: 0
+					padding-top: 60px
+					overflow: hidden
+					z-index: 100
+					width: 50%
+					background-color: #000000
+					opacity: 0.75
+				&__item
+					display: flex
+					padding: 6px 27px 17px
+					padding-bottom: 13px
+					border-radius: 0
+					margin: 0
+					color: #fff
+					background-color: #000000
+					z-index: 1000
+					&:first-child
+						max-width: none
+		&-head
+			display: flex
+			justify-content: space-between
+			margin-bottom: 80px
+			z-index: 1000
+		&-title
+			margin-bottom: 45px
+			font-size: 20px
+			line-height: 25px
+			max-width: 267px
+			display: none
+			&__mobile
+				display: inline-block!important
+		&-subtitle
+			display: none
+			margin-bottom: 45px
+			font-size: 15px
+			line-height: 20px
+			span
+				color: #fa4580
+			&__mobile
+				display: inline-block!important
+		&-button
+			height: 41px
+			width: 181px
+			margin-bottom: 40px
+			&::after
+				content: none
+			&::before
+				content: none
+		&-body
+			&__text
+				max-width: 261px
+				font-size: 14px
+				&__desk
+					display: none!important
+				&__mobile
+					display: inline-block
+					text-align: center
+					&::before
+						width: 223px
+					&::after
+						width: 223px
+			&__descr
+				line-height: 18px
+				font-size: 14px
+		&-mobile
+			&__text
+				display: inline-block!important
+				max-width: 200px
+				margin-right: 0
+				text-decoration: none
+				line-height: 26px
+				font-size: 14px
+				color: #fff
+
+@media (min-width: 767px) and (max-width: 1024px)
+	.header
+		&-title
+			font-size: 30px
+			max-width: 415px
+			line-height: 35px
+		&-subtitle
+			font-size: 20px
+			line-height: 27px
+			max-width: 430px

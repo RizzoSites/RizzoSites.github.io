@@ -1,0 +1,180 @@
+.descr
+	position: relative
+	padding-top: 80px
+	height: 100vh
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 1060px
+	&-title
+		margin-bottom: 30px
+		font-size: 48px
+		font-weight: 400
+		span
+			color: #fa4580
+	&-subtitle
+		max-width: 500px
+		font-size: 40px
+		font-weight: 400
+		line-height: 50px
+		text-align: center
+		z-index: 100
+		span
+			font-weight: 500
+	&-map
+		position: relative
+		img
+			position: absolute
+			top: 20px
+			left: 50%
+			height: 610px
+			transform: translateX(-50%)
+		&__mobile
+			display: none
+	&-content
+		&__container
+			display: flex
+			justify-content: flex-start
+			width: 100%
+	&-button
+		position: absolute
+		bottom: 175px
+		z-index: 100
+	&-text
+		&__mobile
+			span
+				display: none
+	.text-descr
+		position: absolute
+		bottom: 310px
+		max-width: 580px
+		z-index: 100
+
+@media (max-width: 1440px)
+	.descr
+		height: 100vh
+		padding-top: 190px
+		&-map
+			img
+				height: 560px
+				z-index: 1
+				top: 10px
+		&-title
+			font-size: 40px
+			margin-bottom: 20px
+		&-subtitle
+			font-size: 34px
+			line-height: 40px
+		&-text
+			bottom: 80px!important
+		&-button
+			bottom: -50px!important
+@media (max-width: 1380px)
+	.descr
+		padding-top: 270px
+		&-container
+			max-width: 900px
+		&-title
+			font-size: 34px
+		&-subtitle
+			font-size: 28px
+			max-width: 450px
+		&-map
+			img
+				height: 550px
+				top: 10px
+		&-button
+			bottom: -195px!important
+		&-text
+			font-size: 15px!important
+			max-width: 490px!important
+			bottom: -80px!important
+			line-height: 21px!important
+
+@media (max-width: 1024px)
+	.header
+		height: 100vh
+	.descr
+		padding-top: 0
+		&-container
+			padding-left: 20px
+			padding-right: 20px
+			text-align: center
+		&-content
+			&__container
+				flex-direction: column
+				align-items: center
+		&-title
+			margin-bottom: 20px
+			font-size: 20px
+			max-width: 250px
+			line-height: 25px
+		&-subtitle
+			margin-bottom: 40px
+			font-size: 15px
+			max-width: 200px
+			line-height: 20px
+		&-map
+			display: none
+			&__mobile
+				display: block
+				height: 420px
+				margin-bottom: 30px
+		&-text
+			display: none
+			&__mobile
+				position: relative
+				margin-bottom: 40px
+				&::before
+					content: ''
+					position: absolute
+					top: 50%
+					left: -40px
+					transform: translateY(-50%)
+					background: url('../img/arrow-mob.png') no-repeat center
+					height: 34px
+					width: 20px	
+				&::after
+					content: ''
+					position: absolute
+					top: 50%
+					right: -40px
+					transform: translateY(-50%)
+					background: url('../img/arrow-mob.png') no-repeat center
+					height: 34px
+					width: 20px			
+				span
+					display: inline-block
+		&-button
+			width: 181px
+			height: 41px
+			position: static
+
+@media (max-width: 360px)
+	.descr
+		height: 112vh
+
+@media (max-width: 320px)
+	.descr
+		padding-top: 40px
+		height: 110vh
+		&-subtitle
+			margin-bottom: 20px
+		&-map
+			&__mobile
+				height: 355px
+
+@media (min-width: 767px) and (max-width: 1024px)
+	.descr
+		&-title
+			font-size: 30px
+			max-width: 415px
+			line-height: 35px
+		&-subtitle
+			font-size: 20px
+			line-height: 27px
+			max-width: 430px
+		&-map
+			&__mobile
+				height: 580px
