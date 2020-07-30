@@ -3,37 +3,65 @@ html
 *, *:before, *:after  
 	box-sizing: inherit 
 
+body
+	font-size: 14px
+	color: #000
+
 html, body
 	max-width: 100%
 	overflow-x: hidden
-
-body
-	font-family: 'Raleway'
-	font-weight: 400
-	font-size: 18px
-	color: #fff
+	font-family: 'Montserrat'
 
 .container
-	max-width: 1200px
+	max-width: 1150px
 	margin: 0 auto
-
 .button
-	height: 64px
-	width: 300px
-	box-shadow: 0 0 64px 11px rgba(250, 69, 128, 0.4)
-	background-color: #fa4580
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 330px
+	height: 60px
+	background-color: #FF0000
+	border-radius: 27px
+	font-size: 24px
+	font-weight: 600
 	color: #fff
-	font-size: 20px
-	font-weight: 400
-	border: none
-	cursor: pointer
-.text-descr
-	font-family: 'Rubik'
-	font-size: 18px
-	font-weight: 300
-	line-height: 26px
-	letter-spacing: 0.9px
+	text-decoration: none
+	transition: 0.1s
+	&:hover
+		background-color: #b92e2e
+		transition: 0.1s ease-in-out
+.section-title
+	font-size: 44px
+	font-weight: 600
+	line-height: 66px
+	span
+		color: #FF0000
+.section-subtitle
+	font-size: 34px
+	font-weight: 500
+	line-height: 90px
+	span
+		color: #FF0000
+.section-text
+	font-size: 22px
+	font-weight: 500
+	line-height: 45px
+	span
+		color: #FF0000
 
-@media (max-width: 1380px)
+@media (max-width: 1024px)
+	.section-title
+		font-size: 26px
+		line-height: 36px
+	.section-subtitle
+		font-size: 20px
+		line-height: 28px
+	.section-text
+		font-size: 16px
+		line-height: 22px
 	.button
-		font-size: 18px
+		height: 55px
+		font-size: 18px	
+		max-width: none!important
+		width: 100%

@@ -1,0 +1,65 @@
+.delivery
+	padding-top: 160px
+	padding-bottom: 160px
+	position: relative
+	&-page
+		content: ''
+		position: absolute
+		top: 95px
+		left: 195px
+		height: 145px
+		width: 250px
+		z-index: -1
+	&-block
+		position: relative
+	&-img
+		position: absolute
+		top: 100px
+		right: -280px
+		height: 500px
+		z-index: -1
+	.section-title
+		margin-bottom: 80px
+	.section-text
+		margin-bottom: 25px
+		max-width: 660px
+	.header-text
+		max-width: 340px
+		display: inline-block
+		margin-bottom: 55px
+
+@media (min-width: 1920px) 
+	.delivery-page
+		left: 300px
+
+@media (max-width: 1440px)
+	.delivery
+		&-page
+			left: 70px
+		&-img
+			height: 450px
+			right: -180px
+			top: 110px
+@media (max-width: 1380px)
+	.delivery
+		&-img
+			height: 420px
+			right: -130px
+			top: 140px
+
+@media (max-width: 1024px)
+	.delivery
+		padding-top: 110px
+		padding-bottom: 80px
+		&-page
+			top: 20px
+			left: 20px
+			height: 40px
+			width: auto
+		&-img
+			display: none
+		.section-title
+			margin-bottom: 50px
+		.container
+			padding-left: 20px
+			padding-right: 20px

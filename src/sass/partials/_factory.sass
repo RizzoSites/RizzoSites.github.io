@@ -1,0 +1,63 @@
+.factory
+	position: relative
+	padding-top: 20px
+	height: 540px
+	background: url('../img/factory/bg.png') no-repeat
+	background-position: 150%
+	z-index: 1000
+	&-page
+		content: ''
+		position: absolute
+		top: -40px
+		left: 190px
+		height: 145px
+		width: 250px
+		z-index: -1
+		transform
+	&-info
+		width: 600px
+	.section-title
+		margin-bottom: 50px
+		z-index: 100!important
+	.section-text
+		margin-bottom: 40px
+
+@media (min-width: 1920px) 
+	.factory-page
+		left: 290px
+
+@media (max-width: 1440px)
+	.factory
+		background-position: -550%
+		&-page
+			left: 70px
+@media (max-width: 1400px)
+	.factory
+		background-position: -230%
+		&-page
+			left: 70px
+@media (max-width: 1380px)
+	.factory
+		background-position: -110%
+		&-page
+			left: 70px
+
+@media (max-width: 1024px)
+	.factory
+		padding-top: 110px
+		padding-bottom: 60px
+		background: none
+		height: auto
+		&-page
+			top: 20px
+			left: 20px
+			height: 40px
+			width: auto
+		&-info
+			width: 100%
+		.section-text
+			&:last-child
+				margin-bottom: 0
+		.container
+			padding-left: 20px
+			padding-right: 20px
