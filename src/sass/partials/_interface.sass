@@ -5,30 +5,63 @@ html
 
 body
 	font-size: 14px
-	color: #fff
+	color: #000
 
 html, body
 	max-width: 100%
 	overflow-x: hidden
+	font-family: 'Montserrat'
 
-.overlay
-	background: url('../img/bg.png') no-repeat 
-	background-size: cover
-	height: 1740px
-.section-text
-	font-family: 'Raleway'
-	font-size: 14px
-	font-weight: 500
-	line-height: 18px
-	span
-		color: #e09340
+.container
+	max-width: 1150px
+	margin: 0 auto
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 330px
+	height: 60px
+	background-color: #FF0000
+	border-radius: 27px
+	font-size: 24px
+	font-weight: 600
+	color: #fff
+	text-decoration: none
+	transition: 0.1s
+	&:hover
+		background-color: #b92e2e
+		transition: 0.1s ease-in-out
 .section-title
-	font-size: 18px
-	font-family: 'Raleway'
+	font-size: 44px
+	font-weight: 600
+	line-height: 66px
+	span
+		color: #FF0000
+.section-subtitle
+	font-size: 34px
 	font-weight: 500
-	line-height: 18px
+	line-height: 90px
+	span
+		color: #FF0000
+.section-text
+	font-size: 22px
+	font-weight: 500
+	line-height: 40px
+	span
+		color: #FF0000
 
-
-@media (max-width: 320px)
-	.overlay
-		height: 1690px
+@media (max-width: 1024px)
+	.section-title
+		font-size: 26px
+		line-height: 36px
+	.section-subtitle
+		font-size: 20px
+		line-height: 28px
+	.section-text
+		font-size: 16px
+		line-height: 22px
+	.button
+		height: 55px
+		font-size: 18px	
+		max-width: none!important
+		width: 100%
