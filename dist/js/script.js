@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$(".examples-slider").slick({autoplay:!0})});

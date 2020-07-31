@@ -1,0 +1,86 @@
+.examples
+	padding-top: 60px
+	position: relative
+	overflow: hidden
+	&::before
+		content: ''
+		position: absolute
+		bottom: -65px
+		left: -65px
+		height: 128px
+		width: 128px
+		background: url('../img/examples/pattern-left.png') no-repeat
+	&::after
+		content: ''
+		position: absolute
+		bottom: -65px
+		right: -65px
+		height: 128px
+		width: 128px
+		background: url('../img/examples/pattern-left.png') no-repeat
+	&-slider
+		max-width: 290px
+		&__item
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				bottom: 30px
+				left: 45%
+				transform: translateX(-50%)
+				width: 276px
+				height: 91px
+				z-index: -1
+				background: url('../img/examples/pattern.png') no-repeat
+		&__wrap
+			margin-bottom: 40px
+			img
+				margin-bottom: 15px
+			span
+				max-width: 143px
+				font-size: 14px
+				font-family: 'Roboto'
+				font-weight: 400
+				line-height: 20px
+				text-align: center
+				letter-spacing: 0.42px
+	.slick-list
+		overflow-x: hidden!important
+		overflow-y: visible!important
+	.slick-next
+		display: none!important
+	.slick-prev
+		display: none!important
+	.section-title
+		position: relative
+		margin-bottom: 30px
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: -80px
+			width: 60px
+			height: 1px
+			background-color: #e09340
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: -80px
+			width: 60px
+			height: 1px
+			background-color: #e09340
+	.container
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+
+@media (max-width: 320px)
+	.section-title
+		&::before
+			left: -30px
+		&::after
+			right: -30px
