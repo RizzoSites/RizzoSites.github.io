@@ -1,290 +1,210 @@
 .header
-	padding-top: 20px
-	height: 100vh
 	position: relative
-	&::after
-		content: ''
-		position: absolute
-		z-index: -1
-		top: 0
-		left: -75px
-		height: 869px
-		width: 1977px	
-		background:	url('../img/header/pattern-1.png') no-repeat 
 	&-container
+		padding-top: 20px
+		padding-left: 20px
+		padding-right: 20px
 		display: flex
 		flex-direction: column
-		height: 100%
-	&-head
-		display: flex
-		justify-content: space-between
-	&-separate
-		display: flex
-	&-logo
-		font-size: 24px
-		position: relative
-		img
-			position: absolute
-			top: 50%
-			transform: translateY(-50%)
-	&-phone
-		padding-top: 35px
-		margin-right: 65px
-		display: flex
-		flex-direction: column
-		a
-			margin-bottom: 8px
-			font-family: 'Montserrat'
-			font-weight: 600
-			font-size: 24px
-			text-decoration: none
-			color: #000
-		button
-			border: 1px solid #FF0000
-			background-color: transparent
-			height: 43px
-			width: 210px
-			font-size: 18px
-			font-weight: 400
-			letter-spacing: 1px
-			transition: 0.2s
-			cursor: pointer
-			&:hover
-				transition: 0.2s
-				background-color: #FF0000
-				color: #fff
-	&-navbtn
-		display: flex
-		position: relative
-		right: 0px
-		top: 50px
-		height: 20px
-		width: 50px
-		cursor: pointer
-		z-index: 100
-		span
-			position: absolute
-			top: 0
-			right: 0
-			border-radius: 4px
-			width: 100%
-			height: 3px
-			background-color: #000
-			transition: 0.2s ease
-			&::before
-				content: ''
-				position: absolute
-				top: -12px
-				right: 0
-				border-radius: 4px
-				width: 100%
-				height: 3px
-				background-color: #000
-				transition: 0.2s ease
-			&::after
-				content: ''
-				position: absolute
-				top: 12px
-				right: 0
-				border-radius: 4px
-				width: 100%
-				height: 3px
-				background-color: #000
-				transition: 0.2s ease
-		&__active
-			span
-				height: 0
-				background-color: transparent
-				&::before
-					top: 0
-					transform: rotate(-45deg)
-				&::after
-					top: 0
-					transform: rotate(45deg)
-	&-body
-		flex: 1
-		display: flex
 		align-items: center
-		justify-content: space-between
-		&__block
-			max-width: 750px
-			display: flex
-			flex-direction: column
+		text-align: center
 	&-title
-		max-width: 880px
-		margin-bottom: 25px
-		font-weight: 600
-		font-size: 64px
-		line-height: 78px
-		z-index: 7
-		span
-			color: #FF0000
-	&-subtitle
-		margin-bottom: 75px
-		font-weight: 500
-		font-size: 36px
-		line-height: 44px
-		z-index: 30
-		span
-			color: #FF0000
-			font-weight: 600
-	&-text
-		margin-bottom: 45px
-		line-height: 27px
-		font-size: 20px
-		max-width: 343px
-		z-index: 30
-	&-img
-		transform: translateY(-30px)
-		width: 320px
-		z-index: 3
-	&-button
-		position: relative
-		z-index: 30
+		max-width: 280px
+		margin-bottom: 22px
 		&::before
 			content: ''
 			position: absolute
-			top: -60px
-			left: -80px
-			background: url('../img/arrow.png') no-repeat
-			width: 68px
-			height: 100px
-			z-index: 40
-
-@media (max-width: 1680px) 
-	.header
+			top: 29px
+			left: 0
+			width: 60px
+			height: 1px
+			background-color: #e09340
 		&::after
-			left: -185px
-@media (max-width: 1440px)
-	.header
-		&::after
-			left: -325px
-			background: url('../img/header/pattern-2.png') no-repeat
-			height: 696px
-@media (max-width: 1540px) and (max-height: 864px)
-	.header
-		&::after
-			left: -295px
-			background: url('../img/header/pattern-2.png') no-repeat
-			height: 696px
-		&-img
-			width: 310px
-
-@media (max-width: 1420px) and (max-height: 750px)
-	.header-img
-		transform: translateX(0)
-
-@media (max-width: 1380px)
-	.header
-		&::after
-			left: -350px
-			background: url('../img/header/pattern-3.png') no-repeat
-			height: 696px
-		&-phone
-			a
-				font-size: 20px
-			button
-				width: auto
-				height: auto
-				padding: 10px
-		&-body
-			&__block
-				max-width: 520px
-		&-title
-			font-size: 44px
-			line-height: 48px
-		&-subtitle
-			margin-bottom: 45px
-			font-size: 26px
-			line-height: 34px
-		&-text
-			font-size: 18px
-		&-button
-			max-width: 290px
-		&-img
-			width: 310px
-			transform: translateY(0px)
-@media (max-width: 1280px)
-	.header
-		&::after
-			left: -395px
-			background: url('../img/header/pattern-2.png') no-repeat
-			height: 696px
-		&-img
-			width: 290px
-
-@media (max-width: 1024px)
-	.header
-		&::after
-			display: none
-		&-navbtn
-			width: 40px
-		&-logo
-			img
-				height: 40px
-				top: 0
-		&-phone
-			padding-top: 0
-			margin-right: 30px
-			a
-				font-size: 15px
-			&__button
-				display: none
-		&-navbtn
-			top: 5px
-			width: 30px
-			span
-				height: 2px
-				&::before
-					height: 2px
-					top: -8px
-				&::after
-					height: 2px
-					top: 8px
-		&-container
-			padding-top: 20px
-			padding-left: 20px
-			padding-right: 20px
-		&-body
-			&__block
-				width: 100%			
-		&-title
-			font-size: 30px
-			line-height: 36px
-			max-width: 240px
-		&-subtitle
-			font-size: 22px
-			line-height: 29px
-			max-width: 270px
-		&-text
-			font-size: 12px
-			line-height: 18px
-			max-width: 210px
-		&-img
+			content: ''
 			position: absolute
-			top: 120px
-			right: -140px
-			height: 400px
-			width: auto
+			top: 29px
+			right: 0
+			width: 60px
+			height: 1px
+			background-color: #e09340
+	&-info
+		display: flex
+		flex-direction: column
+		margin-bottom: 30px
+	&-phone
+		display: flex
+		align-items: center
+		margin-bottom: 15px
+		img
+			margin-right: 10px
+		a
+			font-family: 'Rubik'
+			font-size: 16px
+			font-weight: 300
+			text-decoration: none
+			color: #fff
+	&-location
+		display: flex
+		align-items: center
+		img
+			margin-right: 15px
+		span
+			font-family: 'Rubik'
+			font-size: 16px
+			font-weight: 300
+	&-button
+		position: relative
+		display: flex
+		align-items: center
+		padding: 20px
+		width: 289px
+		height: 69px
+		border: 2px solid #e09340
+		border-radius: 15px
+		text-decoration: none
+		color: #fff
+		font-family: 'Roboto'
+		font-weight: 500
+		line-height: 20px
+		letter-spacing: 0.7px
+		text-align: left
+		z-index: 1000
+		overflow: hidden
+		&:hover
+			box-shadow: 0 0 35px rgba(238, 172, 14, 0.35)
+			background-image: linear-gradient(15deg, #e09340 0%, #d5621d 100%)
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 1.5em
+			height: 100%
+			background-color: rgba(255,255,255, 0.8)
+			transition: 0.3s
+			animation: move-light 1.8s infinite
+	@keyframes move-light
+		from
+			transform: translateX(-1em) skewX(-45deg)
+		to
+			transform: translateX(23em) skewX(-45deg)
+	&-text
+		margin-bottom: 55px
+	&-features
+		padding-top: 45px
+		position: relative
+		display: flex
+		justify-content: space-between
+		width: 100%
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -90%)
+			height: 12px
+			width: 12px
+			background: url('../img/header/pattern.png') no-repeat
+		&__1
+			margin-bottom: 30px
+			&::before
+				transform: translate(-55%, -150%)
+			.header-feature
+				&:last-child
+					margin-right: 0
+		&__2
+			margin-bottom: 25px
+			.header-feature
+				&:last-child
+					margin-right: 0
+	&-feature
+		max-width: 144px
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		&:nth-child(2)
+			span
+				max-width: 80px
+		img
+			margin-bottom: 25px
+		span
+			font-size: 14px
+			font-family: 'Raleway'
+			font-weight: 500
+			line-height: 18px
+		p
+			font-size: 14px
+			font-family: 'Raleway'
+			font-weight: 500
+			line-height: 18px
+	&-notice
+		margin-bottom: 8px
+		font-family: 'Roboto'
+		font-size: 10px
+		font-weight: 400
+		line-height: 16px
+		letter-spacing: 0.5px
+		color: #a9a9a9
+		&:last-child
+			margin-bottom: 0
+	.button-container
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			background-color: #0c0a08
+			border-radius: 15px
+			opacity: 0.6
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 30px
+			height: 36px
+			width: 36px
+			background: url('../img/header/button-pattern.png') no-repeat 
+.pc-text
+	display: none!important
+
+@media (min-width: 1024px)
+	.pc-text
+		display: inline-block
+		font-size: 30px
+		color: #000
+	.overlay
+		display: none
+	.header
+		display: none
+	.vr
+		display: none
+	.examples
+		display: none
+@media (min-width: 768px)
+	.header-features
+		justify-content: center
 
 @media (max-width: 320px)
-	.header
-		&-title
-			font-size: 24px
-			line-height: 30px
-		&-subtitle
-			font-size: 18px
-			line-height: 25px
-			max-width: 220px
-		&-text
-			font-size: 10px
-			max-width: 190px
-		&-img
-			top: 70px
-			right: -170px
-		&-logo
+	.header-features
+		margin-bottom: 20px
+		.header-feature
 			img
-				height: 35px
-		&-phone
-			a
-				font-size: 11px
+				margin-bottom: 20px
+		&__1
+			.header-feature
+				margin-right: 40px
+		&__2
+			.header-feature
+				margin-right: 38px
+
+	.header
+		&-info
+			margin-bottom: 25px
+		&-text
+			margin-bottom: 45px
