@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".examples-slider").slick({autoplay:!0}),jQuery("img.svg").each(function(){var a=jQuery(this),e=a.attr("id"),i=a.attr("class"),t=a.attr("src");jQuery.get(t,function(t){var r=jQuery(t).find("svg");void 0!==e&&(r=r.attr("id",e)),void 0!==i&&(r=r.attr("class",i+" replaced-svg")),r=r.removeAttr("xmlns:a"),a.replaceWith(r)},"xml")})});
+$(document).ready(function(){});
