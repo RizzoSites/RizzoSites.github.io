@@ -16,6 +16,7 @@ html, body
 	max-width: 1150px
 	margin: 0 auto
 .button
+	position: relative
 	display: flex
 	justify-content: center
 	align-items: center
@@ -28,9 +29,20 @@ html, body
 	color: #fff
 	text-decoration: none
 	transition: 0.1s
+	overflow: hidden
 	&:hover
 		background-color: #b92e2e
 		transition: 0.1s ease-in-out
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 1.5em
+		height: 100%
+		background-color: rgba(255,255,255, 0.8)
+		transition: 0.3s
+		animation: move-light 1.8s infinite
 .section-title
 	font-size: 44px
 	font-weight: 600
@@ -50,6 +62,18 @@ html, body
 	span
 		color: #FF0000
 
+@keyframes move-light
+	from
+		transform: translateX(-1em) skewX(-45deg)
+	to
+		transform: translateX(22em) skewX(-45deg)
+
+@keyframes move-light-ipad
+	from
+		transform: translateX(-1em) skewX(-45deg)
+	to
+		transform: translateX(35em) skewX(-45deg)
+
 @media (max-width: 1024px)
 	.section-title
 		font-size: 26px
@@ -65,3 +89,8 @@ html, body
 		font-size: 18px	
 		max-width: none!important
 		width: 100%
+
+@media (min-width: 768px) and (max-width: 1024px)
+	.button
+		&::after
+			animation: move-light-ipad 1.8s infinite
