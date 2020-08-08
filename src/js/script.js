@@ -1,3 +1,4 @@
+var stone;
 $(document).ready(function() {
 
 $('.header-navbtn').click(function() {
@@ -31,6 +32,39 @@ $(function(){
                 return false;
         });
 });
+
+$("#form-first").submit(function() {
+	stone = $("input[name='stones']:checked").val();
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: {
+              name : document.getElementById('form-1-name').value,
+              phone : document.getElementById('form-1-phone').value,
+              email : document.getElementById('form-1-email').value,
+              text : document.getElementById('form-1-text').value,
+              stones : stone
+            }
+    }).done(function() {
+      $("#form-first").trigger("reset");
+      $('.modal').removeClass('modal-active');
+    });
+    return false;
+
+  });
+
+$("#form-second").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "mail-answer.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $("#form-second").trigger("reset");
+      $('.modal').removeClass('modal-active');
+    });
+    return false;
+  });
+
 
 });
 

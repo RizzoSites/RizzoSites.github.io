@@ -14,18 +14,18 @@
 		<div class="modal-container">
 			<div class="form-block">
 				<img class="modal-close" src="img/close.png">
-				<form class="form-1" id="form">
-					<input type="text" name="name" required placeholder="Имя" class="form-text form-input">
-					<input type="tel" name="phone" required placeholder="Телефон" class="form-text form-input">
-					<input type="email" name="email" required placeholder="E-mail" class="form-text form-input">
-					<textarea name="text" placeholder="Размеры закрытой каменки (ширина или диаметр x длина), мм"></textarea>
+				<form class="form-1" id="form-first">
+					<input type="text" name="name" required placeholder="Имя" class="form-text form-input" id="form-1-name">
+					<input type="tel" name="phone" required placeholder="Телефон" class="form-text form-input" id="form-1-phone">
+					<input type="email" name="email" required placeholder="E-mail" class="form-text form-input" id="form-1-email">
+					<textarea id="form-1-text" name="text" placeholder="Размеры закрытой каменки (ширина или диаметр x длина), мм"></textarea>
 					<span>Форма каменки</span>
-				</form>
-				<p><input name="dzen" type="radio" value="first" onMouseDown="this.isChecked=this.checked;" 
+					<p><input class="modal-options" name="stones" type="radio" value="плоское дно" onMouseDown="this.isChecked=this.checked;" 
   onClick="this.checked=!this.isChecked;" >плоское дно</p>
-				<p><input name="nodzen" type="radio" value="second" onMouseDown="this.isChecked=this.checked;" 
+				<p><input class="modal-options" name="stones" type="radio" value="цилиндрическая" onMouseDown="this.isChecked=this.checked;" 
   onClick="this.checked=!this.isChecked;" >цилиндрическая</p>
   				<input type="submit" value="Заказать расчет" class="button button-o" id="form-button">
+				</form>
   				<p class="modal-notice">
   					Нажимая на кнопку "Заказать расчёт",<br>
   					я подтверждаю своё согласие на<br>
@@ -44,7 +44,7 @@
 					наш менеджер<br>
 					свяжется с Вами
 				</span>
-				<form class="form-1" id="form">
+				<form class="form-1" id="form-second">
 					<input type="text" name="name" required placeholder="Имя" class="form-text form-input">
 					<input type="tel" name="phone" required placeholder="Телефон" class="form-text form-input">
 					<input type="submit" value="Заказать расчет" class="button button-o" id="form-button">
@@ -80,7 +80,7 @@
 					<a href="#advantages" class="header-nav__item">Преимущества</a>
 					<a href="#advantages-specifics" class="header-nav__item">Характеристики</a>
 					<a href="#factory" class="header-nav__item">О заводе</a>
-					<a href="#delivery" class="header-nav__item">Доставки</a>
+					<a href="#delivery" class="header-nav__item">Доставка</a>
 				</nav>
 		</div>
 		<!-- /.header-head -->

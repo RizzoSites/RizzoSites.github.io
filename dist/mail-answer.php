@@ -10,12 +10,9 @@ $headers .= "\r\nX-Mailer: PHP/".phpversion();
 
 $name = $_POST["name"];
 $phone = $_POST["phone"];
-$email = $_POST['email'];
-$text = $_POST['text'];
 
-$stones = $_POST['stones'];
 
-$message = "Имя: $name\nТелефон: $phone \nПочта: $email \nРазмеры: $text \nФорма каменки: $stones";
+$message = "Имя: $name\nТелефон: $phone \n";
 
 $pagetitle = "Письмо с сайта \"$sitename\"";
 mail($to, $pagetitle, $message, $headers, "-f info@sleepcokie.ru"); echo "Mail sent";

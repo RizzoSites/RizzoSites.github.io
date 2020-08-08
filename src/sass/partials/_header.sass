@@ -269,7 +269,7 @@
 			text-align: center
 			margin-bottom: 15px
 		input[type="radio"]
-			appearance: auto!important
+			appearance: radio!important
 			text-align: left!important
 			margin-left: 20px!important
 
@@ -378,6 +378,9 @@
 			border-radius: 0%!important
 			z-index: 10000!important
 			border: none!important
+		form
+			textarea
+				padding-top: 8px!important
 	.header
 		&::after
 			display: none
@@ -402,7 +405,7 @@
 				padding-bottom: 0
 				padding-left: 30px
 			&__item
-				font-size: 30px
+				font-size: 28px
 		&-phone
 			padding-top: 0
 			margin-right: 30px
@@ -410,6 +413,9 @@
 				font-size: 15px
 			&__button
 				display: none
+		&-text
+			&::before
+				content: none
 		&-navbtn
 			top: 5px
 			width: 30px
@@ -456,6 +462,9 @@
 			.modal-close
 				top: 40px!important
 				right: 15px!important
+		form
+			.button
+				margin-top: 10px!important
 	.header
 		&-title
 			font-size: 24px
@@ -476,3 +485,6 @@
 		&-phone
 			a
 				font-size: 11px
+		&-nav
+			&__item
+				font-size: 24px
