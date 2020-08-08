@@ -2,8 +2,8 @@ var stone;
 $(document).ready(function() {
 
 $('.header-navbtn').click(function() {
-	$('.header-navbtn').toggleClass('header-navbtn__active')
-	$('.header-nav').toggleClass('header-nav__active');
+  $('.header-navbtn').toggleClass('header-navbtn__active')
+  $('.header-nav').toggleClass('header-nav__active');
 });
 
  $(".header-nav__item").click(function() {
@@ -12,17 +12,17 @@ $('.header-navbtn').click(function() {
 });
 
 $('.header-button').click(function() {
-	$('#modal-first').toggleClass('modal-active');
+  $('#modal-first').toggleClass('modal-active');
 });
 
 $('.header-phone__button').click(function() {
-	$('#modal-second').toggleClass('modal-active');
+  $('#modal-second').toggleClass('modal-active');
 });
 
 
 $('.modal-close').click(function() {
-	$('#modal-first').removeClass('modal-active');
-	$('#modal-second').removeClass('modal-active');
+  $('#modal-first').removeClass('modal-active');
+  $('#modal-second').removeClass('modal-active');
 });
 
 $(function(){
@@ -34,7 +34,7 @@ $(function(){
 });
 
 $("#form-first").submit(function() {
-	stone = $("input[name='stones']:checked").val();
+  stone = $("input[name='stones']:checked").val();
     $.ajax({
       type: "POST",
       url: "mail.php",
