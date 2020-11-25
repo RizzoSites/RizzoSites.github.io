@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".clients-slider").slick({slidesToShow:1,dots:!0})});
+$(document).ready(function(){$(".header-navbtn").click(function(){$(".header-navbtn").toggleClass("header-navbtn__active"),$(".header-nav").toggleClass("header-nav__active")}),$(".clients-slider").slick({slidesToShow:1,dots:!0})});
